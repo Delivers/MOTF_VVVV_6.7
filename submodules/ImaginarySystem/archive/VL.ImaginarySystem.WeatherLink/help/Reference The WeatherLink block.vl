@@ -1,0 +1,739 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document xmlns:p="property" xmlns:r="reflection" Id="PuLbH7nRwsWNt9ZHgQGvBf" LanguageVersion="2023.5.3-0059-gc01610d6fc" Version="0.128">
+  <NugetDependency Id="VMrqrWZicqsOlfL1VscAqo" Location="VL.CoreLib" Version="2023.5.3-0059-gc01610d6fc" />
+  <Patch Id="B0dN0IhToHDP6ThkEwsrCq">
+    <Canvas Id="NPjYBWFdo4zNBI0hdlmHVz" DefaultCategory="Main" CanvasType="FullCategory">
+      <!--
+
+    ************************ MyWeatherData ************************
+
+-->
+      <Node Name="MyWeatherData" Bounds="305,280" Id="EtzDs5k7EvQOGb8qxK2Usc">
+        <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
+          <Choice Kind="RecordDefinition" Name="Record" />
+        </p:NodeReference>
+        <Patch Id="DB322t3ILAOO3YO4Zvsaeg">
+          <Canvas Id="V3iddcTmd8EPBRdOrZMjsl" CanvasType="Group">
+            <Pad Id="VqHJgRnMZzcPJTcAoOfFVr" SlotId="UNV5QpSLwFkPyDPXGbGwzY" Bounds="357,342" />
+            <Pad Id="A8CZstRJx9UNj03jmMnTmn" SlotId="QMc7FNRzYV2MW78O2zbGQK" Bounds="497,342" />
+            <Pad Id="PwM64ncppANM4bect5mDZM" SlotId="JbEBP89NvecObciWiyr5eZ" Bounds="637,342" />
+            <ControlPoint Id="GgbkP9CoCmMLcvc6OT24xc" Bounds="637,312" />
+            <ControlPoint Id="KYZjEr7Gmx4LX0SVZSxbL7" Bounds="637,372" />
+            <ControlPoint Id="KHlEMPPn6a5MZ4HUQD3lDU" Bounds="497,312" />
+            <ControlPoint Id="DlkyaaeFCBKMyxevTjsth0" Bounds="497,372" />
+            <ControlPoint Id="PTeelgiW7XcOIzas2uIltj" Bounds="357,312" />
+            <ControlPoint Id="I3Cy0uyCezfLAqKMLwgPes" Bounds="357,372" />
+          </Canvas>
+          <ProcessDefinition Id="PadLT2nJ0oZPZ8bSuCDIp9" IsHidden="true">
+            <Fragment Id="FIfAvzqoEKSPW6YyF8y1kP" Patch="Q2YC6koRursQNzbhaQQw8T" Enabled="true" />
+            <Fragment Id="JXTQN4sRM4NNvxGJ60rm8Y" Patch="Vs0gEpDZ02YOEARLLaAyKI" />
+          </ProcessDefinition>
+          <Slot Id="UNV5QpSLwFkPyDPXGbGwzY" Name="Pressure">
+            <p:TypeAnnotation p:Type="TypeReference">
+              <Choice Kind="TypeFlag" Name="Float32" />
+            </p:TypeAnnotation>
+          </Slot>
+          <Slot Id="QMc7FNRzYV2MW78O2zbGQK" Name="Temperature">
+            <p:TypeAnnotation p:Type="TypeReference">
+              <Choice Kind="TypeFlag" Name="Float32" />
+            </p:TypeAnnotation>
+          </Slot>
+          <Slot Id="JbEBP89NvecObciWiyr5eZ" Name="Wind Direction">
+            <p:TypeAnnotation p:Type="TypeReference">
+              <Choice Kind="TypeFlag" Name="Float32" />
+            </p:TypeAnnotation>
+          </Slot>
+          <Link Id="MBDu83UFmSVQdoZG0QXxI7" Ids="JZeS9Ja66i2OuDYuDsh9e4,GgbkP9CoCmMLcvc6OT24xc" IsHidden="true" />
+          <Link Id="O43xR7O5PfSOyW1dXVgwNO" Ids="GgbkP9CoCmMLcvc6OT24xc,PwM64ncppANM4bect5mDZM" />
+          <Link Id="SuKG9H3AoDgPb9ZRTMvVUH" Ids="KYZjEr7Gmx4LX0SVZSxbL7,ARgdxDbUQrpP3y9JSJrQhc" IsHidden="true" />
+          <Link Id="Dme00WeoIuoLcbMzwrIz27" Ids="PwM64ncppANM4bect5mDZM,KYZjEr7Gmx4LX0SVZSxbL7" />
+          <Link Id="PdcNMFfENSAPhLq93YSC6Z" Ids="MxHwkLzfiMEOPeLmdYr3JL,KHlEMPPn6a5MZ4HUQD3lDU" IsHidden="true" />
+          <Link Id="Ly0ffl3eBlsLZyOCkS388m" Ids="KHlEMPPn6a5MZ4HUQD3lDU,A8CZstRJx9UNj03jmMnTmn" />
+          <Link Id="ArKqeGH53MeLiMs64VFphi" Ids="DlkyaaeFCBKMyxevTjsth0,T579XnZSf3gNNPqQoOkE4l" IsHidden="true" />
+          <Link Id="UwGtXcc6zkSM2AohtKhOiX" Ids="A8CZstRJx9UNj03jmMnTmn,DlkyaaeFCBKMyxevTjsth0" />
+          <Link Id="E7fWh6dO415PSJERVez5Ck" Ids="NheN4967w1CMuwBRiG9bJ1,PTeelgiW7XcOIzas2uIltj" IsHidden="true" />
+          <Link Id="QHP5NMwGJ6HMRzHhTLEweG" Ids="PTeelgiW7XcOIzas2uIltj,VqHJgRnMZzcPJTcAoOfFVr" />
+          <Link Id="Bdl5vb6kEsuN3llKzL7sJ3" Ids="I3Cy0uyCezfLAqKMLwgPes,PsUniAo8J34LbRsHaoESQT" IsHidden="true" />
+          <Link Id="D6kB5ccrkhQLkX9cIVN2ru" Ids="VqHJgRnMZzcPJTcAoOfFVr,I3Cy0uyCezfLAqKMLwgPes" />
+          <Patch Id="Q2YC6koRursQNzbhaQQw8T" Name="Create">
+            <Pin Id="NheN4967w1CMuwBRiG9bJ1" Name="Pressure" Kind="InputPin" />
+            <Pin Id="MxHwkLzfiMEOPeLmdYr3JL" Name="Temperature" Kind="InputPin" />
+            <Pin Id="JZeS9Ja66i2OuDYuDsh9e4" Name="Wind Direction" Kind="InputPin" />
+          </Patch>
+          <Patch Id="Vs0gEpDZ02YOEARLLaAyKI" Name="Split">
+            <Pin Id="PsUniAo8J34LbRsHaoESQT" Name="Pressure" Kind="OutputPin" />
+            <Pin Id="T579XnZSf3gNNPqQoOkE4l" Name="Temperature" Kind="OutputPin" />
+            <Pin Id="ARgdxDbUQrpP3y9JSJrQhc" Name="Wind Direction" Kind="OutputPin" />
+          </Patch>
+        </Patch>
+      </Node>
+      <!--
+
+    ************************ WeatherLinkDataToMyWeatherData ************************
+
+-->
+      <Node Name="WeatherLinkDataToMyWeatherData" Bounds="305,333,528,232" Id="ETqP2EC3Pp8Qc0rP5RGRpY">
+        <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
+          <Choice Kind="OperationDefinition" Name="Operation" />
+        </p:NodeReference>
+        <Patch Id="TxLlNTxWgUwPIJO8cmYpUf">
+          <Node Bounds="378,497,73,26" Id="TSTbGV9wyPpPiPirjetRpJ">
+            <p:NodeReference LastCategoryFullName="Main.MyWeatherData" LastDependency="Reference The WeatherLink block.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <CategoryReference Kind="RecordType" Name="MyWeatherData" />
+              <Choice Kind="OperationCallFlag" Name="Create" />
+            </p:NodeReference>
+            <Pin Id="PS3ZAlVr7nKMjpkmBwNvPd" Name="Pressure" Kind="InputPin" />
+            <Pin Id="C6vQmDYJMb7QE86sPjOmxa" Name="Temperature" Kind="InputPin" />
+            <Pin Id="RTSRPEce0MAOV9mLMWDhwt" Name="Wind Direction" Kind="InputPin" />
+            <Pin Id="Sns7HdJBVgPPshkozrRkhZ" Name="Output" Kind="StateOutputPin" />
+          </Node>
+          <Node Bounds="412,390,149,19" Id="MH7NhJl7oroOmLAsYGtpoC">
+            <p:NodeReference LastCategoryFullName="IO.WeatherLink.Sensors" LastDependency="VL.WeatherLink.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <CategoryReference Kind="Category" Name="WeatherLink" />
+              <CategoryReference Kind="Category" Name="Sensors" />
+              <Choice Kind="OperationCallFlag" Name="GetTemperatureAndHumidity" />
+            </p:NodeReference>
+            <Pin Id="HqeadrDcbfjLPAIg72uj4Q" Name="Input" Kind="InputPin" />
+            <Pin Id="KujMT3yOo6TNGD2vdhjKgL" Name="Output" Kind="OutputPin" />
+          </Node>
+          <Node Bounds="412,422,109,26" Id="Poi05DQzHQINx01HFkHYlN">
+            <p:NodeReference LastCategoryFullName="IO.WeatherLink.Sensors.TemperatureAndHumidity" LastDependency="VL.WeatherLink.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <CategoryReference Kind="RecordType" Name="TemperatureAndHumidity" />
+              <Choice Kind="OperationCallFlag" Name="Split" />
+            </p:NodeReference>
+            <Pin Id="HvyMkynSjQ8N5klAfLTen5" Name="Input" Kind="StateInputPin" />
+            <Pin Id="MicgVaa0uOtQIowVq8wnRS" Name="Timestamp" Kind="OutputPin" />
+            <Pin Id="TdphPK4gT3kNXBPRMDi0CL" Name="Temperature In" Kind="OutputPin" />
+            <Pin Id="NWVSK5P0c6YP92Oj80BZhQ" Name="Humidity In" Kind="OutputPin" />
+            <Pin Id="SCALlYYGjXfNjZTObWj54D" Name="Dew Point In" Kind="OutputPin" />
+            <Pin Id="MnTt7TRPEHVLZpWjLQdybW" Name="Heat Index In" Kind="OutputPin" />
+          </Node>
+          <Node Bounds="576,392,123,19" Id="OFQ4iv8xiowNwQIqcudxjg">
+            <p:NodeReference LastCategoryFullName="IO.WeatherLink.Sensors" LastDependency="VL.WeatherLink.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <CategoryReference Kind="Category" Name="Sensors" />
+              <Choice Kind="OperationCallFlag" Name="GetISSCurrentCondition" />
+            </p:NodeReference>
+            <Pin Id="UupB09Szly0MMlOlKdeqh3" Name="Input" Kind="InputPin" />
+            <Pin Id="GJPmhuUDtUSQGLccysHReZ" Name="Output" Kind="OutputPin" />
+          </Node>
+          <Node Bounds="576,422,245,26" Id="LCcKN5J10WaPstZuvzDKd9">
+            <p:NodeReference LastCategoryFullName="IO.WeatherLink.Sensors.ISSCurrentCondition" LastDependency="VL.WeatherLink.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <CategoryReference Kind="RecordType" Name="ISSCurrentCondition" />
+              <Choice Kind="OperationCallFlag" Name="GetWindData" />
+            </p:NodeReference>
+            <Pin Id="QTZj0kbypKSOCRfUlRkOe1" Name="Input" Kind="StateInputPin" />
+            <Pin Id="P4shhH70YD8MadpYT47uJo" Name="Wind Chill" Kind="OutputPin" />
+            <Pin Id="AOuC2X45iBoNCUgUOEAZ5F" Name="Wind Dir At High Speed Last Ten Minutes" Kind="OutputPin" />
+            <Pin Id="CGlXIuXEScjNVlwbLY3FUU" Name="Wind Dir At High Speed Last Two Minutes" Kind="OutputPin" />
+            <Pin Id="GYP5norfMpyQXYAalvyQPI" Name="Wind Dir Last" Kind="OutputPin" />
+            <Pin Id="QBwSck3eG6iMGyw4Ozg3pa" Name="Wind Dir Scalar Average Last Ten Minutes" Kind="OutputPin" />
+            <Pin Id="U7LYzOUWjI8LIXW0vomK8q" Name="Wind Dir Scalar Average Last Minute" Kind="OutputPin" />
+            <Pin Id="GtlrWPOYyRpO2lKn1EDCVJ" Name="Wind Dir Scalar Average Last Two Minutes" Kind="OutputPin" />
+            <Pin Id="BgypN9aTLxQPCJ6NBGZh0H" Name="Wind Speed Average Last Ten Minutes" Kind="OutputPin" />
+            <Pin Id="AVrA1x6PxRdNd2ZY96w8fA" Name="Wind Speed Average Last Minute" Kind="OutputPin" />
+            <Pin Id="D0R9oMq4bQhOzBPw1XnI2o" Name="Wind Speed Average Last Two Minutes" Kind="OutputPin" />
+            <Pin Id="RPH1NwAM9QUMpbmD5YhFog" Name="Wind Speed High Last Ten Minutes" Kind="OutputPin" />
+            <Pin Id="Ac8yg8nXSPgNs2esbdhoCG" Name="Wind Speed High Last Two Minutes" Kind="OutputPin" />
+            <Pin Id="A9KalxuXpidQVwDGO8din3" Name="Wind Speed Last" Kind="OutputPin" />
+          </Node>
+          <Node Bounds="318,389,78,19" Id="HDfsPEfB4ZyL4BxQxoEeuX">
+            <p:NodeReference LastCategoryFullName="IO.WeatherLink.Sensors" LastDependency="VL.WeatherLink.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="OperationCallFlag" Name="GetBarometer" />
+            </p:NodeReference>
+            <Pin Id="GA0BZG4hHPNLZhTXR5azhX" Name="Input" Kind="InputPin" />
+            <Pin Id="Te9aJpikUszQMVsetPOSNh" Name="Output" Kind="OutputPin" />
+          </Node>
+          <Node Bounds="318,422,85,26" Id="EfYkIFQoS1CPUn70ViHBVB">
+            <p:NodeReference LastCategoryFullName="IO.WeatherLink.Sensors.Barometer" LastDependency="VL.WeatherLink.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <CategoryReference Kind="RecordType" Name="Barometer" />
+              <Choice Kind="OperationCallFlag" Name="Split" />
+            </p:NodeReference>
+            <Pin Id="ECiNOFrF8SRLt0nzyFIzLB" Name="Input" Kind="StateInputPin" />
+            <Pin Id="TCfto7gpq49MqPgm4YsvfP" Name="Timestamp" Kind="OutputPin" />
+            <Pin Id="JU0dlsM7FpcLcIVwVHhlhl" Name="Bar Sea Level" Kind="OutputPin" />
+            <Pin Id="KUbordC5bBtPp0mPTmR2MJ" Name="Bar Trend" Kind="OutputPin" />
+            <Pin Id="KN75MWIX4P2M0tWrdIYgPn" Name="Bar Absolute" Kind="OutputPin" />
+            <Pin Id="F2XwvdlCuE8O3YChq4OmzY" Name="Bar Offset" Kind="OutputPin" />
+          </Node>
+          <Link Id="SAFyXsS7RavM7u8IdtSCpw" Ids="KujMT3yOo6TNGD2vdhjKgL,HvyMkynSjQ8N5klAfLTen5" />
+          <Link Id="SZbr4wp0ieGP5r72oCTkAk" Ids="TdphPK4gT3kNXBPRMDi0CL,C6vQmDYJMb7QE86sPjOmxa" />
+          <Link Id="IHfMNvKlCBvPi8hNKp61PQ" Ids="GJPmhuUDtUSQGLccysHReZ,QTZj0kbypKSOCRfUlRkOe1" />
+          <Link Id="QqkdJpyYcP2LiH00oDh0UD" Ids="GYP5norfMpyQXYAalvyQPI,RTSRPEce0MAOV9mLMWDhwt" />
+          <Link Id="UOwBvLB0eSlQXvzmdhbTAQ" Ids="Te9aJpikUszQMVsetPOSNh,ECiNOFrF8SRLt0nzyFIzLB" />
+          <Link Id="S0Vocqtop7FN0Krf1AO639" Ids="KN75MWIX4P2M0tWrdIYgPn,PS3ZAlVr7nKMjpkmBwNvPd" />
+          <ControlPoint Id="UpIBUYoZ52TLvo9xscjWKZ" Bounds="320,351" />
+          <Link Id="DigafuJ84TePJxqYdXoQVs" Ids="UpIBUYoZ52TLvo9xscjWKZ,GA0BZG4hHPNLZhTXR5azhX" />
+          <Pin Id="CiuB61xVCvWMFXoVq3vMr2" Name="Input" Kind="InputPin" Bounds="388,383" />
+          <Link Id="Gk3nnsNEezCMZMt3CHwa0E" Ids="CiuB61xVCvWMFXoVq3vMr2,UpIBUYoZ52TLvo9xscjWKZ" IsHidden="true" />
+          <Link Id="El4JDyqRJ11LN2ffZxb3Ks" Ids="UpIBUYoZ52TLvo9xscjWKZ,HqeadrDcbfjLPAIg72uj4Q" />
+          <Link Id="HNJ5ZFzHxWdMHHmqITbkOp" Ids="UpIBUYoZ52TLvo9xscjWKZ,UupB09Szly0MMlOlKdeqh3" />
+          <ControlPoint Id="Bsuuv31sIusMh5XEFuvGna" Bounds="380,548" />
+          <Link Id="QW6NWnqdpwmOAwUzGT6r9I" Ids="Sns7HdJBVgPPshkozrRkhZ,Bsuuv31sIusMh5XEFuvGna" />
+          <Pin Id="DNmJILonSjcMO1GRWX3pGz" Name="Output" Kind="OutputPin" Bounds="430,552" />
+          <Link Id="VvNOAU5WYGOMHHCKbivvha" Ids="Bsuuv31sIusMh5XEFuvGna,DNmJILonSjcMO1GRWX3pGz" IsHidden="true" />
+        </Patch>
+      </Node>
+      <!--
+
+    ************************ MyScene ************************
+
+-->
+      <Node Name="MyScene" Bounds="313,634" Id="S1Cf1Ils34zQTEy8qZTYcI">
+        <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
+          <Choice Kind="ClassDefinition" Name="Class" />
+        </p:NodeReference>
+        <p:Interfaces>
+          <TypeReference LastCategoryFullName="ImaginarySystem.Core" LastDependency="VL.ImaginarySystem.vl">
+            <Choice Kind="InterfaceTypeFlag" Name="IScene" />
+          </TypeReference>
+        </p:Interfaces>
+        <Patch Id="FpsItuBxzGFMseDyiyOFZO">
+          <Canvas Id="B9W4pP3OomSO6kzrCP9Wck" CanvasType="Group">
+            <Pad Id="NFwfMnFkl1SLCZOYVwZQZN" SlotId="FDySt1mSN0FPMqeyYrocPS" Bounds="274,840" />
+            <ControlPoint Id="MP2vEf8pWs3OTA9zktaSWi" Bounds="274,898" />
+            <Pad Id="QnUxJX2bDLiO4yLd6IHQ9j" SlotId="BTwZpMlMweRPhs8dWrbE1h" Bounds="270,202" />
+            <ControlPoint Id="QLUhSOmKsRrMbf81VbAqm5" Bounds="270,260" />
+            <Pad Id="NX8bwxAsSg6NK6G3Do7mZt" SlotId="Ak4GdAPbeKOLPGvMRXpnFl" Bounds="166,202" />
+            <ControlPoint Id="CuYRTEcFPj5OkXnbo5JAhY" Bounds="166,260" />
+            <Pad Id="QVpoEgOaDRHN1zcShYRlyy" SlotId="JxohqYerNW3OcrEnqXc0gW" Bounds="382,202" />
+            <ControlPoint Id="SjA5roOje9CNcrfuFCKaAj" Bounds="382,260" />
+            <ControlPoint Id="LcmPO5zXvl9PNL8e42nZ6o" Bounds="696,145" />
+            <ControlPoint Id="GbfPkTCuPduO68qLmQ8A6V" Bounds="270,145" />
+            <ControlPoint Id="Tlzqc1yn1ZgP6bakRIeWbS" Bounds="382,145" />
+            <Pad Id="NyPeiknDvAyL7wGAxcEDCP" SlotId="P6KKu1CsNF7PNuPGEr1Dbi" Bounds="539,200" />
+            <ControlPoint Id="SyMD7rA71SJPpsIrZ73s7V" Bounds="539,145" />
+            <ControlPoint Id="JfJPcV03vhjM1LwBef60N1" Bounds="539,260" />
+            <Pad Id="HZR939egnAsOyvksEQwPHt" SlotId="OQ0k70i52w9LY9FUY2ymVc" Bounds="696,199" />
+            <ControlPoint Id="KRnQj2qfGnUP1cKiogjTyP" Bounds="696,260" />
+            <Pad Id="KW900T8vHFJOIFOEF2GIfi" Comment="" Bounds="166,146,35,15" ShowValueBox="true" isIOBox="true" Value="MyScene">
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+                <Choice Kind="TypeFlag" Name="String" />
+              </p:TypeAnnotation>
+            </Pad>
+            <Node Bounds="272,783,429,19" Id="FTae3gpZvMhMQ7vMktA9ge">
+              <p:NodeReference LastCategoryFullName="ImaginarySystem.Utils.Rendering" LastDependency="VL.ImaginarySystem.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="ProcessAppFlag" Name="RenderStage" />
+              </p:NodeReference>
+              <Pin Id="K1qpjyKFP4GM8lAeD7rOh0" Name="IScene" Kind="InputPin" />
+              <Pin Id="MGsJ37qsDItP8bFmkrk3QL" Name="Root Scene" Kind="InputPin" />
+              <Pin Id="PbAVHOLxJarOTw580KA96O" Name="Content Texture Camera" Kind="InputPin" />
+              <Pin Id="UydZPSIEzZGNudho2KTRTQ" Name="Post FX" Kind="InputPin" />
+              <Pin Id="SRjexsfkkuELGfi2tbcVd9" Name="Texture" Kind="OutputPin" />
+              <Pin Id="F3xH0IsABUrMjvF9JRcIuz" Name="Depth" Kind="OutputPin" />
+            </Node>
+            <Node Bounds="272,746,36,19" Id="U0IwmmUbwiqL2cyAjJ3Biw">
+              <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <CategoryReference Kind="Category" Name="Primitive" />
+                <Choice Kind="ProcessNode" Name="This" />
+              </p:NodeReference>
+              <Pin Id="LssQVcpzN7WMjrXSux3WH8" Name="Instance" Kind="OutputPin" />
+            </Node>
+            <Overlay Id="Iox36WcBqfkLzq3OkHl8Dn" Name="IScene" Bounds="96,100,710,196">
+              <p:ColorIndex p:Type="Int32">11</p:ColorIndex>
+            </Overlay>
+            <Node Bounds="414,740,63,19" Id="JtDP1dSnUUeP9ApUoJMJv4">
+              <p:NodeReference LastCategoryFullName="Stride" LastDependency="VL.Stride.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <CategoryReference Kind="Category" Name="Stride" NeedsToBeDirectParent="true" />
+                <Choice Kind="ProcessAppFlag" Name="RootScene" />
+              </p:NodeReference>
+              <Pin Id="ARCB9eox0GOPa6qUzHgZAs" Name="Child" Kind="InputPin" />
+              <Pin Id="Nz0UcMoh8WILl9aJoaf18l" Name="Child 2" Kind="InputPin" />
+              <Pin Id="UH3NeXykDZNN9Sh5XH9UB9" Name="Enabled" Kind="InputPin" />
+              <Pin Id="DSLWInWLXwlPHo1HB1oYBB" Name="Output" Kind="OutputPin" />
+            </Node>
+            <Node Bounds="443,684,165,19" Id="QrOqzHyTn2yNI90my3TxDp">
+              <p:NodeReference LastCategoryFullName="Stride.Rendering" LastDependency="VL.Stride.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="ProcessAppFlag" Name="RenderEntity" />
+              </p:NodeReference>
+              <Pin Id="VOw8VdYFFiAPHRPXe51PoM" Name="Transformation" Kind="InputPin" />
+              <Pin Id="HGF33LxrvxRM9XoVNiV01m" Name="Input" Kind="InputPin" />
+              <Pin Id="ONhPlZus9JGOjw0BxAfwtc" Name="Render Stage" Kind="InputPin" DefaultValue="AfterScene" />
+              <Pin Id="PSDfDuu82kwOUJrtBHQody" Name="Single Call Per Frame" Kind="InputPin" />
+              <Pin Id="PzyBhAM2TAxMmphazZI0P5" Name="Render Group" Kind="InputPin" />
+              <Pin Id="I8bxP5D7bSAOIlH7ajioVf" Name="Components" Kind="InputPin" />
+              <Pin Id="RgY7cVxu1UbMapiaZ31osy" Name="Children" Kind="InputPin" />
+              <Pin Id="Sg3S8HmZu5RPJjpjmotg2Q" Name="Name" Kind="InputPin" />
+              <Pin Id="Hxso2TdNw50NabQN2s5l6g" Name="Enabled" Kind="InputPin" />
+              <Pin Id="G6iBKc6IgUIMsY8Gh3ngWJ" Name="Output" Kind="OutputPin" />
+            </Node>
+            <Node Bounds="463,641,76,19" Id="JW4RIOsMMpHLlcSUgbyWXF">
+              <p:NodeReference LastCategoryFullName="Stride.Rendering" LastDependency="VL.Stride.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="ProcessAppFlag" Name="SkiaRenderer" />
+              </p:NodeReference>
+              <Pin Id="FEkYyRXm98pPjmpiw0nj86" Name="Input" Kind="InputPin" />
+              <Pin Id="AA47FFRFhHEPJb3Sdl30oK" Name="Space" Kind="InputPin" />
+              <Pin Id="TrhGPk0adlrL6Z7GQ9j7jo" Name="Output" Kind="OutputPin" />
+            </Node>
+            <Node Bounds="463,603,105,19" Id="EBcBL2FO8k8LceANNNFODX">
+              <p:NodeReference LastCategoryFullName="Graphics.Skia.Layers.Text" LastDependency="VL.Skia.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <CategoryReference Kind="Category" Name="Skia" />
+                <Choice Kind="ProcessAppFlag" Name="Text" />
+              </p:NodeReference>
+              <Pin Id="Cif3VnG0tQaPmPzuxpyv4I" Name="Position" Kind="InputPin" />
+              <Pin Id="R99MqgkzKMRNkFxQTnRXMC" Name="Size" Kind="InputPin" />
+              <Pin Id="At91mZ6wFmCQZpRYevVhMA" Name="Anchor" Kind="InputPin" />
+              <Pin Id="IGtrHJfcLcdNwDbT0BDqBN" Name="Text" Kind="InputPin" />
+              <Pin Id="BuCX44kqqJHLBbOUyh3syH" Name="Paint" Kind="InputPin" />
+              <Pin Id="OqFIaM2HaLIPm5TaW4DsWd" Name="Enabled" Kind="InputPin" />
+              <Pin Id="VRPZXjr3PFBPc13dcXzdm2" Name="Output" Kind="OutputPin" />
+              <Pin Id="SZiByxpp5d2OSADnlu8EH4" Name="Baseline Position" Kind="OutputPin" />
+            </Node>
+            <Node Bounds="282,684,145,19" Id="SY9YHthcU4RL5sdo9tVawm">
+              <p:NodeReference LastCategoryFullName="Stride.Models" LastDependency="VL.Stride.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="ProcessAppFlag" Name="Background" />
+              </p:NodeReference>
+              <Pin Id="B8MPLWYpVZzMGlaeZS34X1" Name="Transformation" Kind="InputPin" />
+              <Pin Id="NBHK3QGaNPmMY1q5bWZ4YA" Name="Texture" Kind="InputPin" />
+              <Pin Id="UbuCZq23khMLDNP98XW0Fs" Name="Intensity" Kind="InputPin" />
+              <Pin Id="NIaYJHwATr3OvtReCygF20" Name="Is 2D" Kind="InputPin" />
+              <Pin Id="HHVaxxmofz5NxyFndYmeYw" Name="Component" Kind="InputPin" />
+              <Pin Id="PJIFfHCZhdJPNeAMQGBaMF" Name="Children" Kind="InputPin" />
+              <Pin Id="HdOIdkUwvMeM7GCl8awlYA" Name="Name" Kind="InputPin" />
+              <Pin Id="DHBNhgZ2nhGOmHg4VBc2cS" Name="Enabled" Kind="InputPin" />
+              <Pin Id="ExRHs0ttMsCPc3jXmhv8kZ" Name="Entity" Kind="OutputPin" />
+            </Node>
+            <Node Bounds="302,642,45,19" Id="PDMIrZ3hyKRLxrnURqHHY4">
+              <p:NodeReference LastCategoryFullName="Stride.Textures.Source" LastDependency="VL.Stride.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <CategoryReference Kind="Category" Name="Source" NeedsToBeDirectParent="true" />
+                <Choice Kind="ProcessAppFlag" Name="Color" />
+              </p:NodeReference>
+              <Pin Id="E5lvMtFe9ZGPDcRKxe24ee" Name="Color" Kind="InputPin" />
+              <Pin Id="HaRkLHsE1pDPwueBc3yA2z" Name="Output Size" Kind="InputPin" />
+              <Pin Id="Vi7sdBlaqxiMn7ugopFHiQ" Name="Enabled" Kind="InputPin" />
+              <Pin Id="HD7A0OiCdCMMcYJ5T59xaT" Name="Output" Kind="OutputPin" />
+            </Node>
+            <Node Bounds="302,571,45,19" Id="QU0mtqdjoYnMXcK6szaLwm">
+              <p:NodeReference LastCategoryFullName="Animation" LastDependency="VL.CoreLib.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="ProcessAppFlag" Name="LFO" />
+              </p:NodeReference>
+              <Pin Id="SVsBtHO4BFPOluZUz1cCsn" Name="Period" Kind="InputPin" DefaultValue="30" />
+              <Pin Id="GIAhYGm9hvpOZl20uYotaP" Name="Pause" Kind="InputPin" />
+              <Pin Id="Nl4a8LAdg1zQAC1upIhC7l" Name="Reset" Kind="ApplyPin" />
+              <Pin Id="UIay5YaCwj7NUHyajbWArF" Name="Phase" Kind="OutputPin" />
+              <Pin Id="PgkyQ3XkkNaPbX7lZOixMI" Name="On New Cycle" Kind="OutputPin" />
+              <Pin Id="DXvidQZgyG4Nd1pNwcdkwW" Name="Cycles" Kind="OutputPin" />
+            </Node>
+            <Node Bounds="302,606,65,19" Id="LRVDN5f9XmOMqm2OSz9nCm">
+              <p:NodeReference LastCategoryFullName="Color.RGBA" LastDependency="VL.CoreLib.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="OperationCallFlag" Name="FromHSV" />
+              </p:NodeReference>
+              <Pin Id="KiFdDzGP2bgMnqk2c2stlq" Name="Hue" Kind="InputPin" />
+              <Pin Id="JOlZrPn9MAoLXuTJPsTuv6" Name="Saturation" Kind="InputPin" />
+              <Pin Id="IFTprgDzecoNVTOanJKMhf" Name="Value" Kind="InputPin" />
+              <Pin Id="DC7xx0nRkOxM25I65C8eFg" Name="Alpha" Kind="InputPin" />
+              <Pin Id="S7yjLW9ud5hM0Vo100BKKX" Name="Result" Kind="OutputPin" />
+            </Node>
+            <Node Bounds="416,359,87,19" Id="GFUA354ch8CNbFCbtpD91E">
+              <p:NodeReference LastCategoryFullName="ImaginarySystem.WeatherLink.Blocks.WeatherLink" LastDependency="VL.ImaginarySystem.WeatherLink.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="ProcessAppFlag" Name="GetWeatherLink" />
+              </p:NodeReference>
+              <Pin Id="FiAd06AUX7INnIsV0AQf1d" Name="Output" Kind="OutputPin" />
+              <Pin Id="I4eYlC7VJVCNWKUfJzEJ3F" Name="Found" Kind="OutputPin" />
+            </Node>
+            <Node Bounds="416,405,71,26" Id="UjyiOEniR0JOW26nHVtaXq">
+              <p:NodeReference LastCategoryFullName="ImaginarySystem.WeatherLink.Blocks.WeatherLink" LastDependency="VL.ImaginarySystem.WeatherLink.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <CategoryReference Kind="Category" Name="ImaginarySystem" />
+                <CategoryReference Kind="Category" Name="WeatherLink" />
+                <Choice Kind="OperationCallFlag" Name="CachedData" />
+              </p:NodeReference>
+              <Pin Id="CdM7lezrN2oPCvi2rcTqIB" Name="Input" Kind="StateInputPin" />
+              <Pin Id="RInb6H6jo1iNTHKt59tywA" Name="Output" Kind="StateOutputPin" />
+              <Pin Id="BrZ4x7aSNEyLEbJLZIj8Qu" Name="Collection" Kind="OutputPin" />
+            </Node>
+            <Node Bounds="482,450,66,26" Id="AFLe7qQLjGZM0QpKx3NjT2">
+              <p:NodeReference LastCategoryFullName="Collections.Builder.SpreadBuilder" LastDependency="VL.CoreLib.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <CategoryReference Kind="ClassType" Name="SpreadBuilder" NeedsToBeDirectParent="true" />
+                <Choice Kind="OperationCallFlag" Name="ToSpread" />
+              </p:NodeReference>
+              <Pin Id="GiR9x5Wxl2jQKkxTlLtev9" Name="Input" Kind="StateInputPin" />
+              <Pin Id="G54TiWkp82TN6LNyHDQfc8" Name="Output" Kind="StateOutputPin" />
+              <Pin Id="PCU8Be3EsoZMuPX0FXv5RJ" Name="Result" Kind="OutputPin" />
+            </Node>
+            <Node Bounds="543,489,52,19" Id="AgxQUVBA2EENl25NJmpIK7">
+              <p:NodeReference LastCategoryFullName="Collections.Spread" LastDependency="VL.CoreLib.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <CategoryReference Kind="ClassType" Name="Spread" NeedsToBeDirectParent="true" />
+                <Choice Kind="OperationCallFlag" Name="GetSlice" />
+              </p:NodeReference>
+              <Pin Id="KxxbAp94NjkPAec13sdTi6" Name="Input" Kind="StateInputPin" />
+              <Pin Id="IpQ69hloEhKMBIWHUMloSU" Name="Default Value" Kind="InputPin" />
+              <Pin Id="CjM2fcLOSSfOGT0B7hj1df" Name="Index" Kind="InputPin" />
+              <Pin Id="VZJEULJ5iaKMhLAkR6fxHN" Name="Result" Kind="OutputPin" />
+            </Node>
+            <Node Bounds="543,519,72,26" Id="UApkyDiDHpVOmckUYaU8pL">
+              <p:NodeReference LastCategoryFullName="Main.MyWeatherData" LastDependency="Reference The WeatherLink block.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <CategoryReference Kind="RecordType" Name="MyWeatherData" />
+                <Choice Kind="OperationCallFlag" Name="Split" />
+              </p:NodeReference>
+              <Pin Id="VRRSqxPdeivOgjjltm32Eh" Name="Input" Kind="StateInputPin" />
+              <Pin Id="Jk5H29c4YOiOJA6qwwIKjT" Name="Pressure" Kind="OutputPin" />
+              <Pin Id="RT0vbyAavq3ObTyGqviWtX" Name="Temperature" Kind="OutputPin" />
+              <Pin Id="QT5CBjpXK7jNATH0UomaOE" Name="Wind Direction" Kind="OutputPin" />
+            </Node>
+            <Pad Id="G0fwJmLM24IP0a3Yt92qRK" Comment="Found" Bounds="500,394,35,15" ShowValueBox="true" isIOBox="true" />
+            <Node Bounds="523,571,85,19" Id="QH0quY3G1XfOzeVmfmqmQf">
+              <p:NodeReference LastCategoryFullName="Primitive.String" LastDependency="VL.CoreLib.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <CategoryReference Kind="StringType" Name="String" NeedsToBeDirectParent="true" />
+                <Choice Kind="OperationCallFlag" Name="Format" />
+              </p:NodeReference>
+              <Pin Id="OqyPssb5sf1MQmaULcekLh" Name="Format" Kind="InputPin" DefaultValue="Pressure : {0}&#xD;&#xA;Temperature : {1}&#xD;&#xA;Wind Dir : {2}" />
+              <Pin Id="DWEoW5ah4i0PcXBGzqS1i4" Name="Input" Kind="StateInputPin" />
+              <Pin Id="GLfP0ni3hLWLMNxXRybxSu" Name="Input 2" Kind="InputPin" />
+              <Pin Id="Tw1X2JXrXQSLwSwFCz2BYj" Name="Input 3" Kind="InputPin" />
+              <Pin Id="LDkN8k2XR7QMjryN3y56fU" Name="Input 4" Kind="InputPin" />
+              <Pin Id="RS2IOSvIDNnPyQ8a3JaMHl" Name="Output" Kind="StateOutputPin" />
+            </Node>
+          </Canvas>
+          <Patch Id="CFBXCGFjjJQOYLyJ2XMhNv" Name="Create" ParticipatingElements="RGMeiLwvx1EQIEodYdxARF" />
+          <!--
+
+    ************************  ************************
+
+-->
+          <ProcessDefinition Id="SBLx3hkXbqJNFJXm0WgDMx" HasStateOut="true">
+            <Fragment Id="PY3fY04vKpkNhyrd9XH7wZ" Patch="CFBXCGFjjJQOYLyJ2XMhNv" Enabled="true" />
+            <Fragment Id="HZPGpXKpDazNt43My5XzBb" Patch="LtMlUY5hBRbMuVFkrfSflr" />
+            <Fragment Id="VZOozXv3JAPNrJGjhlop4Y" Patch="VvyiuEtVMtHLE9aTG0wtnG" />
+            <Fragment Id="Nt8DhFqY67ON2YO98dm23u" Patch="LP8YZtg0ynOQLJ9SK8d2MH" />
+            <Fragment Id="NNpQdiMmiZaPiA0KbBua37" Patch="Sk9EgLDtrZfNuxCQ2MBVLR" />
+            <Fragment Id="KTlJ3sg1wvJOXcr5ggv3Pi" Patch="OO2I56l1lZEMJxkw8m3Hdm" />
+            <Fragment Id="E8X3253Ary0MbfmAjmGANK" Patch="Vf89qSRhBnNMCDmr4bcZG0" />
+            <Fragment Id="BwGC0ihkKeyNZ2jlFZAvGp" Patch="MBxZoj9Wv7EO8tVN5c3e7n" />
+            <Fragment Id="JqZXpDXIIjeO5pZArwEvcw" Patch="DA3th4mQUWHMOSjKjxLrDs" />
+            <Fragment Id="R0xmTKoQmhuLYsBREKDnuN" Patch="SC7J4VwamXULpCiTGmvoF4" />
+            <Fragment Id="GwOBH8y6HMsNQmxumC5836" Patch="KOj94kZEBkaM8SnAcvpLFI" />
+            <Fragment Id="UVw3mJ4TeEWQV0NWGJIS9r" Patch="ScXa9LbRDVYMRrNCtNzsIe" />
+          </ProcessDefinition>
+          <Slot Id="BTwZpMlMweRPhs8dWrbE1h" Name="Root Scene">
+            <p:TypeAnnotation p:Type="TypeReference">
+              <Choice Kind="TypeFlag" Name="SceneInstance" />
+            </p:TypeAnnotation>
+          </Slot>
+          <Slot Id="Ak4GdAPbeKOLPGvMRXpnFl" Name="Name">
+            <p:TypeAnnotation p:Type="TypeReference">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+          </Slot>
+          <Slot Id="FDySt1mSN0FPMqeyYrocPS" Name="Content Texture">
+            <p:TypeAnnotation p:Type="TypeReference">
+              <Choice Kind="TypeFlag" Name="Texture" />
+            </p:TypeAnnotation>
+          </Slot>
+          <Slot Id="JxohqYerNW3OcrEnqXc0gW" Name="Post FX">
+            <p:TypeAnnotation p:Type="TypeReference">
+              <Choice Kind="TypeFlag" Name="PostProcessingEffects" />
+            </p:TypeAnnotation>
+          </Slot>
+          <Patch Id="LtMlUY5hBRbMuVFkrfSflr" Name="Texture">
+            <Pin Id="JRwSx8yXcj2QUjwaSDYdAD" MergeId="121616" Name="Content Texture" Kind="OutputPin" />
+          </Patch>
+          <Patch Id="VvyiuEtVMtHLE9aTG0wtnG" Name="RootScene">
+            <Pin Id="Gm5f5AwzH52PtyQYUDBqXf" MergeId="121619" Name="Root Scene" Kind="OutputPin" />
+          </Patch>
+          <Patch Id="LP8YZtg0ynOQLJ9SK8d2MH" Name="Name">
+            <Pin Id="TDcbfQM3M9EOhUEPyUTDnb" MergeId="121622" Name="Name" Kind="OutputPin" />
+          </Patch>
+          <Patch Id="Sk9EgLDtrZfNuxCQ2MBVLR" Name="PostFX">
+            <Pin Id="D6Cp2vQx0cdQburol1CHk8" MergeId="121625" Name="Post FX" Kind="OutputPin" />
+          </Patch>
+          <Patch Id="OO2I56l1lZEMJxkw8m3Hdm" Name="SetSceneRenderer">
+            <Pin Id="Q84qm3Ys34hLn6D3r2tiUh" MergeId="121627" Name="Scene Renderer" Kind="InputPin" />
+          </Patch>
+          <Patch Id="Vf89qSRhBnNMCDmr4bcZG0" Name="SetRootScene">
+            <Pin Id="JUHS36CVVMXLpbk1EBae31" MergeId="121630" Name="Root Scene" Kind="InputPin" />
+          </Patch>
+          <Patch Id="MBxZoj9Wv7EO8tVN5c3e7n" Name="SetPostFx">
+            <Pin Id="AaHVzPBpByFOi107PrvZ5b" MergeId="121633" Name="Post FX" Kind="InputPin" />
+          </Patch>
+          <Slot Id="P6KKu1CsNF7PNuPGEr1Dbi" Name="Content Texture Camera">
+            <p:TypeAnnotation p:Type="TypeReference">
+              <Choice Kind="TypeFlag" Name="Optional" />
+              <p:TypeArguments>
+                <TypeReference>
+                  <Choice Kind="TypeFlag" Name="Entity" />
+                </TypeReference>
+              </p:TypeArguments>
+            </p:TypeAnnotation>
+          </Slot>
+          <Patch Id="DA3th4mQUWHMOSjKjxLrDs" Name="SetContentTextureCamera">
+            <Pin Id="CYmkXHkhaLjNH76zc21rxz" MergeId="121634" Name="Content Texture Camera" Kind="InputPin" />
+          </Patch>
+          <Patch Id="SC7J4VwamXULpCiTGmvoF4" Name="ContentTextureCamera">
+            <Pin Id="STOLb2RvZgINxswKVnMpb3" MergeId="121637" Name="Content Texture Camera" Kind="OutputPin" />
+          </Patch>
+          <Slot Id="OQ0k70i52w9LY9FUY2ymVc" Name="Scene Renderer">
+            <p:TypeAnnotation p:Type="TypeReference" LastCategoryFullName="ImaginarySystem.Blocks" LastDependency="VL.ImaginarySystem.vl">
+              <Choice Kind="TypeFlag" Name="SceneRenderer" />
+            </p:TypeAnnotation>
+          </Slot>
+          <Patch Id="KOj94kZEBkaM8SnAcvpLFI" Name="SceneRenderer">
+            <Pin Id="HQiXfc1pEKHLVVHh0MLyKq" MergeId="121643" Name="Scene Renderer" Kind="OutputPin" />
+          </Patch>
+          <Link Id="AhxSSUsZlC6O9jMQ2fgIIP" Ids="NFwfMnFkl1SLCZOYVwZQZN,MP2vEf8pWs3OTA9zktaSWi" />
+          <Link Id="Ur0j4c1PUEiPbkOeoDWUR6" Ids="MP2vEf8pWs3OTA9zktaSWi,JRwSx8yXcj2QUjwaSDYdAD" IsHidden="true" />
+          <Link Id="EKpiIpe0RDtOxS2s6DImGm" Ids="QnUxJX2bDLiO4yLd6IHQ9j,QLUhSOmKsRrMbf81VbAqm5" />
+          <Link Id="CX9rcId2i2JNqcVrGMlL0s" Ids="QLUhSOmKsRrMbf81VbAqm5,Gm5f5AwzH52PtyQYUDBqXf" IsHidden="true" />
+          <Link Id="LFxS0NEP3FNLki5WyS86jL" Ids="NX8bwxAsSg6NK6G3Do7mZt,CuYRTEcFPj5OkXnbo5JAhY" />
+          <Link Id="IvXg5Dw8GyTNjCBB5Ly2n7" Ids="CuYRTEcFPj5OkXnbo5JAhY,TDcbfQM3M9EOhUEPyUTDnb" IsHidden="true" />
+          <Link Id="QvuUrczLXkZOgGibooDTPd" Ids="QVpoEgOaDRHN1zcShYRlyy,SjA5roOje9CNcrfuFCKaAj" />
+          <Link Id="RUhQvjbV1Y4PoDh0w0wxll" Ids="SjA5roOje9CNcrfuFCKaAj,D6Cp2vQx0cdQburol1CHk8" IsHidden="true" />
+          <Link Id="Mhy7uHcBk5VODMuM6EqaNq" Ids="Q84qm3Ys34hLn6D3r2tiUh,LcmPO5zXvl9PNL8e42nZ6o" IsHidden="true" />
+          <Link Id="CqaExEsI5pvMtN6b8LT8WL" Ids="GbfPkTCuPduO68qLmQ8A6V,QnUxJX2bDLiO4yLd6IHQ9j" />
+          <Link Id="ITUwdNpwsQPNwHvSqARUqy" Ids="JUHS36CVVMXLpbk1EBae31,GbfPkTCuPduO68qLmQ8A6V" IsHidden="true" />
+          <Link Id="Sw1esGd8R9MPAGirBjKh5Z" Ids="Tlzqc1yn1ZgP6bakRIeWbS,QVpoEgOaDRHN1zcShYRlyy" />
+          <Link Id="EhG1hHFlK6QOlTyZYDJaCG" Ids="AaHVzPBpByFOi107PrvZ5b,Tlzqc1yn1ZgP6bakRIeWbS" IsHidden="true" />
+          <Link Id="NW4DQlu6RtwM7PGdatiobo" Ids="CYmkXHkhaLjNH76zc21rxz,SyMD7rA71SJPpsIrZ73s7V" IsHidden="true" />
+          <Link Id="OTlKddsts8ZN29De8fkNZS" Ids="SyMD7rA71SJPpsIrZ73s7V,NyPeiknDvAyL7wGAxcEDCP" />
+          <Link Id="GoxKdZ7Z0GBMdd5x83P61S" Ids="JfJPcV03vhjM1LwBef60N1,STOLb2RvZgINxswKVnMpb3" IsHidden="true" />
+          <Link Id="CCra6er2mtFMSdajwZsvjK" Ids="NyPeiknDvAyL7wGAxcEDCP,JfJPcV03vhjM1LwBef60N1" />
+          <Link Id="CJ83ZVdVrNqNF5Yl13uY4E" Ids="LcmPO5zXvl9PNL8e42nZ6o,HZR939egnAsOyvksEQwPHt" />
+          <Link Id="UGv0K51djMQPFcfPsVDHNr" Ids="HZR939egnAsOyvksEQwPHt,KRnQj2qfGnUP1cKiogjTyP" />
+          <Link Id="CeWjly0LzhcODUelodGu1q" Ids="KRnQj2qfGnUP1cKiogjTyP,HQiXfc1pEKHLVVHh0MLyKq" IsHidden="true" />
+          <Link Id="RGMeiLwvx1EQIEodYdxARF" Ids="KW900T8vHFJOIFOEF2GIfi,NX8bwxAsSg6NK6G3Do7mZt" />
+          <Link Id="Gdr1ywg9j0KNeV4yof0wZM" Ids="SRjexsfkkuELGfi2tbcVd9,NFwfMnFkl1SLCZOYVwZQZN" />
+          <Link Id="VAbGBsqrD6kQAhjw4fQuW5" Ids="LssQVcpzN7WMjrXSux3WH8,K1qpjyKFP4GM8lAeD7rOh0" />
+          <Link Id="RQX44NNdR0hMDQXyNVt6rm" Ids="DSLWInWLXwlPHo1HB1oYBB,MGsJ37qsDItP8bFmkrk3QL" />
+          <Patch Id="ScXa9LbRDVYMRrNCtNzsIe" Name="Update" />
+          <Link Id="FQrvscijVo6MEl2veaRKeO" Ids="TrhGPk0adlrL6Z7GQ9j7jo,HGF33LxrvxRM9XoVNiV01m" />
+          <Link Id="FVi7BPC6HxdP3wx96uHyvw" Ids="VRPZXjr3PFBPc13dcXzdm2,FEkYyRXm98pPjmpiw0nj86" />
+          <Link Id="VTiVEoJDrwALgL4WzVBwlR" Ids="G6iBKc6IgUIMsY8Gh3ngWJ,Nz0UcMoh8WILl9aJoaf18l" />
+          <Link Id="DQljt43VbWCL9aPzKcCXus" Ids="ExRHs0ttMsCPc3jXmhv8kZ,ARCB9eox0GOPa6qUzHgZAs" />
+          <Link Id="C02SaBHjiMgMLiWYSafI4x" Ids="HD7A0OiCdCMMcYJ5T59xaT,NBHK3QGaNPmMY1q5bWZ4YA" />
+          <Link Id="R59vyqEaEMePjwRsuYqFBy" Ids="UIay5YaCwj7NUHyajbWArF,KiFdDzGP2bgMnqk2c2stlq" />
+          <Link Id="PrAoKsTdiF7PdHCXY8GMXq" Ids="S7yjLW9ud5hM0Vo100BKKX,E5lvMtFe9ZGPDcRKxe24ee" />
+          <Link Id="E0OpiBPixwmMe8ExFtXtqa" Ids="FiAd06AUX7INnIsV0AQf1d,CdM7lezrN2oPCvi2rcTqIB" />
+          <Link Id="OHnxqFrkU53N2kIuHwBngI" Ids="BrZ4x7aSNEyLEbJLZIj8Qu,GiR9x5Wxl2jQKkxTlLtev9" />
+          <Link Id="GgoLVJv9ilmOI5bVzFCy61" Ids="PCU8Be3EsoZMuPX0FXv5RJ,KxxbAp94NjkPAec13sdTi6" />
+          <Link Id="TJYFKrFhq0nQGdDCw4HSgf" Ids="VZJEULJ5iaKMhLAkR6fxHN,VRRSqxPdeivOgjjltm32Eh" />
+          <Link Id="Eq6Yu4MzSy6QZn8FMiYXFy" Ids="I4eYlC7VJVCNWKUfJzEJ3F,G0fwJmLM24IP0a3Yt92qRK" />
+          <Link Id="B9qSqcnsFVIM70sqz9LbQw" Ids="Jk5H29c4YOiOJA6qwwIKjT,DWEoW5ah4i0PcXBGzqS1i4" />
+          <Link Id="LU4MnNRfx3BL75kQqoNg3m" Ids="RT0vbyAavq3ObTyGqviWtX,GLfP0ni3hLWLMNxXRybxSu" />
+          <Link Id="Eh7VDVst1SdPgcnMXlsxNx" Ids="QT5CBjpXK7jNATH0UomaOE,Tw1X2JXrXQSLwSwFCz2BYj" />
+          <Link Id="RvvpDyxNr5nLAp70XKxY8R" Ids="RS2IOSvIDNnPyQ8a3JaMHl,IGtrHJfcLcdNwDbT0BDqBN" />
+        </Patch>
+      </Node>
+    </Canvas>
+    <!--
+
+    ************************ Application ************************
+
+-->
+    <Node Name="Application" Bounds="100,100" Id="TpVGe6ZoyYfNeUTlcay9ah">
+      <p:NodeReference>
+        <Choice Kind="ContainerDefinition" Name="Process" />
+        <CategoryReference Kind="Category" Name="Primitive" />
+      </p:NodeReference>
+      <Patch Id="NZRle1qPfRoO8Y94jRbADN">
+        <Canvas Id="TkQ4alZB0hLN4mTKZL6n8o" CanvasType="Group">
+          <Node Bounds="193,633,93,19" Id="H8ky2lKPvrTNonzaofAZXp">
+            <p:NodeReference LastCategoryFullName="ImaginarySystem.Core" LastDependency="VL.ImaginarySystem.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="ImaginarySystem" />
+            </p:NodeReference>
+            <Pin Id="SmAhQhgBGL1NOLosUsC13e" Name="Input" Kind="InputPin" />
+            <Pin Id="QMAkf5BU1BtNplhadF9thX" Name="Update" Kind="ApplyPin" />
+            <Pin Id="Lg3YZX6qpICOQ8E5D0xfFj" Name="Imaginary System" Kind="OutputPin" />
+          </Node>
+          <Node Bounds="193,571,229,19" Id="NrkAhNuF5U4NeykrfMMnTD">
+            <p:NodeReference LastCategoryFullName="Collections.Spread" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <CategoryReference Kind="ClassType" Name="Spread" NeedsToBeDirectParent="true" />
+              <Choice Kind="OperationCallFlag" Name="Cons" />
+            </p:NodeReference>
+            <Pin Id="IVejoPe0h5OLV50fFxPSBq" Name="Input" Kind="InputPin" />
+            <Pin Id="HelHn4gz4LOMFxODTv9zBI" Name="Result" Kind="OutputPin" />
+            <Pin Id="Ui7e6LzXB4cLZX4ppLK6UZ" Name="Input 2" Kind="InputPin" />
+          </Node>
+          <Node Bounds="417,478,125,19" Id="NVMnWZf8iT5PagbsKzFkmA">
+            <p:NodeReference LastCategoryFullName="ImaginarySystem.WeatherLink.Blocks" LastDependency="VL.ImaginarySystem.WeatherLink.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="WeatherLink" />
+            </p:NodeReference>
+            <Pin Id="OAQnvFv128FLMzy35eTiam" Name="Weather Data Conversion Function" Kind="InputPin" />
+            <Pin Id="IUHEHEZrnmDODZ4OIfRRUw" Name="API Key" Kind="InputPin" />
+            <Pin Id="C0pVaz5aLkHPSTEGZ2qdMa" Name="API Secret" Kind="InputPin" />
+            <Pin Id="M10xFonEcPqOXFX4Ueoi1O" Name="Station Id" Kind="InputPin" />
+            <Pin Id="HW7yS3fWk05P9e6nEn1wGJ" Name="Data Cache Path" Kind="InputPin" />
+            <Pin Id="Rd27XaqQGtsOrsD1qNT1pk" Name="Period" Kind="InputPin" />
+            <Pin Id="Gc35tHLnjmvOHkB8d5MxiL" Name="Data Cache Length" Kind="InputPin" />
+            <Pin Id="R1KwFwNnDOFNhotz0a7gkW" Name="Output" Kind="StateOutputPin" />
+            <Pin Id="R9y6lyH9x1lOYejDXMTgbT" Name="Refresh Phase" Kind="OutputPin" />
+          </Node>
+          <Node Bounds="417,231,199,95" Id="AXwIauqWFnZMI3V36nPKbf">
+            <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
+              <Choice Kind="RegionFlag" Name="Region (Stateless)" Fixed="true" />
+              <CategoryReference Kind="Category" Name="Primitive" />
+              <Choice Kind="ApplicationRegion" Name="Delegate" />
+            </p:NodeReference>
+            <Pin Id="OswFezjixshNadwutgHRau" Name="Functionality" Kind="OutputPin" />
+            <Patch Id="Q6TeK6EUmX5LmxAbuC6es0" ManuallySortedPins="true">
+              <Pin Id="DaQrJAPX1SeOjnilKj0uqf" Name="Arg" Kind="InputPin" />
+              <ControlPoint Id="EC7yaNaVnHcPQRJgiVwaxu" Bounds="431,249" />
+              <Pin Id="UoNmGmIXCbqO7mao9N5vse" Name="Result" Kind="OutputPin" />
+              <ControlPoint Id="DH8muFL7pYYNa7WAlDV9yf" Bounds="431,309" />
+              <Node Bounds="429,270,175,19" Id="QDsHwOfmJwJNyzfycG9m3D">
+                <p:NodeReference LastCategoryFullName="Main" LastDependency="Reference The WeatherLink block.vl">
+                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                  <Choice Kind="OperationCallFlag" Name="WeatherLinkDataToMyWeatherData" />
+                </p:NodeReference>
+                <Pin Id="UjKaBxatxuKLJouavB2lig" Name="Input" Kind="InputPin" />
+                <Pin Id="DfoFeSckCDhNnSrf5ulrns" Name="Output" Kind="OutputPin" />
+              </Node>
+            </Patch>
+          </Node>
+          <Pad Id="DSwmYiAKheMOB9m9TQNSyb" Comment="API Key" Bounds="439,344,36,15" ShowValueBox="true" isIOBox="true" Value="">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="CI18C2SpEXTMKnOhsp58dz" Comment="API Secret" Bounds="459,370,35,15" ShowValueBox="true" isIOBox="true" Value="">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="MxnDRumfg7TP1QGtoSCeLQ" Comment="Station Id" Bounds="479,396,35,15" ShowValueBox="true" isIOBox="true" Value="">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="FvuTePanDsLMWbv4SeOXGo" Comment="Period" Bounds="519,450,35,15" ShowValueBox="true" isIOBox="true" Value="300">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="Float32" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="KSGygSB6SEJQRiCi3NEbNv" Comment="Refresh Phase" Bounds="539,518,119,15" ShowValueBox="true" isIOBox="true">
+            <p:ValueBoxSettings>
+              <p:maximum p:Type="Single">1</p:maximum>
+              <p:minimum p:Type="Single">0</p:minimum>
+              <p:precision p:Type="Int32">3</p:precision>
+              <p:showslider p:Type="Boolean">true</p:showslider>
+              <p:showvalue p:Type="Boolean">true</p:showvalue>
+              <p:sliderdirection p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.SliderDirectionEnum">Horizontal</p:sliderdirection>
+              <p:stepsize p:Type="Single">0.01</p:stepsize>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="Qxn4nluo9jUNn1tYA1dRmR" Comment="Data Cache Path" Bounds="499,423,109,15" ShowValueBox="true" isIOBox="true" Value="weatherdata.xml">
+            <p:TypeAnnotation LastCategoryFullName="IO" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="Path" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Node Bounds="78,484,205,19" Id="Gs4le9xkIklQPR6BlqYraJ">
+            <p:NodeReference LastCategoryFullName="ImaginarySystem.Blocks" LastDependency="VL.ImaginarySystem.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <CategoryReference Kind="Category" Name="Blocks" NeedsToBeDirectParent="true">
+                <p:OuterCategoryReference Kind="Category" Name="ImaginarySystem" NeedsToBeDirectParent="true" />
+              </CategoryReference>
+              <Choice Kind="ProcessAppFlag" Name="SceneRenderer" />
+            </p:NodeReference>
+            <Pin Id="AORuIJHuM2lOnQON1Pql1d" Name="Name" Kind="InputPin" />
+            <Pin Id="NLRbfiTjfXfLdPz3a1yotK" Name="Scenes" Kind="InputPin" />
+            <Pin Id="Oy8tu6jVJHtOkneEhgMSrf" Name="Resolution" Kind="InputPin" />
+            <Pin Id="VrR6RBiwpP6LCyoquhMtVf" Name="SetRendererMode" Kind="ApplyPin" />
+            <Pin Id="D7lED9gHuwIQS4xBoLNHCt" Name="Preload Enabled" Kind="InputPin" />
+            <Pin Id="ODdTnj7bRJeNh2M3hfe67n" Name="Preload Time" Kind="InputPin" />
+            <Pin Id="C6k5GHLwTsANwPmKa6DM2r" Name="Scene Fade Enabled" Kind="InputPin" />
+            <Pin Id="Kw6vtvDkgcIQO79lvJzLbS" Name="Fade Time" Kind="InputPin" />
+            <Pin Id="B74CzBQ7SqJQYivZXUy6fz" Name="Video Output Preview" Kind="InputPin" />
+            <Pin Id="TJyNKHLYUUWNLkanLehbcC" Name="Scene Renderer" Kind="InputPin" />
+            <Pin Id="Ai2bzIESgHhOUmj8U2xCL3" Name="Scene Index" Kind="InputPin" />
+            <Pin Id="IL5HGiyi28UPgudXMWlmEu" Name="Output" Kind="StateOutputPin" />
+            <Pin Id="Evlbs1LAfBDPo7CVKfEhTY" Name="Is Preloading" Kind="OutputPin" />
+            <Pin Id="LMn0rQ7nYLIOxgOFxdyire" Name="Name" Kind="OutputPin" />
+            <Pin Id="KEP0qW6sxnMOS3jREgKxPR" Name="Scene Index" Kind="OutputPin" />
+            <Pin Id="OgUKd0oasAnPgDVV2adDwR" Name="Module Name" Kind="OutputPin" />
+          </Node>
+          <Node Bounds="98,438,39,19" Id="PR5V8H1CsoIPGaRAiTiT95">
+            <p:NodeReference LastCategoryFullName="Collections.Spread" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <CategoryReference Kind="ClassType" Name="Spread" NeedsToBeDirectParent="true" />
+              <Choice Kind="OperationCallFlag" Name="Cons" />
+            </p:NodeReference>
+            <Pin Id="FzjY6PFNLz2N9yGg59ckgv" Name="Input" Kind="InputPin" />
+            <Pin Id="LQtUxfhZfhoLzpVL8N2JRq" Name="Result" Kind="OutputPin" />
+          </Node>
+          <Node Bounds="98,393,55,19" Id="AzGIxzkHRdYQMfvUHoQd6y">
+            <p:NodeReference LastCategoryFullName="Main" LastDependency="Reference The WeatherLink block.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="MyScene" />
+            </p:NodeReference>
+            <Pin Id="OIvUzDssG3bQW7BiMh41MG" Name="Output" Kind="StateOutputPin" />
+          </Node>
+          <Node Bounds="193,692,102,19" Id="BYeDqocGXJsMjs7yd6UmdZ">
+            <p:NodeReference LastCategoryFullName="ImaginarySystem.Utils.RendererWindows" LastDependency="VL.ImaginarySystem.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="ImaginaryRenderer" />
+            </p:NodeReference>
+            <Pin Id="N3t8MPf9y7LPMw9y41mEWi" Name="Input" Kind="InputPin" />
+            <Pin Id="NozyjvIF5ZhMP2UKRRa0BA" Name="Exhibit Mode Scene Renderer Name" Kind="InputPin" DefaultValue="MainSceneRenderer" />
+          </Node>
+          <Node Bounds="258,423,125,19" Id="O3RA50fOc8INuUQS7HfFXv">
+            <p:NodeReference LastCategoryFullName="ImaginarySystem.Utils.Rendering" LastDependency="VL.ImaginarySystem.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="PerspectiveRenderer" />
+            </p:NodeReference>
+            <Pin Id="HFa3Xx0VkYsP3iBr4wpGK1" Name="Initial Interest" Kind="InputPin" />
+            <Pin Id="PLziyydqywbM6D3NknFJgF" Name="Initial Yaw" Kind="InputPin" />
+            <Pin Id="EXack5cgYqVQMTpTiGbbLE" Name="Initial Pitch" Kind="InputPin" />
+            <Pin Id="Qa0BU4YxmmCNzj2jdQlqBX" Name="Initial Distance" Kind="InputPin" />
+            <Pin Id="RHLK4QFKMx2PxTlmpZ2SeA" Name="Initial Vertical Field Of View" Kind="InputPin" />
+            <Pin Id="VPORgflW36bPrga1g0AhGu" Name="Near Clip Plane" Kind="InputPin" />
+            <Pin Id="MOGwwvF8MCFQV0mJiDcr48" Name="Far Clip Plane" Kind="InputPin" />
+            <Pin Id="GAZSWjrX37MQaB8H5en4gR" Name="Output" Kind="StateOutputPin" />
+            <Pin Id="LzBCUOChumLPpJizHQtyNc" Name="Uses Camera From Scene" Kind="OutputPin" />
+          </Node>
+        </Canvas>
+        <Patch Id="G31jS1IKKzzOgnewEI0TId" Name="Create" />
+        <Patch Id="K8GqyI96xUwNrXlJ8yx8Kz" Name="Update" />
+        <ProcessDefinition Id="Ve5STfRfJVdPQsj1j8fTKv">
+          <Fragment Id="MS9Lrt3iSpTMrQvhxPyr8t" Patch="G31jS1IKKzzOgnewEI0TId" Enabled="true" />
+          <Fragment Id="MlCodQvuhY0PJkVfKq3q6L" Patch="K8GqyI96xUwNrXlJ8yx8Kz" Enabled="true" />
+        </ProcessDefinition>
+        <Link Id="OGuQOE6CQ7vNdaKGB0eBYh" Ids="HelHn4gz4LOMFxODTv9zBI,SmAhQhgBGL1NOLosUsC13e" />
+        <Link Id="NvIJxZIhPYgL1b8AtZVs3K" Ids="DaQrJAPX1SeOjnilKj0uqf,EC7yaNaVnHcPQRJgiVwaxu" IsHidden="true" />
+        <Link Id="JfBlbd5c3ZINms6lfrQztd" Ids="DH8muFL7pYYNa7WAlDV9yf,UoNmGmIXCbqO7mao9N5vse" IsHidden="true" />
+        <Link Id="OlvJ7cO0V5sOcMKrOdG0od" Ids="OswFezjixshNadwutgHRau,OAQnvFv128FLMzy35eTiam" />
+        <Link Id="MLCvtn9ZvnvOapflHRaV2n" Ids="EC7yaNaVnHcPQRJgiVwaxu,UjKaBxatxuKLJouavB2lig" />
+        <Link Id="MrvpJXXUaVhLsn15K4t3kx" Ids="DfoFeSckCDhNnSrf5ulrns,DH8muFL7pYYNa7WAlDV9yf" />
+        <Link Id="Ng4Wy9OQ7lmNdDGKC4dfBM" Ids="DSwmYiAKheMOB9m9TQNSyb,IUHEHEZrnmDODZ4OIfRRUw" />
+        <Link Id="AOha5EVgEdcOqQLFx7FBrK" Ids="CI18C2SpEXTMKnOhsp58dz,C0pVaz5aLkHPSTEGZ2qdMa" />
+        <Link Id="OAMMOUaspeYPP2GOhjcO58" Ids="MxnDRumfg7TP1QGtoSCeLQ,M10xFonEcPqOXFX4Ueoi1O" />
+        <Link Id="RkPNpYU5MUDQKlxzScJ6cJ" Ids="FvuTePanDsLMWbv4SeOXGo,Rd27XaqQGtsOrsD1qNT1pk" />
+        <Link Id="OzyrcZg92YvMpZ9Qiuq3ix" Ids="R9y6lyH9x1lOYejDXMTgbT,KSGygSB6SEJQRiCi3NEbNv" />
+        <Link Id="IgBSDmeKUOELCPh26Qlpum" Ids="Qxn4nluo9jUNn1tYA1dRmR,HW7yS3fWk05P9e6nEn1wGJ" />
+        <Link Id="SFofRdJjj2ONTciivikQvL" Ids="R1KwFwNnDOFNhotz0a7gkW,Ui7e6LzXB4cLZX4ppLK6UZ" />
+        <Link Id="BN2tunudOQUQFLvN8iRvrB" Ids="IL5HGiyi28UPgudXMWlmEu,IVejoPe0h5OLV50fFxPSBq" />
+        <Link Id="BwmGRf7dXkOOxqPh66WhIP" Ids="LQtUxfhZfhoLzpVL8N2JRq,NLRbfiTjfXfLdPz3a1yotK" />
+        <Link Id="NuBnuwLqr6wQQAHIDoOQbs" Ids="OIvUzDssG3bQW7BiMh41MG,FzjY6PFNLz2N9yGg59ckgv" />
+        <Link Id="AH28LxFUt2rLmkLnTuy3Ff" Ids="Lg3YZX6qpICOQ8E5D0xfFj,N3t8MPf9y7LPMw9y41mEWi" />
+        <Link Id="PiH80D5B0JoQDlw9nDKZpl" Ids="GAZSWjrX37MQaB8H5en4gR,TJyNKHLYUUWNLkanLehbcC" />
+      </Patch>
+    </Node>
+  </Patch>
+  <NugetDependency Id="VpD9bfsF5vCLx6ZkBkpHHn" Location="VL.ImaginarySystem" Version="0.0.0" />
+  <NugetDependency Id="UKERSBTjJdmPWUuwLUnt3t" Location="VL.ImaginarySystem.WeatherLink" Version="0.0.0" />
+  <NugetDependency Id="LpooiaSbAoQOxklGaEK9nC" Location="VL.WeatherLink" Version="0.0.0" />
+  <NugetDependency Id="G8O3cMgqvP4LpUfCYjCEa1" Location="VL.Stride" Version="2023.5.3-0059-gc01610d6fc" />
+  <NugetDependency Id="Smc7B2a3b1dNRxaXndpH7R" Location="VL.Skia" Version="2023.5.3-0059-gc01610d6fc" />
+</Document>

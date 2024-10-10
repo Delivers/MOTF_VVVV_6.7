@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+  <metadata>
+    <id>VL.IO.OSCQuery</id>
+    <version>2024.6.7-0185-g7d063e105d</version>
+    <authors>vvvv group</authors>
+    <icon>nugeticon.png</icon>
+    <readme>readme.md</readme>
+    <projectUrl>http://vvvv.org/</projectUrl>
+    <description>OSCQuery support for vvvv</description>
+    <copyright>Copyright © 2024 by vvvv group. All rights reserved.</copyright>
+    <tags>VL, OSC</tags>
+    <repository type="git" commit="879fdc26f2c5edd1396a2e236f91da875db068bc" />
+    <dependencies>
+      <group targetFramework="net8.0">
+        <dependency id="VL.Core" version="2024.6.7-0185-g7d063e105d" exclude="Build,Analyzers" />
+        <dependency id="VL.Serialization.FSPickler" version="2024.6.7-0185-g7d063e105d" exclude="Build,Analyzers" />
+        <dependency id="MeaMod.DNS" version="1.0.70" exclude="Build,Analyzers" />
+        <dependency id="Newtonsoft.Json" version="13.0.3" exclude="Build,Analyzers" />
+        <dependency id="WatsonWebsocket" version="4.0.10" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+</package>

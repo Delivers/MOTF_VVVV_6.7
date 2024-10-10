@@ -1,0 +1,30 @@
+#!/bin/sh
+
+COMMIT_MSG_FILE=$1
+COMMIT_MSG=$(cat $COMMIT_MSG_FILE)
+PREFIX=""
+
+# Populate array with directories in root of repository
+DIRS=()
+for d in */ ; do
+    DIRS+=("${d%/}")
+done
+
+MODIFIED_DIRS=0
+
+for DIR in "${DIRS[@]}"; do
+  # Check if files in directory are modified and use that directories name as prefix
+  if git diff --cached --name-only | grep --quiet "$DIR"
+  then
+    PREFIX="[$DIR]"
+    ((MODIFIED_DIRS++))
+  fi
+done
+
+# If more than one directory has changes, set prefix to "global"
+if [[ $MODIFIED_DIRS -gt 1 ]]; then
+  PREFIX="[global]"
+fi
+
+# Prefix the commit message
+echo "$PREFIX $COMMIT_MSG" > $COMMIT_MSG_FILE

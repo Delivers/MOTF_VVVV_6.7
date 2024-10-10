@@ -1,0 +1,347 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document xmlns:p="property" xmlns:r="reflection" Id="BcCyPisjx7MOPW3W1LOCZu" LanguageVersion="2024.6.4" Version="0.128">
+  <NugetDependency Id="NpFdoJhPb5cMztiIO6Ln7w" Location="VL.CoreLib" Version="2024.6.4" />
+  <Patch Id="Gp4mA7rvm9RM0z26sGVIrf">
+    <Canvas Id="H1ustX3vQoANCSVYr6gype" DefaultCategory="Observability" CanvasType="FullCategory">
+      <Canvas Id="TwnFr7ssg3vOka6DjgJyfY" Name="Logging" Position="329,340">
+        <!--
+
+    ************************ AddLoki (Basic) ************************
+
+-->
+        <Node Name="AddLoki (Basic)" Bounds="161,229,395,515" Id="Lcz7wustAVaNi8Cglwknze">
+          <p:NodeReference>
+            <Choice Kind="OperationDefinition" />
+          </p:NodeReference>
+          <Patch Id="CG1SLFGQhLaPsxxoEFtgTf">
+            <ControlPoint Id="BPeVN7kh9f6OSL4kBuDc92" Bounds="217,280" />
+            <Node Bounds="215,313,267,411" Id="F1xd7XjMuegPgHlfz9fDVh">
+              <p:NodeReference LastCategoryFullName="Microsoft.Extensions.Logging.LokiLoggerExtensions" LastDependency="LokiLoggingProvider.dll" OverloadStrategy="AllPinsThatAreNotCommon">
+                <Choice Kind="RegionFlag" Name="Region (Stateless)" Fixed="true" />
+                <Choice Kind="OperationCallFlag" Name="AddLoki" />
+                <PinReference Kind="InputPin" Name="Configure" />
+              </p:NodeReference>
+              <Pin Id="UTP6c9i5v9ULTuIqF8wjqN" Name="Input" Kind="StateInputPin" />
+              <Pin Id="U0kgOW0JWA9Lk6qFIhKHI0" Name="Output" Kind="OutputPin" />
+              <Patch Id="ATigC2QzMYdNqJbAZMgbRy" Name="Configure" ManuallySortedPins="true">
+                <Pin Id="TtYoJ12mSRMN5s3MB21ENw" Name="Input" Kind="InputPin" />
+                <ControlPoint Id="VpdjosrtsV3O2uMgPYzxe4" Bounds="229,328" />
+                <Node Bounds="227,438,84,26" Id="Oib0SiGAAG1POOoi57dlD5">
+                  <p:NodeReference LastCategoryFullName="LokiLoggingProvider.Options.LokiLoggerOptions" LastDependency="LokiLoggingProvider.dll">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <CategoryReference Kind="AssemblyCategory" Name="LokiLoggerOptions" />
+                    <Choice Kind="OperationCallFlag" Name="SetHttp" />
+                  </p:NodeReference>
+                  <Pin Id="OyYfM2qZ5oVOC8uP5nCyTu" Name="Input" Kind="StateInputPin" />
+                  <Pin Id="Gl7pvj8Q4eILBdDi2t3LzK" Name="Value" Kind="InputPin" />
+                  <Pin Id="H4q4JXULozJL8nmnvW8lCQ" Name="Output" Kind="StateOutputPin" />
+                </Node>
+                <Node Bounds="306,336,60,26" Id="GbRAOiJxBQiMSByuZWtw8L">
+                  <p:NodeReference LastCategoryFullName="LokiLoggingProvider.Options.HttpOptions" LastDependency="LokiLoggingProvider.dll">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <CategoryReference Kind="AssemblyCategory" Name="HttpOptions" />
+                    <Choice Kind="OperationCallFlag" Name="Create" />
+                  </p:NodeReference>
+                  <Pin Id="Fokdxj77BxzMeoMI2RzXrY" Name="Output" Kind="StateOutputPin" />
+                </Node>
+                <Node Bounds="306,391,67,26" Id="VjuFrNI0q2TORyT3fQIXrN">
+                  <p:NodeReference LastCategoryFullName="LokiLoggingProvider.Options.HttpOptions" LastDependency="LokiLoggingProvider.dll">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <CategoryReference Kind="AssemblyCategory" Name="HttpOptions" />
+                    <Choice Kind="OperationCallFlag" Name="SetAddress" />
+                  </p:NodeReference>
+                  <Pin Id="PWON7aSjzrGOUTZQj7W3a5" Name="Input" Kind="StateInputPin" />
+                  <Pin Id="Vl0MCnu4mYiLEntMQnrWFp" Name="Value" Kind="InputPin" DefaultValue="http://localhost:3100" />
+                  <Pin Id="RrViljhGchcNH9K0e1dQTp" Name="Output" Kind="StateOutputPin" />
+                </Node>
+                <Node Bounds="227,502,84,26" Id="Bh1BtCD8MqZOvc6u9Mncvo">
+                  <p:NodeReference LastCategoryFullName="LokiLoggingProvider.Options.LokiLoggerOptions" LastDependency="LokiLoggingProvider.dll">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <CategoryReference Kind="AssemblyCategory" Name="LokiLoggerOptions" />
+                    <Choice Kind="OperationCallFlag" Name="SetClient" />
+                  </p:NodeReference>
+                  <Pin Id="NMJ4ENIfQuANwvnMyBI3Ao" Name="Input" Kind="StateInputPin" />
+                  <Pin Id="EP5olBSh2mJNKG6uDmrw4P" Name="Value" Kind="InputPin" />
+                  <Pin Id="Ux4fwf5bhF7L7Hao5O01Mb" Name="Output" Kind="StateOutputPin" />
+                </Node>
+                <Pad Id="Rv2hXfK6tzHQUyIPfgAQEm" Comment="" Bounds="308,485,47,15" ShowValueBox="true" isIOBox="true" Value="Http">
+                  <p:TypeAnnotation LastCategoryFullName="LokiLoggingProvider.Options" LastDependency="LokiLoggingProvider.dll">
+                    <Choice Kind="TypeFlag" Name="PushClient" />
+                  </p:TypeAnnotation>
+                </Pad>
+                <Node Bounds="227,678,84,26" Id="AFNDxiogunlMMNSaKJ902B">
+                  <p:NodeReference LastCategoryFullName="LokiLoggingProvider.Options.LokiLoggerOptions" LastDependency="LokiLoggingProvider.dll">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <CategoryReference Kind="AssemblyCategory" Name="LokiLoggerOptions" />
+                    <Choice Kind="OperationCallFlag" Name="SetStaticLabels" />
+                  </p:NodeReference>
+                  <Pin Id="PZ1NUKpYvOZNgO0Art3hKn" Name="Input" Kind="StateInputPin" />
+                  <Pin Id="JinaGjbzyFXLwTGJcfNZey" Name="Value" Kind="InputPin" />
+                  <Pin Id="SH7mVLxojlVNLdb5LLtyts" Name="Output" Kind="StateOutputPin" />
+                </Node>
+                <Node Bounds="306,634,130,26" Id="FP6XmzH4Es6MjSfSRJlrXV">
+                  <p:NodeReference LastCategoryFullName="LokiLoggingProvider.Options.StaticLabelOptions" LastDependency="LokiLoggingProvider.dll">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <CategoryReference Kind="AssemblyCategory" Name="StaticLabelOptions" />
+                    <Choice Kind="OperationCallFlag" Name="SetAdditionalStaticLabels" />
+                  </p:NodeReference>
+                  <Pin Id="NkTXRcORgdwL21ni1rFubI" Name="Input" Kind="StateInputPin" />
+                  <Pin Id="MD6aBvcpf9uO5bJpMFiFEd" Name="Value" Kind="InputPin" />
+                  <Pin Id="CYecmbB5F9IOjLU6pRfiOh" Name="Output" Kind="StateOutputPin" />
+                </Node>
+                <Node Bounds="306,592,83,26" Id="GHdhDhmM6FCLQiKevDX1wA">
+                  <p:NodeReference LastCategoryFullName="LokiLoggingProvider.Options.StaticLabelOptions" LastDependency="LokiLoggingProvider.dll">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <CategoryReference Kind="AssemblyCategory" Name="StaticLabelOptions" />
+                    <Choice Kind="OperationCallFlag" Name="Create" />
+                  </p:NodeReference>
+                  <Pin Id="AWUgizvmIqjPOOFGYwEDr7" Name="Output" Kind="StateOutputPin" />
+                </Node>
+                <Node Bounds="431,600,39,19" Id="JDbRrD3jApdMsT4dnf3axD">
+                  <p:NodeReference LastCategoryFullName="Collections.Mutable.MutableDictionary" LastDependency="VL.CoreLib.vl">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <CategoryReference Kind="ClassType" Name="MutableDictionary" />
+                    <Choice Kind="OperationCallFlag" Name="Cons" />
+                  </p:NodeReference>
+                  <Pin Id="C694JCuDocWMGBX6VNRWSV" Name="Output" Kind="StateOutputPin" />
+                  <Pin Id="R2k2qf21YCPLZRjry1ucVK" Name="installation" Kind="InputPin" PinGroupName="Input" />
+                  <Pin Id="O8KcTWJY78CODGqORAhA5s" Name="machine" Kind="InputPin" PinGroupName="Input" />
+                </Node>
+              </Patch>
+            </Node>
+            <Pin Id="RiPjehAzhi8QHW4fuV4dqy" Name="Logging Builder" Kind="InputPin">
+              <p:TypeAnnotation LastCategoryFullName="Microsoft.Extensions.Logging" LastDependency="VL.CoreLib.vl">
+                <Choice Kind="TypeFlag" Name="ILoggingBuilder" />
+              </p:TypeAnnotation>
+            </Pin>
+            <Link Id="OaXkYurOXWcNYL0K1EKLdR" Ids="RiPjehAzhi8QHW4fuV4dqy,BPeVN7kh9f6OSL4kBuDc92" IsHidden="true" />
+            <Link Id="ROz1Gt0zEuLMDbOsB0g9gu" Ids="TtYoJ12mSRMN5s3MB21ENw,VpdjosrtsV3O2uMgPYzxe4" IsHidden="true" />
+            <Link Id="JqpwNEn6GLgLluIMzHHVru" Ids="BPeVN7kh9f6OSL4kBuDc92,UTP6c9i5v9ULTuIqF8wjqN" />
+            <Link Id="PMJ9mODoXsZLu9D5MEBXkv" Ids="VpdjosrtsV3O2uMgPYzxe4,OyYfM2qZ5oVOC8uP5nCyTu" />
+            <Link Id="J6FMQnaS4NWPZdocpaHR7T" Ids="Fokdxj77BxzMeoMI2RzXrY,PWON7aSjzrGOUTZQj7W3a5" />
+            <Link Id="UYhMoaYrrn8QU7gnsbRCcq" Ids="RrViljhGchcNH9K0e1dQTp,Gl7pvj8Q4eILBdDi2t3LzK" />
+            <Link Id="KUkF7FMlPPzOV4yygGSinp" Ids="H4q4JXULozJL8nmnvW8lCQ,NMJ4ENIfQuANwvnMyBI3Ao" />
+            <Link Id="RrhfqPoCR7wMfJdmVjFqBi" Ids="Rv2hXfK6tzHQUyIPfgAQEm,EP5olBSh2mJNKG6uDmrw4P" />
+            <Link Id="GxduJP8MmYlMPxkw97KsOX" Ids="Ux4fwf5bhF7L7Hao5O01Mb,PZ1NUKpYvOZNgO0Art3hKn" />
+            <Link Id="PVycP3aRTdBM3FaGe8hEH6" Ids="CYecmbB5F9IOjLU6pRfiOh,JinaGjbzyFXLwTGJcfNZey" />
+            <Link Id="FQTMBF84cNZLBlxW7h15Qv" Ids="AWUgizvmIqjPOOFGYwEDr7,NkTXRcORgdwL21ni1rFubI" />
+            <Link Id="HemiOdTKTFKMVfXxeqtTme" Ids="C694JCuDocWMGBX6VNRWSV,MD6aBvcpf9uO5bJpMFiFEd" />
+            <Link Id="HQIvmUIcX44QT2FjVUsZzo" Ids="Cr2xPkxrc7PMFgksez248Z,R2k2qf21YCPLZRjry1ucVK" />
+            <ControlPoint Id="Cr2xPkxrc7PMFgksez248Z" Bounds="433,264" />
+            <Pin Id="CcXLwxWlfJHOlgPQMusYtb" Name="Address" Kind="InputPin" DefaultValue="http://localhost:3100" />
+            <Link Id="Sz74ObAuzDVQFlamZYzQMD" Ids="CcXLwxWlfJHOlgPQMusYtb,M4ibNIsqiW5QLQdHfm3PNJ" IsHidden="true" />
+            <Pin Id="Q4ba2JiQF2mPZ0BGsgNjdd" Name="Installation Name" Kind="InputPin" DefaultValue="INSTALLATION-NAME">
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+                <Choice Kind="TypeFlag" Name="String" />
+              </p:TypeAnnotation>
+            </Pin>
+            <Link Id="PqFiTJNp86lPFwttdRRnBT" Ids="Q4ba2JiQF2mPZ0BGsgNjdd,Cr2xPkxrc7PMFgksez248Z" IsHidden="true" />
+            <Link Id="TLEAYzLhHgcPcwcDa7EA1i" Ids="V0ppYUjNkUUMaBsn9Y2kn5,O8KcTWJY78CODGqORAhA5s" />
+            <ControlPoint Id="V0ppYUjNkUUMaBsn9Y2kn5" Bounds="466,290" />
+            <Pin Id="HASy4mLtPrhLLOZiVU0Rci" Name="Machine Name" Kind="InputPin" DefaultValue="MACHINE-NAME">
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+                <Choice Kind="TypeFlag" Name="String" />
+              </p:TypeAnnotation>
+            </Pin>
+            <Link Id="Fr4NSBq0rDFPXzrEveeB3C" Ids="HASy4mLtPrhLLOZiVU0Rci,V0ppYUjNkUUMaBsn9Y2kn5" IsHidden="true" />
+            <Link Id="GHLUorqS7fuQbVvO8zQ52M" Ids="M4ibNIsqiW5QLQdHfm3PNJ,Vl0MCnu4mYiLEntMQnrWFp" />
+            <ControlPoint Id="M4ibNIsqiW5QLQdHfm3PNJ" Bounds="371,247" />
+          </Patch>
+        </Node>
+      </Canvas>
+      <Canvas Id="MEjou7XfmEZPQZfhdGbBmt" Name="Metrics" Position="329,387">
+        <Canvas Id="IDOshWEPrqsOJVBJkhJleD" Name="Bindings" Position="329,287">
+          <!--
+
+    ************************ Gauge ************************
+
+-->
+          <Node Name="Gauge" Bounds="234,163" Id="HRV19e8UgfnPeJZ8fYk3DM" Summary="Gauges can have any numeric value and change arbitrarily.">
+            <p:NodeReference>
+              <Choice Kind="ContainerDefinition" />
+            </p:NodeReference>
+            <Patch Id="BA080tNcdKTQNrqvDGKvbI" IsGeneric="true">
+              <Canvas Id="JWCBzPKuUBqPOgq0LtbCj3" CanvasType="Group">
+                <ControlPoint Id="P1kdax95nTqM3zB7VmZa9s" Bounds="270,394" />
+                <Node Bounds="52,332,99,71" Id="RoYf2xQhyCxQGxQKXoG3ck">
+                  <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
+                    <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
+                    <CategoryReference Kind="Category" Name="Primitive" />
+                    <Choice Kind="ProcessStatefulRegion" Name="Cache" />
+                  </p:NodeReference>
+                  <Pin Id="O3azkMNfXVBPx2mtff6hey" Name="Force" Kind="InputPin" />
+                  <Pin Id="UGaf6u1RtCTMlLiOZOeWQE" Name="Dispose Cached Outputs" Kind="InputPin" />
+                  <Pin Id="O9EgEoV1h2ENgWFa0zBNyQ" Name="Has Changed" Kind="OutputPin" />
+                  <Patch Id="S5crYpllrMyLsJIVabxKBl" ManuallySortedPins="true">
+                    <Patch Id="AV0GV5HcLvMMqcvGTeoCbD" Name="Create" ManuallySortedPins="true" />
+                    <Patch Id="IKRqVc4qGmOMPvm9iDurrt" Name="Then" ManuallySortedPins="true" />
+                    <Node Bounds="64,355,75,19" Id="UoHFczEoM1kNGFbb3q2ylg">
+                      <p:NodeReference LastCategoryFullName="Prometheus.Metrics" LastDependency="Prometheus.NetStandard.dll" OverloadStrategy="AllPinsThatAreNotCommon">
+                        <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                        <CategoryReference Kind="AssemblyCategory" Name="Metrics" NeedsToBeDirectParent="true" />
+                        <Choice Kind="OperationCallFlag" Name="CreateGauge" />
+                        <PinReference Kind="InputPin" Name="Configuration" />
+                      </p:NodeReference>
+                      <Pin Id="Uevgs2r1ODPOm6seM2gddk" Name="Name" Kind="InputPin" />
+                      <Pin Id="O0FiuJLLtkdMoxEDzm8Rv6" Name="Help" Kind="InputPin" />
+                      <Pin Id="Aj16dScxHH7PvNHn6aDtpS" Name="Configuration" Kind="InputPin" />
+                      <Pin Id="RH6vKhJW54PMfQGYSVljkZ" Name="Result" Kind="OutputPin" />
+                    </Node>
+                  </Patch>
+                  <ControlPoint Id="IIel6H76TpRPv2RMjUDPiw" Bounds="66,397" Alignment="Bottom" />
+                  <ControlPoint Id="PzGasHYMpm3MJnxLFXA1K4" Bounds="66,338" Alignment="Top" />
+                </Node>
+                <ControlPoint Id="NVXhqD1ExsTQTcvIT1WnAL" Bounds="66,310" />
+                <Node Bounds="220,440,122,126" Id="TNuvSZPvWCePMnZt1JMOVV">
+                  <p:NodeReference LastCategoryFullName="Reactive.Channel" LastDependency="VL.CoreLib.vl">
+                    <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
+                    <Choice Kind="ProcessAppFlag" Name="ForEach (Channel)" />
+                  </p:NodeReference>
+                  <Pin Id="A0fpLd4EcgYOS2Efoug6jP" Name="Node Context" Kind="InputPin" IsHidden="true" />
+                  <Pin Id="HgWhFlrTK9fMADDWc0gccd" Name="At Least Run Once" Kind="InputPin" />
+                  <Patch Id="KY2i8bX62I5QYgzbN2dt7v" ManuallySortedPins="true">
+                    <Patch Id="EQXnc1nRdMgOrXu8nMknXl" Name="Create" ManuallySortedPins="true" />
+                    <Patch Id="NTFOsiuJqZzM8tDklQOWue" Name="Update" ManuallySortedPins="true" />
+                    <Patch Id="S4V6u6gSYA3PrXs8Nl23co" Name="Dispose" ManuallySortedPins="true" />
+                    <Node Bounds="232,520,41,26" Id="PDbLIsW6by2Mj0RG3kMJw8">
+                      <p:NodeReference LastCategoryFullName="Prometheus.IGauge" LastDependency="Prometheus.NetStandard.dll">
+                        <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                        <FullNameCategoryReference ID="Prometheus.IGauge" />
+                        <Choice Kind="OperationCallFlag" Name="Set" />
+                      </p:NodeReference>
+                      <Pin Id="VttEj2ZaVAzLSd0TJGZo8g" Name="Input" Kind="StateInputPin" />
+                      <Pin Id="E4DSpFmgtvvM2drnHccNub" Name="Val" Kind="InputPin" />
+                      <Pin Id="PU8dJicVBfrQc34ZcFFUvJ" Name="Output" Kind="StateOutputPin" />
+                    </Node>
+                    <Node Bounds="268,469,62,26" Id="DJZAhyOd3rDLBgMgmUAsgm">
+                      <p:NodeReference LastCategoryFullName="Primitive.Float32" LastDependency="VL.CoreLib.vl">
+                        <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                        <CategoryReference Kind="Float32Type" Name="Float32" NeedsToBeDirectParent="true" />
+                        <Choice Kind="OperationCallFlag" Name="ToFloat64" />
+                      </p:NodeReference>
+                      <Pin Id="HMpooHlR5WvPribv2ABHdU" Name="Input" Kind="StateInputPin" />
+                      <Pin Id="PE91acGbUg3NBPmroUzHh4" Name="Result" Kind="OutputPin" />
+                    </Node>
+                  </Patch>
+                  <Pin Id="Ud5gzTtPKinLNAHZn4Tv49" Name="Force Push" Kind="InputPin" IsHidden="true" />
+                  <ControlPoint Id="UyDI0eMWI5PNRyuwWgLwQX" Bounds="270,446" Alignment="Top" />
+                </Node>
+              </Canvas>
+              <Patch Id="B5AWUon8yQPOR4yzkXPGlB" Name="Create" />
+              <Patch Id="AZBGQ5M18zLLOe00xigGOn" Name="Update">
+                <Pin Id="LWSJeZ54VeHMR1mehPQT6k" Name="Name" Kind="InputPin">
+                  <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+                    <Choice Kind="TypeFlag" Name="String" />
+                  </p:TypeAnnotation>
+                </Pin>
+                <Pin Id="RKjwt5wKJaDQNvSAZGve3a" Name="Input" Kind="InputPin">
+                  <p:TypeAnnotation LastCategoryFullName="Reactive" LastDependency="VL.CoreLib.vl">
+                    <Choice Kind="TypeFlag" Name="Channel" />
+                  </p:TypeAnnotation>
+                </Pin>
+              </Patch>
+              <ProcessDefinition Id="GmE9NIZVNzWMXoWMA8t1s4">
+                <Fragment Id="PjUsV1jE7CwN0PStfESnGL" Patch="B5AWUon8yQPOR4yzkXPGlB" Enabled="true" />
+                <Fragment Id="P4rb6XiptbROpeodeIamaz" Patch="AZBGQ5M18zLLOe00xigGOn" Enabled="true" />
+              </ProcessDefinition>
+              <Link Id="V6iKK08xmvbN7qyepl4eiF" Ids="RKjwt5wKJaDQNvSAZGve3a,P1kdax95nTqM3zB7VmZa9s" IsHidden="true" />
+              <Link Id="MFIQ2uHYUa2OEkOmSPh8O0" Ids="RH6vKhJW54PMfQGYSVljkZ,IIel6H76TpRPv2RMjUDPiw" />
+              <Link Id="PtZ3FRDPyNGPJVNSyvaxuu" Ids="PzGasHYMpm3MJnxLFXA1K4,Uevgs2r1ODPOm6seM2gddk" />
+              <Link Id="RskybRvxVcpPEeks3b2a3Q" Ids="NVXhqD1ExsTQTcvIT1WnAL,PzGasHYMpm3MJnxLFXA1K4" />
+              <Link Id="PjLI9yJMqOFQI572IJZRaj" Ids="LWSJeZ54VeHMR1mehPQT6k,NVXhqD1ExsTQTcvIT1WnAL" IsHidden="true" />
+              <Link Id="AroGK7khILpNZq97OSvgUS" Ids="P1kdax95nTqM3zB7VmZa9s,UyDI0eMWI5PNRyuwWgLwQX" />
+              <Link Id="RPeViJPmupDMZrJAlYPe1l" Ids="IIel6H76TpRPv2RMjUDPiw,VttEj2ZaVAzLSd0TJGZo8g" />
+              <Link Id="DrZSxMeCrc9QEi2pmXnBcx" Ids="UyDI0eMWI5PNRyuwWgLwQX,HMpooHlR5WvPribv2ABHdU" />
+              <Link Id="R5P0cW3qLb4N8WlsWrqaXR" Ids="PE91acGbUg3NBPmroUzHh4,E4DSpFmgtvvM2drnHccNub" />
+            </Patch>
+          </Node>
+        </Canvas>
+        <!--
+
+    ************************ Server ************************
+
+-->
+        <Node Name="Server" Bounds="365,377" Id="Seyl9zCjwVINb5qrBZ2C1u">
+          <p:NodeReference>
+            <Choice Kind="ContainerDefinition" />
+          </p:NodeReference>
+          <Patch Id="SM5Fxo93uLPNhnk5uEJlHS">
+            <Canvas Id="ASAI06tq5uBPqLPRi2V3yE" CanvasType="Group">
+              <Node Bounds="525,473,65,26" Id="UINuT7D3hMGMg4ncEPKROY">
+                <p:NodeReference LastCategoryFullName="Prometheus.MetricServer" LastDependency="Prometheus.NetStandard.dll">
+                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                  <CategoryReference Kind="AssemblyCategory" Name="Prometheus" />
+                  <CategoryReference Kind="AssemblyCategory" Name="MetricServer" />
+                  <Choice Kind="OperationCallFlag" Name="Create" />
+                </p:NodeReference>
+                <Pin Id="N6L6r0or4pXLwsThV66qaS" Name="Port" Kind="InputPin" />
+                <Pin Id="Hvoa2rUrFdkOUf3hYLri71" Name="Url" Kind="InputPin" />
+                <Pin Id="IpQglwqChUiLvlCKsLg4ph" Name="Registry" Kind="InputPin" />
+                <Pin Id="PQeGMxMkGTbLwhYejtPzNu" Name="Use Https" Kind="InputPin" />
+                <Pin Id="KZeMipKqWufMR6jLWPdx4P" Name="Output" Kind="StateOutputPin" />
+              </Node>
+              <Pad Id="ULBD0qaBzffONXac24mx2o" Comment="Port" Bounds="527,410,54,15" ShowValueBox="true" isIOBox="true" Value="15000">
+                <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+                  <Choice Kind="TypeFlag" Name="Integer32" />
+                </p:TypeAnnotation>
+              </Pad>
+              <Node Bounds="487,599,66,26" Id="LNqQQitM1BKNhVsf6SWWEB">
+                <p:NodeReference LastCategoryFullName="Prometheus.MetricHandler" LastDependency="Prometheus.NetStandard.dll">
+                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                  <FullNameCategoryReference ID="Prometheus.MetricHandler" />
+                  <Choice Kind="OperationCallFlag" Name="Dispose" />
+                </p:NodeReference>
+                <Pin Id="H9ryAd4dAJePr9DPuACXk6" Name="Input" Kind="StateInputPin" />
+                <Pin Id="LEcGL2nwaMHPKa1EpVg3Vd" Name="Output" Kind="StateOutputPin" />
+              </Node>
+              <Node Bounds="525,528,63,26" Id="H3Csalcw2FSQcODhPwmlo9">
+                <p:NodeReference LastCategoryFullName="Prometheus.IMetricServer" LastDependency="Prometheus.NetStandard.dll">
+                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                  <FullNameCategoryReference ID="Prometheus.IMetricServer" />
+                  <Choice Kind="OperationCallFlag" Name="Start" />
+                </p:NodeReference>
+                <Pin Id="DfdEXioF9GJOGstQ1Z0pin" Name="Input" Kind="StateInputPin" />
+                <Pin Id="D3kSxnqIk9zPtcuQDROl9B" Name="Output" Kind="StateOutputPin" />
+                <Pin Id="N8Tbh5KE2iPMvH9PDgWsB0" Name="Result" Kind="OutputPin" />
+              </Node>
+              <Pad Id="Q1g3ocSl0CGP3V3Lazh2ye" Bounds="489,542" />
+            </Canvas>
+            <Patch Id="KIja9tMgKoRQbJM8ioBEkb" Name="Create" ParticipatingElements="UINuT7D3hMGMg4ncEPKROY,Go7OgLHUVaxMWk01ZVdFmy" />
+            <ProcessDefinition Id="HgaAG61u2utM4pBWyYQcV4">
+              <Fragment Id="CLzXStvKOttQA1GIOHhNgc" Patch="KIja9tMgKoRQbJM8ioBEkb" Enabled="true" />
+            </ProcessDefinition>
+            <Patch Id="ECJuXxkVj3xP4AcnS6QPGl" Name="Dispose" ParticipatingElements="LNqQQitM1BKNhVsf6SWWEB,GNJZf4Ku89hNdRDKP9urK8" />
+            <Link Id="Go7OgLHUVaxMWk01ZVdFmy" Ids="ULBD0qaBzffONXac24mx2o,N6L6r0or4pXLwsThV66qaS" />
+            <Link Id="FhR3gCyIv3XNz4pBfrPJcS" Ids="KZeMipKqWufMR6jLWPdx4P,DfdEXioF9GJOGstQ1Z0pin" />
+            <Link Id="Sj2SNwmrGtFMApe7L5z8ic" Ids="KZeMipKqWufMR6jLWPdx4P,Q1g3ocSl0CGP3V3Lazh2ye" />
+            <Link Id="GNJZf4Ku89hNdRDKP9urK8" Ids="Q1g3ocSl0CGP3V3Lazh2ye,H9ryAd4dAJePr9DPuACXk6" />
+          </Patch>
+        </Node>
+      </Canvas>
+    </Canvas>
+    <!--
+
+    ************************ Application ************************
+
+-->
+    <Node Name="Application" Bounds="100,100" Id="SHdo9lGGaMuL0J9Az6Gbc4">
+      <p:NodeReference>
+        <Choice Kind="ContainerDefinition" Name="Process" />
+        <CategoryReference Kind="Category" Name="Primitive" />
+      </p:NodeReference>
+      <Patch Id="UP106t9C306N1occOC654k">
+        <Canvas Id="NNtqKT6MnaBMkBT8YquOhI" CanvasType="Group" />
+        <Patch Id="UCYATAcWRJMMbxjrbUsFxf" Name="Create" />
+        <Patch Id="O6jNfQ7xh7VLtO2qbMhMf1" Name="Update" />
+        <ProcessDefinition Id="U5BijWLaiLyMLfHiaNzuFb">
+          <Fragment Id="CuFjxiX8LxpMfMFzlP8wpz" Patch="UCYATAcWRJMMbxjrbUsFxf" Enabled="true" />
+          <Fragment Id="M8bwsGsktLFLcUgTX8Y9sq" Patch="O6jNfQ7xh7VLtO2qbMhMf1" Enabled="true" />
+          <Fragment Id="L9JPvJUJ1muOb5l2DH4ivM" Patch="TW0899Uc3OGOtUvbRGBvrR" />
+        </ProcessDefinition>
+        <Patch Id="TW0899Uc3OGOtUvbRGBvrR" Name="SetupLogging" />
+      </Patch>
+    </Node>
+  </Patch>
+  <NugetDependency Id="Nl5sZvCjgSCPShvCJQedwD" Location="LokiLoggingProvider" Version="1.0.0" />
+  <NugetDependency Id="FPVKqBK7N9eQceCOJRSGbW" Location="prometheus-net" Version="8.2.1" />
+</Document>

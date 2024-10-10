@@ -1,0 +1,161 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document xmlns:p="property" xmlns:r="reflection" Id="VUuJx8yIxzKO84rX0iTQE9" LanguageVersion="2024.6.0-0147-g7216424c8e" Version="0.128">
+  <Patch Id="Ikx290s9rAHPMgVJva4EZx">
+    <Canvas Id="NkJlrPW32iyOsiUXiANQo8" DefaultCategory="System" CanvasType="FullCategory">
+      <Canvas Id="VbuArtzETX2QPtoXCHUtMQ" Name="EditorAttributes" Position="346,231">
+        <!--
+
+    ************************ LabelAttribute ************************
+
+-->
+        <Node Name="LabelAttribute" Bounds="367,253" Id="GW2VGpGDjbGOMtHxfgeHCG">
+          <p:NodeReference>
+            <Choice Kind="ForwardDefinition" Name="Forward" />
+            <CategoryReference Kind="Category" Name="Primitive" />
+          </p:NodeReference>
+          <p:TypeAnnotation LastCategoryFullName="VL.Core.EditorAttributes" LastDependency="VL.Core.dll">
+            <Choice Kind="TypeFlag" Name="LabelAttribute" />
+          </p:TypeAnnotation>
+          <p:ForwardAllNodesOfTypeDefinition p:Type="Boolean">true</p:ForwardAllNodesOfTypeDefinition>
+          <Patch Id="M5C6uG6ub1VNbhDhUCbMtn">
+            <Canvas Id="Rc1taE7izR7O0P980M3vrW" CanvasType="Group" />
+            <ProcessDefinition Id="G2TZtQTZ1mVNkF4h6HIVfh" IsHidden="true" />
+          </Patch>
+        </Node>
+        <!--
+
+    ************************ WidgetType ************************
+
+-->
+        <Node Name="WidgetType" Bounds="569,305" Id="P1nksX7DgUyOSBoyfxxxRJ">
+          <p:NodeReference>
+            <Choice Kind="ForwardRecordDefinition" Name="Immutable Forward" />
+            <CategoryReference Kind="Category" Name="Primitive" />
+          </p:NodeReference>
+          <p:TypeAnnotation LastCategoryFullName="VL.Core.EditorAttributes" LastDependency="VL.Core.dll">
+            <Choice Kind="TypeFlag" Name="WidgetType" />
+          </p:TypeAnnotation>
+          <p:ForwardAllNodesOfTypeDefinition p:Type="Boolean">true</p:ForwardAllNodesOfTypeDefinition>
+          <Patch Id="IQ3mZtb6jdwPI9HqQKYLZq">
+            <Canvas Id="JMMWTEvurHuNKdjF6K4Ska" CanvasType="Group" />
+            <ProcessDefinition Id="L2qF2PT7iNnLfBBFEisH3L" IsHidden="true" />
+          </Patch>
+        </Node>
+        <!--
+
+    ************************ WidgetTypeAttribute ************************
+
+-->
+        <Node Name="WidgetTypeAttribute" Bounds="367,303" Id="KgHismNJ8CULbLzJrccXls">
+          <p:NodeReference>
+            <Choice Kind="ForwardDefinition" Name="Forward" />
+            <CategoryReference Kind="Category" Name="Primitive" />
+          </p:NodeReference>
+          <p:TypeAnnotation LastCategoryFullName="VL.Core.EditorAttributes" LastDependency="VL.Core.dll">
+            <Choice Kind="TypeFlag" Name="WidgetTypeAttribute" />
+          </p:TypeAnnotation>
+          <p:ForwardAllNodesOfTypeDefinition p:Type="Boolean">true</p:ForwardAllNodesOfTypeDefinition>
+          <Patch Id="MpzTN9ucEIpLmhZQuZssKv">
+            <Canvas Id="BflX33zUNuGOG9aTx1RScE" CanvasType="Group" />
+            <ProcessDefinition Id="PjBO550uwfdOSpSTcgVNWp" IsHidden="true" />
+          </Patch>
+        </Node>
+        <!--
+
+    ************************ BrowsableAttribute ************************
+
+-->
+        <Node Name="BrowsableAttribute" Bounds="366,203" Id="TBtq0DQy9Z9NRsknQev38g">
+          <p:NodeReference>
+            <Choice Kind="ForwardDefinition" Name="Forward" />
+            <CategoryReference Kind="Category" Name="Primitive" />
+          </p:NodeReference>
+          <p:TypeAnnotation LastCategoryFullName="System.ComponentModel" LastDependency="System.ComponentModel.Primitives.dll">
+            <Choice Kind="TypeFlag" Name="BrowsableAttribute" />
+          </p:TypeAnnotation>
+          <Patch Id="AaNMYxAkJmtP2BFf90UojR">
+            <Canvas Id="QjZTLgPNoUONbKiy82OGyU" CanvasType="Group" />
+            <ProcessDefinition Id="Lit6tPKPuUtLPrFwSHpSG4" IsHidden="true" />
+          </Patch>
+        </Node>
+        <!--
+
+    ************************ TypeSelectorAttribute ************************
+
+-->
+        <Node Name="TypeSelectorAttribute" Bounds="369,352" Id="ItosGqvckzRLCHgA4C61kK">
+          <p:NodeReference>
+            <Choice Kind="ForwardDefinition" Name="Forward" />
+            <CategoryReference Kind="Category" Name="Primitive" />
+          </p:NodeReference>
+          <p:TypeAnnotation LastCategoryFullName="VL.Core.EditorAttributes" LastDependency="VL.Core.dll">
+            <Choice Kind="TypeFlag" Name="TypeSelectorAttribute" />
+          </p:TypeAnnotation>
+          <Patch Id="DWRiF2Gc9uzOpUm0tFuQZp">
+            <Canvas Id="NFJk2pZJfAoLCMqqAhThuE" BordersChecked="false" CanvasType="Group" />
+            <ProcessDefinition Id="KJtEcsQpRTrPwUytNX2EyF" IsHidden="true" />
+          </Patch>
+        </Node>
+        <!--
+
+    ************************ AttributeHelpers ************************
+
+-->
+        <Node Name="AttributeHelpers" Bounds="627,458" Id="FDOj3HhcycqLB59gcsm6sL">
+          <p:NodeReference>
+            <Choice Kind="ForwardDefinition" Name="Forward" />
+            <CategoryReference Kind="Category" Name="Primitive" />
+          </p:NodeReference>
+          <p:TypeAnnotation LastCategoryFullName="VL.Core.EditorAttributes" LastDependency="VL.Core.dll">
+            <Choice Kind="TypeFlag" Name="AttributeHelpers" />
+          </p:TypeAnnotation>
+          <Patch Id="Kqv0BVc9avELfnADQ05Imy">
+            <Canvas Id="J8AydmI246MOFsH6HR6GGF" BordersChecked="false" CanvasType="Group" />
+            <ProcessDefinition Id="UExKaLC6WOeQbK0oVkU7WA" IsHidden="true" />
+          </Patch>
+        </Node>
+      </Canvas>
+      <!--
+
+    ************************ NonSerializedAttribute ************************
+
+-->
+      <Node Name="NonSerializedAttribute" Bounds="349,294" Id="IpzvLVAEdNpNVSUwceQESv">
+        <p:NodeReference>
+          <Choice Kind="ForwardDefinition" Name="Forward" />
+          <CategoryReference Kind="Category" Name="Primitive" />
+        </p:NodeReference>
+        <p:TypeAnnotation LastCategoryFullName="System" LastDependency="System.Runtime.dll">
+          <Choice Kind="TypeFlag" Name="NonSerializedAttribute" />
+        </p:TypeAnnotation>
+        <Patch Id="VxvnPSHu8mlLQg7kvJM78t">
+          <Canvas Id="SCDPZRBBsUWM9jPzNEaUmH" BordersChecked="false" CanvasType="Group" />
+          <ProcessDefinition Id="FdEoADhPhSzNqxrMbdK3s9" IsHidden="true" />
+        </Patch>
+      </Node>
+    </Canvas>
+    <!--
+
+    ************************ Application ************************
+
+-->
+    <Node Name="Application" Bounds="100,100" Id="LVS4A2154fZLiVwy5gdpt2">
+      <p:NodeReference>
+        <Choice Kind="ContainerDefinition" Name="Process" />
+        <CategoryReference Kind="Category" Name="Primitive" />
+      </p:NodeReference>
+      <Patch Id="BCy6c9oSSG2OTgSSv9nmMs">
+        <Canvas Id="TExrHhNkyXiOAPZDi34d21" CanvasType="Group" />
+        <Patch Id="GdSrUPbYLGQO7F4w7ONNzB" Name="Create" />
+        <Patch Id="LP5M93h1G7iQSEbDTMufnP" Name="Update" />
+        <ProcessDefinition Id="QfcjUNKXD7uQDC0Kb4a42k">
+          <Fragment Id="DWlMisBk5B1PpYrOpfmvVk" Patch="GdSrUPbYLGQO7F4w7ONNzB" Enabled="true" />
+          <Fragment Id="Kx1Q5fzN5NZQHpttYNr9my" Patch="LP5M93h1G7iQSEbDTMufnP" Enabled="true" />
+        </ProcessDefinition>
+      </Patch>
+    </Node>
+  </Patch>
+  <PlatformDependency Id="PJdphG5gv9wQPL1PuHvVN3" Location="VL.Core.dll" />
+  <PlatformDependency Id="O3DFDkfAlxfQbi2KOVkrTo" Location="System.ComponentModel.Primitives" />
+  <PlatformDependency Id="JATq6pdHrjkLX8iJjbuSzI" Location="System.Runtime" />
+</Document>

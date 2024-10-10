@@ -1,0 +1,14 @@
+[Category("Filter")]
+[Summary("Seb's work of art")]
+shader LerpToColor_TextureFX : FilterBase
+{
+    [Color]
+    float4 Color = float4(0, 0, 0, 1);
+
+    float Fader;
+
+    float4 Filter(float4 tex0col)
+    {
+        return lerp(tex0col,Color,Fader);
+    }
+};

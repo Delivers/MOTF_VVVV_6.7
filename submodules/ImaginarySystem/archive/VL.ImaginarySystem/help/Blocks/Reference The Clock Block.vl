@@ -1,0 +1,242 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document xmlns:p="property" xmlns:r="reflection" Id="NDqrTPBEd3xL8lMINVbLo3" LanguageVersion="2023.5.3-0071-g3913a69f4f" Version="0.128">
+  <NugetDependency Id="Kjnzbf5RuI7LH8thO4ucOi" Location="VL.CoreLib" Version="2023.5.3-0071-g3913a69f4f" />
+  <Patch Id="OOiEnSWDXVULwBJmW1QEHM">
+    <Canvas Id="GmEcW0WUm1aPPLPPkgdpdq" DefaultCategory="Main" CanvasType="FullCategory" />
+    <!--
+
+    ************************ Application ************************
+
+-->
+    <Node Name="Application" Bounds="100,100" Id="HTyXCMnc6aHLvR6F9ld9ft">
+      <p:NodeReference>
+        <Choice Kind="ContainerDefinition" Name="Process" />
+        <CategoryReference Kind="Category" Name="Primitive" />
+      </p:NodeReference>
+      <Patch Id="RsWAJY0kzAjPof8Xj82cM2">
+        <Canvas Id="Frf63Cyc08vMcTXTMfx011" CanvasType="Group">
+          <Node Bounds="106,505,165,19" Id="GRZNB5XkoboP6aHK5TUVHl">
+            <p:NodeReference LastCategoryFullName="ImaginarySystem.Blocks" LastDependency="VL.ImaginarySystem.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <CategoryReference Kind="Category" Name="ImaginarySystem" />
+              <CategoryReference Kind="Category" Name="Blocks" />
+              <Choice Kind="ProcessAppFlag" Name="Clock" />
+            </p:NodeReference>
+            <Pin Id="OoprwXhUAA9P3wdqkpIfLb" Name="Node Context" Kind="InputPin" IsHidden="true" />
+            <Pin Id="LYoJUCxquOwMiMmVEobh2U" Name="Input" Kind="InputPin" IsHidden="true" />
+            <Pin Id="A0FVAWMdLawL8k6rOHpmHK" Name="Framerate" Kind="InputPin" />
+            <Pin Id="Dq19GYmQRZRMII72anOW7l" Name="Play" Kind="ApplyPin" />
+            <Pin Id="CGxdOUeObxSPxeYQSvbvcZ" Name="Stop" Kind="ApplyPin" />
+            <Pin Id="A3tsn3ARQn4NiEsafdOKMS" Name="Reset" Kind="InputPin" />
+            <Pin Id="U5TGUYRdEAKOpsKFBZQmEN" Name="Is Incremental" Kind="InputPin" />
+            <Pin Id="LMwDXBPXpNiPDjwLClwAdm" Name="Loop" Kind="InputPin" />
+            <Pin Id="OGtRZPoz3O6OQj8wjav7oj" Name="Loop Start" Kind="InputPin" />
+            <Pin Id="DAwxSteNFaXMsWz9De5Npa" Name="Loop End" Kind="InputPin" />
+            <Pin Id="MmXx9cyHDMuMbN8xYNYPwx" Name="Speed" Kind="InputPin" />
+            <Pin Id="VeL4rGCQaqVQQNarWSvBkI" Name="Output" Kind="StateOutputPin" />
+            <Pin Id="KZXHoqLDTRMOzOz9Sq8oXK" Name="Seconds" Kind="OutputPin" />
+            <Pin Id="BTDKXNgyq6KOAvQctWFDJo" Name="Frame" Kind="OutputPin" />
+            <Pin Id="RREk7hIuMBmPiYvzpClRgU" Name="Fractional Part" Kind="OutputPin" IsHidden="true" />
+          </Node>
+          <Node Bounds="106,594,93,19" Id="CxiWVUnRhp0MFXvrVaWSPW">
+            <p:NodeReference LastCategoryFullName="ImaginarySystem.Core" LastDependency="VL.ImaginarySystem.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="ImaginarySystem" />
+            </p:NodeReference>
+            <Pin Id="DboKj3Gj1V5MoxjJVmMpnV" Name="Node Context" Kind="InputPin" IsHidden="true" />
+            <Pin Id="Niqg5N8jqusNBOE7sGby3S" Name="Input" Kind="InputPin" />
+            <Pin Id="Gf41stARDs9L4G1R0jmWGC" Name="Update" Kind="InputPin" />
+            <Pin Id="JXkyRTzJwb0N4ZOmkmI7lQ" Name="Imaginary System" Kind="OutputPin" />
+            <Pin Id="Se8UUV2A7GlOCNohTQzYKd" Name="Blocks" Kind="OutputPin" />
+          </Node>
+          <Node Bounds="106,549,39,19" Id="J7WkpcC36uPOqEEcz7YreY">
+            <p:NodeReference LastCategoryFullName="Collections.Spread" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <CategoryReference Kind="ClassType" Name="Spread" NeedsToBeDirectParent="true" />
+              <Choice Kind="OperationCallFlag" Name="Cons" />
+            </p:NodeReference>
+            <Pin Id="Efu5DpAWRjdQHf884T0WJJ" Name="Input" Kind="InputPin" />
+            <Pin Id="KkJO8eHclxEQXqRNYknCmh" Name="Result" Kind="OutputPin" />
+          </Node>
+          <Pad Id="L0fshrXXLGQO07ca0IeAce" Comment="Seconds" Bounds="188,567,35,15" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="G7Kli6dO1y9Mqu4g0bGRXT" Comment="Play" Bounds="128,417,35,15" ShowValueBox="true" isIOBox="true" Value="False">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
+              <CategoryReference Kind="Category" Name="Primitive" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="DPrneMCvcfvP2okGbMRXSL" Comment="Stop" Bounds="148,444,35,15" ShowValueBox="true" isIOBox="true" Value="False">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
+              <CategoryReference Kind="Category" Name="Primitive" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="PtAmTqm9M2NPXMc8xeXQmk" Comment="Frame" Bounds="268,544,35,15" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="DBQZDQRlmKePdPN16QGAfg" Comment="Reset" Bounds="168,467,35,15" ShowValueBox="true" isIOBox="true" Value="False">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
+              <CategoryReference Kind="Category" Name="Primitive" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="UezkrQmFEZuLcutuXktzfm" Bounds="86,148,107,29" ShowValueBox="true" isIOBox="true" Value="The Clock">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">14</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="A1iyFUVVYvjM73dSztEwN8" Bounds="87,192,686,101" ShowValueBox="true" isIOBox="true" Value="The Clock block is just a clock that counts up. You can customize its framerate, its speed, and set loop points. You can obviously retrieve its properties, such as Seconds, Frame, etc.&#xD;&#xA;&#xD;&#xA;Note that setting a Framerate will set the Mainloop's framerate! Also, it has a cool tooltip that shows you values at a glance.">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Node Bounds="425,458,44,26" Id="LeTTZpYRNvVNAZQAuykQir">
+            <p:NodeReference LastCategoryFullName="ImaginarySystem.Blocks.Clock" LastDependency="VL.ImaginarySystem.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <CategoryReference Kind="ClassType" Name="Clock" />
+              <Choice Kind="OperationCallFlag" Name="Frame" />
+            </p:NodeReference>
+            <Pin Id="AQyTEpso97rLB15hEVa3in" Name="Input" Kind="StateInputPin" />
+            <Pin Id="OOtoF0xaznHM1wZm5AnNiX" Name="Output" Kind="StateOutputPin" />
+            <Pin Id="KjEAvMifsuHNPCtvoQ84ge" Name="Frame" Kind="OutputPin" />
+            <Pin Id="AH1s5XwQg5bQC7TsbjjqyP" Name="Fractional Part" Kind="OutputPin" IsHidden="true" />
+          </Node>
+          <Pad Id="SiSmi1bPkjjPfbKUEKtHf9" Comment="Frame" Bounds="466,503,35,15" ShowValueBox="true" isIOBox="true" />
+          <Node Bounds="424,586,36,26" Id="SdfnLRmValUOPnQOMQJgvW">
+            <p:NodeReference LastCategoryFullName="ImaginarySystem.Blocks.Clock" LastDependency="VL.ImaginarySystem.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <CategoryReference Kind="ClassType" Name="Clock" />
+              <Choice Kind="OperationCallFlag" Name="Play" />
+            </p:NodeReference>
+            <Pin Id="B7wxJyEXs32OgQrmVt0uYJ" Name="Input" Kind="StateInputPin" />
+            <Pin Id="P7tekr3JfQdMg2KEblVBoC" Name="Output" Kind="StateOutputPin" />
+            <Pin Id="JN4F8f29BNFLNb0Y9XdBLt" Name="Apply" Kind="InputPin" />
+          </Node>
+          <Pad Id="EeFFIxYZ6umMnaPJgXflGz" Comment="&gt;" Bounds="457,555,35,15" ShowValueBox="true" isIOBox="true" Value="False">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
+              <CategoryReference Kind="Category" Name="Primitive" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Node Bounds="507,586,37,26" Id="FPaD4h7YnBdL3i8uIG7xZC">
+            <p:NodeReference LastCategoryFullName="ImaginarySystem.Blocks.Clock" LastDependency="VL.ImaginarySystem.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <CategoryReference Kind="ClassType" Name="Clock" />
+              <Choice Kind="OperationCallFlag" Name="Stop" />
+            </p:NodeReference>
+            <Pin Id="IYksYu1MjjWPEUmCJMVfHr" Name="Input" Kind="StateInputPin" />
+            <Pin Id="I0n2MkgzpbuOwdw1Xiv02U" Name="Output" Kind="StateOutputPin" />
+            <Pin Id="EJo9mMzZId2LmLqD3v3yKd" Name="Apply" Kind="InputPin" />
+          </Node>
+          <Pad Id="PZcMCvcbZmpMyPV3lp1wgg" Comment="||" Bounds="541,555,35,15" ShowValueBox="true" isIOBox="true" Value="False">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
+              <CategoryReference Kind="Category" Name="Primitive" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Overlay Id="INSBg6EiOjeL0v9oUbp74Q" Name="" Bounds="402,332,295,334">
+            <p:ColorIndex p:Type="Int32">10</p:ColorIndex>
+          </Overlay>
+          <Pad Id="U8ADuSZKnsFONtm6xlAojQ" Bounds="417,358,254,39" ShowValueBox="true" isIOBox="true" Value="The Clock exposes itself via the GetClock node.">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="QhE3uCmTeZ2NRtI80QbrMr" Bounds="483,466,158,19" ShowValueBox="true" isIOBox="true" Value="You can read its values...">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="Lfh7BNKX53RNqemMnAh9Qv" Bounds="416,642,198,19" ShowValueBox="true" isIOBox="true" Value="But also control it remotely!">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Node Bounds="576,586,41,26" Id="Qo2Vr0KeyQpQcmfs3RbhBu">
+            <p:NodeReference LastCategoryFullName="ImaginarySystem.Blocks.Clock" LastDependency="VL.ImaginarySystem.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <CategoryReference Kind="ClassType" Name="Clock" />
+              <Choice Kind="OperationCallFlag" Name="Reset" />
+            </p:NodeReference>
+            <Pin Id="RB3HDsTI90SMvOudBeQejq" Name="Input" Kind="StateInputPin" />
+            <Pin Id="KvPH7DfOkqoPfYb8xXtQK5" Name="Output" Kind="StateOutputPin" />
+            <Pin Id="VU7mSzftr1jLK77Gh7e0HJ" Name="Apply" Kind="InputPin" />
+          </Node>
+          <Pad Id="TPlf0Wi36NSP5kOaue9UPq" Comment="|&lt;&lt;" Bounds="614,555,35,15" ShowValueBox="true" isIOBox="true" Value="False">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
+              <CategoryReference Kind="Category" Name="Primitive" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Node Bounds="425,418,57,19" Id="RNbNSFZF1sEMaSTJGd8oyd">
+            <p:NodeReference LastCategoryFullName="ImaginarySystem.Blocks.Clock" LastDependency="VL.ImaginarySystem.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="GetClock" />
+            </p:NodeReference>
+            <Pin Id="TQck8YukGvQMZ0uanYLOZw" Name="Node Context" Kind="InputPin" IsHidden="true" />
+            <Pin Id="IFvnz51ObUBOSWyui6N8Vc" Name="Clock" Kind="OutputPin" />
+            <Pin Id="K1pCbyDGJnzNW2QB3bMyCa" Name="Found" Kind="OutputPin" />
+          </Node>
+        </Canvas>
+        <Patch Id="A3wOH4ZX8LdM2SHxz1h9TT" Name="Create" />
+        <Patch Id="LX7gZyogphoPFJW5p4bs2s" Name="Update" />
+        <ProcessDefinition Id="H6d6Q9NvmgwLZc0NhosoJt">
+          <Fragment Id="TLPDkQcr5rZMf7cIa55cRh" Patch="A3wOH4ZX8LdM2SHxz1h9TT" Enabled="true" />
+          <Fragment Id="E32jpbgGz2yMDfz5vQpooB" Patch="LX7gZyogphoPFJW5p4bs2s" Enabled="true" />
+        </ProcessDefinition>
+        <Link Id="QBor4nGCE22OVhCdsB7fKB" Ids="VeL4rGCQaqVQQNarWSvBkI,Efu5DpAWRjdQHf884T0WJJ" />
+        <Link Id="PKP7F91H9EjK9tE7qDezYc" Ids="KkJO8eHclxEQXqRNYknCmh,Niqg5N8jqusNBOE7sGby3S" />
+        <Link Id="Q5yfH8nkPEAMdvhrZBX9qR" Ids="KZXHoqLDTRMOzOz9Sq8oXK,L0fshrXXLGQO07ca0IeAce" />
+        <Link Id="NpuIwpcvRw5QLa8A6tp2k6" Ids="G7Kli6dO1y9Mqu4g0bGRXT,Dq19GYmQRZRMII72anOW7l" />
+        <Link Id="JxEqPAV4YbSQW8PhpTsdf8" Ids="DPrneMCvcfvP2okGbMRXSL,CGxdOUeObxSPxeYQSvbvcZ" />
+        <Link Id="E7uMVAJY1SMLvPIdivYSlM" Ids="BTDKXNgyq6KOAvQctWFDJo,PtAmTqm9M2NPXMc8xeXQmk" />
+        <Link Id="HpWYA7LwWt2O6QRCVnkC9H" Ids="DBQZDQRlmKePdPN16QGAfg,A3tsn3ARQn4NiEsafdOKMS" />
+        <Link Id="GKdDoXyuD1TLpYUsmYQhf9" Ids="KjEAvMifsuHNPCtvoQ84ge,SiSmi1bPkjjPfbKUEKtHf9" />
+        <Link Id="LXEuZnYpVFpMj7WfqyAygq" Ids="EeFFIxYZ6umMnaPJgXflGz,JN4F8f29BNFLNb0Y9XdBLt" />
+        <Link Id="MoXvzq6GD9GNEBeRmDJiVs" Ids="OOtoF0xaznHM1wZm5AnNiX,B7wxJyEXs32OgQrmVt0uYJ" />
+        <Link Id="Cj65GKulodpQMbQX8FMfN2" Ids="PZcMCvcbZmpMyPV3lp1wgg,EJo9mMzZId2LmLqD3v3yKd" />
+        <Link Id="TNFLEfKaXnENcvDd43HvM1" Ids="TPlf0Wi36NSP5kOaue9UPq,VU7mSzftr1jLK77Gh7e0HJ" />
+        <Link Id="KM3A1ltmWn8Lbgdb4T3Dcg" Ids="P7tekr3JfQdMg2KEblVBoC,IYksYu1MjjWPEUmCJMVfHr" />
+        <Link Id="P8tRxdq7mX2PCi5E3z1oq5" Ids="I0n2MkgzpbuOwdw1Xiv02U,RB3HDsTI90SMvOudBeQejq" />
+        <Link Id="SEKHdOP9CuaL83I3tvJbnq" Ids="IFvnz51ObUBOSWyui6N8Vc,AQyTEpso97rLB15hEVa3in" />
+      </Patch>
+    </Node>
+  </Patch>
+  <NugetDependency Id="PYhD5ine0i5OQgEbVbbomw" Location="VL.ImaginarySystem" Version="0.0.0" />
+</Document>

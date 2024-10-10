@@ -1,0 +1,65 @@
+shader FourCamToCylinder_TextureFX : FilterBase
+{
+
+	float2 rotate2d(float2 x,float a){a*=acos(-1)*2;return float2(cos(a)*x.x+sin(a)*x.y,cos(a)*x.y-sin(a)*x.x);}
+
+	// should make a full 360 version too!
+	float3 targetRay (float2 uv)
+	{
+		float3 rayDir = float3(0,0,1);
+		rayDir.yz = rotate2d(rayDir.yz,  .395 * -(uv.y-.5)*.5); // magic number a little fudged but seems ok
+		//rayDir.yz = rotate2d(rayDir.yz,  -(uv.y-.5)*.5);
+		rayDir.xz = rotate2d(rayDir.xz, -uv.x);
+		return rayDir;
+	}
+
+	// should make a full 360 version too!
+	float2 targetUV (float3 rayDir)
+	{
+		float2 uv = 0.;
+		uint faceIdx = 0;
+		float maxComponent = max(abs(rayDir.x), abs(rayDir.z));
+
+		if(rayDir.x == maxComponent)
+		{
+			faceIdx = 1;
+			uv = float2(-rayDir.z, -rayDir.y) / rayDir.x;
+		}
+		else if(-rayDir.x == maxComponent)
+		{
+			faceIdx = 3;
+			uv = float2(rayDir.z, -rayDir.y) / -rayDir.x;
+		}
+	   
+		else if(rayDir.z == maxComponent)
+		{
+			faceIdx = 0;
+			uv = float2(rayDir.x, -rayDir.y) / rayDir.z;
+		}
+		else if(-rayDir.z == maxComponent)
+		{
+			faceIdx = 2;
+			uv = float2(-rayDir.x, -rayDir.y) / -rayDir.z;
+		}
+		
+		uv = uv * float2(0.5f, 0.5f) + float2(0.5f, 0.5f);
+		uv.x *= .25;
+		uv.x += (float)faceIdx * .25;
+		//uv.x = 1. - uv.x;
+		return uv;
+	}
+
+	float4 Filter(float4 tex0col)
+	{
+		float2 uv = streams.TexCoord;
+
+		float3 rayDir = targetRay(uv);
+		float2 uv2 = targetUV(rayDir);
+
+		//uv2.y = uv.y;
+
+		float4 col = Texture0.SampleLevel(Sampler0, uv2, 0);
+		return col;
+	}
+};
+

@@ -1,0 +1,419 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document xmlns:p="property" xmlns:r="reflection" Id="ALvDjPsb91uNCujlb0RS75" LanguageVersion="2023.5.0" Version="0.128">
+  <NugetDependency Id="Ru2urbkthOoNVLBFiG3fTG" Location="VL.CoreLib" Version="2023.5.0" />
+  <Patch Id="JenRbh1cnQ2Mq3fW3kz56U">
+    <Canvas Id="UwBCEfNlcUzNG1tjm0FdIB" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory" />
+    <!--
+
+    ************************ Application ************************
+
+-->
+    <Node Name="Application" Bounds="100,100" Id="HDvMMCjk4GkPuHnLSfP3mo">
+      <p:NodeReference>
+        <Choice Kind="ContainerDefinition" Name="Process" />
+        <FullNameCategoryReference ID="Primitive" />
+      </p:NodeReference>
+      <Patch Id="SEQ9Jz5Fv0nMK0Frdz2kVR">
+        <Canvas Id="CDJGvlWX00aLFuRnCDMKMD" CanvasType="Group">
+          <Node Bounds="172,534,538,19" Id="EVH3yqGKfpJLZBnC1jd3qh">
+            <p:NodeReference LastCategoryFullName="HapPlayer" LastDependency="vl.happlayer.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="HapPlayer" />
+            </p:NodeReference>
+            <Pin Id="Oaf0bwZwWhpN3rAXWqVVb1" Name="Path" Kind="InputPin" />
+            <Pin Id="VcnYJHvz7jlPF0pc5wqU1j" Name="Enable Audio" Kind="InputPin" />
+            <Pin Id="P2m2fNjD9IyLZSf0IsoLz9" Name="Open" Kind="InputPin" />
+            <Pin Id="L0Zl66G1WevN5tEPeiD50K" Name="Play" Kind="InputPin" />
+            <Pin Id="VkimO2eLGYeNQO3t3BZkbX" Name="Loop" Kind="InputPin" />
+            <Pin Id="MVyRKf15mUwLjBXaa7aCDo" Name="LoopStart" Kind="InputPin" />
+            <Pin Id="UesYYTF0xNKQAvVCbuzqxK" Name="LoopEnd" Kind="InputPin" />
+            <Pin Id="PGtmX8KOuhiO5TW73QOWHB" Name="DoSeek" Kind="InputPin" />
+            <Pin Id="DpavwXg338DN9GMgIo7BEA" Name="SeekfFrame" Kind="InputPin" DefaultValue="10">
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+                <Choice Kind="TypeFlag" Name="Integer32" />
+              </p:TypeAnnotation>
+            </Pin>
+            <Pin Id="RIdR3u4YD1pNBLOsL6s8ce" Name="PreviousFrame" Kind="InputPin" />
+            <Pin Id="AqMnKMJzx19OYAL947Ghoy" Name="NextFrame" Kind="InputPin" />
+            <Pin Id="U7zG47FYRYJL8517ioEJXr" Name="Close" Kind="InputPin" />
+            <Pin Id="LRyrx0gAVTaQVtnqxwT9b8" Name="Speed" Kind="InputPin" />
+            <Pin Id="AxP3Sqb6RJ7NjxLMzDL5AX" Name="Enable Framedrop" Kind="InputPin" />
+            <Pin Id="EGmUwZ9ZSZFNvPDMysoVg1" Name="Output" Kind="OutputPin" />
+            <Pin Id="AtU80qJhPwmOL9NTRbBkKG" Name="VideoFrame" Kind="OutputPin" />
+            <Pin Id="SBlAXih3h9kPAaPWUOqpBN" Name="Audio Signal" Kind="OutputPin" />
+            <Pin Id="SVfM1nbuVaLMnPGyoBHsTL" Name="Path" Kind="OutputPin" />
+            <Pin Id="VrhGaDskTqMQCML3Hg4ijn" Name="Opened" Kind="OutputPin" />
+            <Pin Id="Hgy65krQiLrOoBniEC8ryP" Name="Duration" Kind="OutputPin" />
+            <Pin Id="GnUVuzbl0aAOr1K6WyjVAh" Name="Frame Count" Kind="OutputPin" />
+            <Pin Id="MtE3yx7ztCnLEBh1JO8wew" Name="Framerate" Kind="OutputPin" />
+            <Pin Id="HsUpoA9d75mQcqtF5bckog" Name="Current Position" Kind="OutputPin" />
+            <Pin Id="MVeRjIEZKBwP66U1OuAOHK" Name="Current Frame" Kind="OutputPin" />
+            <Pin Id="Inh0l5rd1OuPRhrA9OGhSl" Name="Size" Kind="OutputPin" />
+            <Pin Id="JX0ZTZ31qC8L5T8gNsJRO7" Name="Playing" Kind="OutputPin" />
+            <Pin Id="BX3TvKGlnrHP9nUebiA04e" Name="State String" Kind="OutputPin" />
+          </Node>
+          <Pad Id="BRLGiWns3bWOzQx0rA9Kih" Comment="Open" Bounds="253,140,35,35" ShowValueBox="true" isIOBox="true" Value="False">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="Boolean" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="D14QjpNoA2KO0UGAsJoqfD" Comment="Path" Bounds="318,922,281,15" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="BIgiDaoFvfqNGmccy1sRuy" Comment="Path" Bounds="174,61,398,15" ShowValueBox="true" isIOBox="true" Value="">
+            <p:TypeAnnotation LastCategoryFullName="IO" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="Path" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="VHAcoUqWkumNFyfGusnaF1" Comment="Opened" Bounds="368,852,35,35" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="RV0jEKD9V3WL0ThDYi3iIF" Comment="Duration" Bounds="418,819,49,15" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="KPcsVYXypCFNTtfdIE7ayN" Comment="Playing" Bounds="707,585,35,35" ShowValueBox="true" isIOBox="true" />
+          <Node Bounds="194,1045,145,19" Id="RPafcghXDFxNMNkItNPUA7">
+            <p:NodeReference LastCategoryFullName="Stride.Rendering" LastDependency="VL.Stride.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="FullscreenQuadRenderer" />
+            </p:NodeReference>
+            <Pin Id="VnFlr9NJmSlO72eFI9VxTx" Name="Transformation" Kind="InputPin" />
+            <Pin Id="AEVjGR5XeMqPVmm89zqSk4" Name="Texture" Kind="InputPin" />
+            <Pin Id="R4d8TECTWRLOWkSLzIWw9g" Name="Sampler" Kind="InputPin" />
+            <Pin Id="EJEZQaJZDJAMfqIWASXGKP" Name="Sample Mode" Kind="InputPin" />
+            <Pin Id="EqYKRDelCCkPo7aoJhszoa" Name="Blend State" Kind="InputPin" />
+            <Pin Id="Jfh0KrIh29TNRpVsHQkww0" Name="Color" Kind="InputPin" DefaultValue="1, 1, 1, 1">
+              <p:TypeAnnotation LastCategoryFullName="Color" LastDependency="VL.CoreLib.vl">
+                <Choice Kind="TypeFlag" Name="RGBA" />
+              </p:TypeAnnotation>
+            </Pin>
+            <Pin Id="S6fhDLM4gYWQVDi5VB4XMw" Name="Rasterizer State" Kind="InputPin" />
+            <Pin Id="QEcbGvAH6evPtyYQi6F3Wx" Name="Depth Stencil State" Kind="InputPin" />
+            <Pin Id="TEMjZYjSZfILI6XhCOUUMz" Name="Output" Kind="OutputPin" />
+          </Node>
+          <Node Bounds="172,1116,185,19" Id="RtvftpkQi7XLJtmdBrMyvv">
+            <p:NodeReference LastCategoryFullName="Stride" LastDependency="VL.Stride.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="RenderWindow" />
+            </p:NodeReference>
+            <Pin Id="NVASRv9zN7wPUpJUDSPL1b" Name="Bounds" Kind="InputPin" DefaultValue="828.8, 32, 704, 409.6">
+              <p:TypeAnnotation LastCategoryFullName="2D" LastDependency="VL.CoreLib.vl">
+                <Choice Kind="TypeFlag" Name="Rectangle" />
+              </p:TypeAnnotation>
+            </Pin>
+            <Pin Id="DcBuwT1rPWiMI6VYKI4Uoa" Name="Input" Kind="InputPin" />
+            <Pin Id="ReSlS3EqojbPu18YA5NLVd" Name="Render View" Kind="InputPin" />
+            <Pin Id="Ee0VNDTFvpuOEO1dEl4pbK" Name="Title" Kind="InputPin" />
+            <Pin Id="SOCiMMrH3rCPZfNYCPEG7O" Name="Clear Color" Kind="InputPin" DefaultValue="0, 0, 0, 1">
+              <p:TypeAnnotation LastCategoryFullName="Color" LastDependency="VL.CoreLib.vl">
+                <Choice Kind="TypeFlag" Name="RGBA" />
+              </p:TypeAnnotation>
+            </Pin>
+            <Pin Id="VDEzhQkoQiPQLKCml9yUVc" Name="Clear" Kind="InputPin" />
+            <Pin Id="V6JeDCB0UUzNJCdELeKRk0" Name="Edit Mode" Kind="InputPin" />
+            <Pin Id="IYVFhos0C7TOR6pPHyvxQ3" Name="Enable Keyboard Shortcuts" Kind="InputPin" />
+            <Pin Id="JRW15ToJ1okLpIXdwbrC5e" Name="Enabled" Kind="InputPin" />
+            <Pin Id="FRGfN02GHXkMgV6Z5xjHia" Name="Present Interval" Kind="InputPin" />
+            <Pin Id="NMrayogx2evOuYph0y4lTZ" Name="Output" Kind="OutputPin" />
+            <Pin Id="VvRSCBBT1bWP51mKkWlnzf" Name="Client Bounds" Kind="OutputPin" />
+            <Pin Id="KsNs49h2lYoNlDRh1Y2ZXR" Name="Input Source" Kind="OutputPin" />
+            <Pin Id="HwfYKabf1GHPdUpaFZqRBw" Name="Back Buffer" Kind="OutputPin" />
+            <Pin Id="AwuVfDtkJ0BPqDe6cAjAK2" Name="Depth Buffer" Kind="OutputPin" />
+          </Node>
+          <Pad Id="BNrRaLzHBn6OklslMuzFSf" Comment="Current Frame" Bounds="611,667,39,15" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="HOnzHeey830ObbVUHwku6e" Comment="Close" Bounds="624,376,35,35" ShowValueBox="true" isIOBox="true" Value="False">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="Boolean" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="R5kTCi70FaZMNd5yS6ljdK" Comment="Play" Bounds="295,178,41,34" ShowValueBox="true" isIOBox="true" Value="False">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="Boolean" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="EPOXFKlpstoOUKBNOrW4mG" Comment="DoSeek" Bounds="462,208,35,35" ShowValueBox="true" isIOBox="true" Value="False">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="Boolean" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="HpxH5MXsKw1PkiGfbQEZRZ" Comment="Size" Bounds="658,627,47,28" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="KAZxSWX83OyMuiFlsyKwpR" Comment="SeekfFrame" Bounds="505,248,35,15" ShowValueBox="true" isIOBox="true" Value="0">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="Integer32" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="Ok8C3atocPiLi6vnS3Tos1" Comment="Next Frame" Bounds="585,333,35,35" ShowValueBox="true" isIOBox="true" Value="False">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="Boolean" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="JR84fkRWYRwOxxPh3w6QHd" Comment="Previos Frame" Bounds="542,295,35,35" ShowValueBox="true" isIOBox="true" Value="False">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="Boolean" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="L8kB2EjOw22PiB8qxyFq63" Comment="Frame Count" Bounds="466,786,35,15" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="VF7BEd0EMZQOftvvRMTv3r" Comment="Framerate" Bounds="512,751,35,15" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="C7Wb75tvzg8MHKKiYjmrXs" Comment="Current Position" Bounds="561,706,35,15" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="DwNFkhmZRpaP0mvpAiqqzu" Comment="Audio Signal" Bounds="269,966,125,62" ShowValueBox="true" isIOBox="true">
+            <p:Value />
+          </Pad>
+          <Pad Id="RdTOqEJqqWMOODf0a6z2lb" Comment="Speed" Bounds="665,440,39,15" ShowValueBox="true" isIOBox="true" Value="1">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="Float32" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="K3RZJQZju29NNRH32HDyLi" Comment="Enable Audio" Bounds="215,92,35,35" ShowValueBox="true" isIOBox="true" Value="False">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="Boolean" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Toggle</p:buttonmode>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="S98dg6wsyTBOab2Cp1BLn2" Bounds="546,195,247,42" ShowValueBox="true" isIOBox="true" Value="DoSeek is triggered automatically when Seek Frame parameter is changed.">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="D6lvvWHXLL2PuJUgd68GOv" Bounds="177,31,114,19" ShowValueBox="true" isIOBox="true" Value="1. Give it a video.">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="UkwIaMZx9mRP16NToQrmvG" Bounds="332,136,120,19" ShowValueBox="true" isIOBox="true" Value="2. Open the video.">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="ParyKwQvPAEP0XCbOcrKXe" Bounds="369,169,85,77" ShowValueBox="true" isIOBox="true" Value="3. Don't use Play for frame based playback">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="AJE21hW0Nh1QWifMhfkp5C" Comment="Loop" Bounds="340,274,35,35" ShowValueBox="true" isIOBox="true" Value="True">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="Boolean" />
+              <FullNameCategoryReference ID="Primitive" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Toggle</p:buttonmode>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="VqEXQclGKIPMwZWKamZOKV" Comment="LoopStart" Bounds="379,404,35,15" ShowValueBox="true" isIOBox="true" Value="-1">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="Integer32" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="LJ9weR6mSdvMWLzYwCu5EY" Comment="LoopEnd" Bounds="419,434,35,15" ShowValueBox="true" isIOBox="true" Value="-1">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="Integer32" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="T7lQBvOu9CBQF5BYgj6xB9" Bounds="360,321,139,75" ShowValueBox="true" isIOBox="true" Value="When loop start and end frame == -1, it will loop the whole video.">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="V2ON0kW01LJN47i7kQGKrw" Comment="" Bounds="5,575,149,132" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="Bw5Gref5mKcOlS2mg3ARfv" Bounds="2,716,161,200" ShowValueBox="true" isIOBox="true" Value="For more advanced scenarios you can use StateOutput and trigger individual operations (set different parameters) down stream. Just be sure you are not using those operations on HapPlayer node.">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Node Bounds="1045,941,33,49" Id="DXOjEiRGVPzNNzakiyaaMK">
+            <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
+              <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
+              <Choice Kind="ApplicationStatefulRegion" Name="If" />
+              <CategoryReference Kind="Category" Name="Primitive" />
+            </p:NodeReference>
+            <Pin Id="OJGCCD8LEbrO25YoiSEUHQ" Name="Condition" Kind="InputPin" />
+            <Patch Id="GE5aoG9COY9PyKmwmxD5te" ManuallySortedPins="true">
+              <Patch Id="I8DTte8wLULNk49awQfKLu" Name="Create" ManuallySortedPins="true" />
+              <Patch Id="GyM8dxpMCYhNkjOz1nbJXO" Name="Then" ManuallySortedPins="true" />
+            </Patch>
+            <ControlPoint Id="BM8Ju73ZhrTMpVcoLd4URs" Bounds="1061,947" Alignment="Top" />
+            <ControlPoint Id="IHs3icrxfhgOWCGOwj2Tua" Bounds="1059,984" Alignment="Bottom" />
+          </Node>
+          <Pad Id="CqNdppL0UVxO5Cj9Ye5Yxl" SlotId="ECT3uMlDmxhMmi6rK0ZonZ" Bounds="1058,1016" />
+          <Pad Id="PVefoZXGIncPDuGMAK2DTn" SlotId="ECT3uMlDmxhMmi6rK0ZonZ" Bounds="1082,901" />
+          <Pad Id="RgaTIBMvQFvMU0DyZK1VQb" Comment="" Bounds="1123,950,35,15" ShowValueBox="true" isIOBox="true" Value="151">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="Integer32" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="S8o2GiOBg8uLR0S5EJX4NW" Comment="Do Seek" Bounds="968,859,35,35" ShowValueBox="true" isIOBox="true" Value="False">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="Boolean" />
+              <FullNameCategoryReference ID="Primitive" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Node Bounds="872,1057,245,19" Id="J1HPypR6VP0QZMfrh6QKwP">
+            <p:NodeReference LastCategoryFullName="HapPlayer" LastDependency="vl.happlayer.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="HapPlayer" />
+            </p:NodeReference>
+            <Pin Id="OX3rM1rCaN1OXGtM2jgc3a" Name="Path" Kind="InputPin" />
+            <Pin Id="Onjva7rlljYPUmL4meWAeL" Name="Open" Kind="ApplyPin" />
+            <Pin Id="EGaHIRrxSi8M4bZNADwvPQ" Name="Play" Kind="InputPin" />
+            <Pin Id="DwyQkV0ZftGNtqvOoQEMh8" Name="DoSeek" Kind="InputPin" />
+            <Pin Id="GSeIMCFdaj7NVtxrPbmx1c" Name="SeekfFrame" Kind="InputPin" />
+            <Pin Id="EbOlfptfHyULFeajgYDSVx" Name="PreviousFrame" Kind="InputPin" />
+            <Pin Id="D16wZkWKkURLEzhSiNuemn" Name="NextFrame" Kind="ApplyPin" />
+            <Pin Id="L4CXdwcCjiLMu04zOt5rU7" Name="Close" Kind="ApplyPin" />
+            <Pin Id="QkdVlTfWZBIP0diGpa9z1F" Name="Output" Kind="StateOutputPin" />
+            <Pin Id="S3B3Ml2mAmINFFe6WkC5fX" Name="VideoFrame" Kind="OutputPin" />
+            <Pin Id="PmvBVRvtyFjNSSU3zNT5Gh" Name="Audio Signal" Kind="OutputPin" />
+            <Pin Id="LoNd2CBfctaNETtsrbmpqa" Name="Path" Kind="OutputPin" />
+            <Pin Id="RHVece9KI7lOJcjJPXALo0" Name="Opened" Kind="OutputPin" />
+            <Pin Id="KgG3Bs2DXzRPhGIICV8lim" Name="Duration" Kind="OutputPin" />
+            <Pin Id="Tszx6lZEuwbNghTtCqeAhF" Name="Frame Count" Kind="OutputPin" />
+            <Pin Id="NAHochmUFrkNrZXSLjeWCE" Name="Framerate" Kind="OutputPin" />
+            <Pin Id="GAhTTBD7Oz7Pac6tr4enDt" Name="Current Position" Kind="OutputPin" />
+            <Pin Id="CXB2gbhAiMtLemnuPydcek" Name="Current Frame" Kind="OutputPin" />
+            <Pin Id="Lb1egxc7gAFL3Sf2812jV6" Name="Size" Kind="OutputPin" />
+            <Pin Id="NzSxwQUQNw6MfbZ3xHjvJI" Name="Playing" Kind="OutputPin" />
+            <Pin Id="My7ZP4eRAf0NZ9TpJHdcWw" Name="State String" Kind="OutputPin" />
+          </Node>
+          <Pad Id="L5HeTa7z5snNELMex79VhR" Bounds="772,839,169,187" ShowValueBox="true" isIOBox="true" Value="I find it useful to have Do Seek automatically triggered when Seek Frame have changed. But in case you need some other behavior, you can manage it on your application side. E.g.:">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="FSxyEwFlzmaNYPrIPSeK99" Bounds="398,981,254,52" ShowValueBox="true" isIOBox="true" Value="Connect VL.Audio's &#xD;&#xA;AudioOut here, and create DriverSettings node to configure the audio device">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="FG4aOlbfqxqLnfYpnSJZj7" Bounds="549,130,322,59" ShowValueBox="true" isIOBox="true" Value="ADVANCED version: seeking is highly optimized (use fast SSD). You can use any clock source to drive the playback (just set the current frame index)">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="BFta5jxIUypMahuUv04w4J" Bounds="668,459,246,76" ShowValueBox="true" isIOBox="true" Value="ADVANCED version: don't forget to set the playback speed hint to -1, in case if you advance the frame indices in the reverse direction">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="AsYJ6E2aZkfLGicnbCNcDb" Bounds="323,84,349,47" ShowValueBox="true" isIOBox="true" Value="ADVANCED version: audio stream needs to be played separately (from a file) when using frame-based playback">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="EHeaJJcBFy8M4PYPzTjJja" Bounds="773,684,293,123" ShowValueBox="true" isIOBox="true" Value="Memory usage notice:&#xD;&#xA;by default each video will use 100Mb of RAM + 100Mb of GPU memory for frames preloading at max. To change those limits, right click on HapPlayer -&gt; Configure -&gt; Show CPU memory limit / Show GPU memory limit">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+        </Canvas>
+        <Patch Id="Gc3QK2z22I4MlsQ89nT2OA" Name="Create" />
+        <Patch Id="Nn6i4bZaM8zNMV7DfjSKYt" Name="Update" />
+        <ProcessDefinition Id="FpUE7Phb5aBNbNbCWXfWOq">
+          <Fragment Id="JDuW1ckC9vALj9ROyeqsVX" Patch="Gc3QK2z22I4MlsQ89nT2OA" Enabled="true" />
+          <Fragment Id="KnujIX6pya8NCbkI0cqdAi" Patch="Nn6i4bZaM8zNMV7DfjSKYt" Enabled="true" />
+        </ProcessDefinition>
+        <Link Id="Hs9W8Ku7YErOfj6atyOwI6" Ids="BRLGiWns3bWOzQx0rA9Kih,P2m2fNjD9IyLZSf0IsoLz9" />
+        <Link Id="FvMfFF3NZkKPJixrP4K6Pq" Ids="SVfM1nbuVaLMnPGyoBHsTL,D14QjpNoA2KO0UGAsJoqfD" />
+        <Link Id="AMeXVvDkxz2OCsz1kwTHFK" Ids="BIgiDaoFvfqNGmccy1sRuy,Oaf0bwZwWhpN3rAXWqVVb1" />
+        <Link Id="KKUXafGkzyHO143PDGcTeo" Ids="VrhGaDskTqMQCML3Hg4ijn,VHAcoUqWkumNFyfGusnaF1" />
+        <Link Id="T78xHXNwGKPLZEeq67MNJY" Ids="Hgy65krQiLrOoBniEC8ryP,RV0jEKD9V3WL0ThDYi3iIF" />
+        <Link Id="FPmGrwLZpYwNZ0maL8rGY2" Ids="JX0ZTZ31qC8L5T8gNsJRO7,KPcsVYXypCFNTtfdIE7ayN" />
+        <Link Id="OJBTndIWTfHNGYAnF4DKI5" Ids="TEMjZYjSZfILI6XhCOUUMz,DcBuwT1rPWiMI6VYKI4Uoa" />
+        <Link Id="QWWWVz2KYIMNrJsSTwMFrY" Ids="MVeRjIEZKBwP66U1OuAOHK,BNrRaLzHBn6OklslMuzFSf" />
+        <Link Id="BP4BeEsqEBPNMnKcDxOJ4j" Ids="HOnzHeey830ObbVUHwku6e,U7zG47FYRYJL8517ioEJXr" />
+        <Link Id="Lz4yWmJvk9eOsFoaHbYEVr" Ids="AtU80qJhPwmOL9NTRbBkKG,AEVjGR5XeMqPVmm89zqSk4" />
+        <Link Id="FotGmV7Q8RmNF9oA5rGR5g" Ids="R5kTCi70FaZMNd5yS6ljdK,L0Zl66G1WevN5tEPeiD50K" />
+        <Link Id="Fp17O7RHQKnQH4gMFW2bZ5" Ids="Inh0l5rd1OuPRhrA9OGhSl,HpxH5MXsKw1PkiGfbQEZRZ" />
+        <Link Id="VQGYt0329DUNVfE6dhD1U9" Ids="Ok8C3atocPiLi6vnS3Tos1,AqMnKMJzx19OYAL947Ghoy" />
+        <Link Id="FnHmGNI8i6yLVHX6uwnNL3" Ids="GnUVuzbl0aAOr1K6WyjVAh,L8kB2EjOw22PiB8qxyFq63" />
+        <Link Id="S3Te5NGb0aDOsfyErMWYRA" Ids="MtE3yx7ztCnLEBh1JO8wew,VF7BEd0EMZQOftvvRMTv3r" />
+        <Link Id="S061gTrvvE0OxiEfUTdn1T" Ids="HsUpoA9d75mQcqtF5bckog,C7Wb75tvzg8MHKKiYjmrXs" />
+        <Link Id="ILGEymYSXqPMDKD9fJZUdB" Ids="SBlAXih3h9kPAaPWUOqpBN,DwNFkhmZRpaP0mvpAiqqzu" />
+        <Link Id="LkNoWCma5XEOD5ieg2u3uG" Ids="RdTOqEJqqWMOODf0a6z2lb,LRyrx0gAVTaQVtnqxwT9b8" />
+        <Link Id="QPaCsIW1oDyOQPx9j9XxHJ" Ids="K3RZJQZju29NNRH32HDyLi,VcnYJHvz7jlPF0pc5wqU1j" />
+        <Link Id="HJ7uvsy76DbPSE6yXGMXif" Ids="AJE21hW0Nh1QWifMhfkp5C,VkimO2eLGYeNQO3t3BZkbX" />
+        <Link Id="CYsqrIXnc1FMULw6rvaqd2" Ids="VqEXQclGKIPMwZWKamZOKV,MVyRKf15mUwLjBXaa7aCDo" />
+        <Link Id="IMJuHDzxqz3LNDrZb8B55R" Ids="LJ9weR6mSdvMWLzYwCu5EY,UesYYTF0xNKQAvVCbuzqxK" />
+        <Link Id="BeRQHYSXWgGODn9WpzS2l5" Ids="EGmUwZ9ZSZFNvPDMysoVg1,V2ON0kW01LJN47i7kQGKrw" />
+        <Slot Id="ECT3uMlDmxhMmi6rK0ZonZ" Name="SeekFrame">
+          <p:TypeAnnotation p:Type="TypeReference">
+            <Choice Kind="TypeFlag" Name="Integer32" />
+          </p:TypeAnnotation>
+        </Slot>
+        <Link Id="MYxmqEELk09ODMixeasCbg" Ids="BM8Ju73ZhrTMpVcoLd4URs,IHs3icrxfhgOWCGOwj2Tua" IsFeedback="true" />
+        <Link Id="HqVulJuqY6sL28ZMsobhwq" Ids="PVefoZXGIncPDuGMAK2DTn,BM8Ju73ZhrTMpVcoLd4URs" />
+        <Link Id="QtMeEiVrW2gNnmdplkdnCF" Ids="IHs3icrxfhgOWCGOwj2Tua,CqNdppL0UVxO5Cj9Ye5Yxl" />
+        <Link Id="Tfa7HHR3kxkMT4GQdd2n8V" Ids="RgaTIBMvQFvMU0DyZK1VQb,IHs3icrxfhgOWCGOwj2Tua" />
+        <Link Id="RjeIewgHP4tQA7KBa2FIZJ" Ids="S8o2GiOBg8uLR0S5EJX4NW,OJGCCD8LEbrO25YoiSEUHQ" />
+        <Link Id="LVhPiVZxpNWNLK4VWhC6MC" Ids="CqNdppL0UVxO5Cj9Ye5Yxl,GSeIMCFdaj7NVtxrPbmx1c" />
+        <Link Id="L1BpSWP4u6YOz7M5qU0GWZ" Ids="S8o2GiOBg8uLR0S5EJX4NW,DwyQkV0ZftGNtqvOoQEMh8" />
+        <Link Id="F6TE5nXUpeoLvTS0Abo5Gz" Ids="KAZxSWX83OyMuiFlsyKwpR,DpavwXg338DN9GMgIo7BEA" />
+        <Link Id="OukNpUT1MaALynCFPl86tj" Ids="EPOXFKlpstoOUKBNOrW4mG,PGtmX8KOuhiO5TW73QOWHB" />
+        <Link Id="PelzD0GDqv9LaE3kYr5lo4" Ids="JR84fkRWYRwOxxPh3w6QHd,RIdR3u4YD1pNBLOsL6s8ce" />
+      </Patch>
+    </Node>
+  </Patch>
+  <NugetDependency Id="ME39bq8ZNljMM8SUegipst" Location="VL.Stride" Version="2023.5.0" />
+  <DocumentDependency Id="AShvqA34kISPpkdEVgFlpg" Location="../vl.happlayer.vl" />
+  <NugetDependency Id="P9gZHKGjsmhLtg7ac6PM2q" Location="VL.Audio" Version="1.2.0" />
+</Document>

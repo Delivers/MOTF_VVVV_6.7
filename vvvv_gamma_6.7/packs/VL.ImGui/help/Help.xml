@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<Pack>
+    <Topic title="Basics">
+        <UriItem title="Reference Original Library" link="https://github.com/ocornut/imgui" mediaType="text"/>
+    </Topic>
+    <Topic title="Widgets"/>
+        <VLDocument link="Widgets\HowTo Combo Box with GetSlice.vl" tags="dropdown" />
+		<VLDocument link="Widgets\HowTo Combo Box.vl" tags="dropdown" />
+    <Topic title="Styling"/>
+    <Topic title="Commands"/>
+    <Topic title="Queries"/>
+    <Topic title="Channels &amp; Binding"/>
+    <Topic title="Primitives"/>
+</Pack>

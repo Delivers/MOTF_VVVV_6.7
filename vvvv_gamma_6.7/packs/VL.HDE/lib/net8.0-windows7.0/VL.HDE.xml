@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>VL.HDE</name>
+    </assembly>
+    <members>
+        <member name="P:VL.HDE.API.VersionString">
+            <summary>
+            The full version string. e.g. "2019.1.0" or "2019.1.0-0063-g2b0be431ff" for preview
+            </summary>
+        </member>
+        <member name="P:VL.HDE.API.IsPreview">
+            <summary>
+            If set the user document root folder will be suffixed with "-preview".
+            </summary>
+        </member>
+        <member name="P:VL.HDE.API.IsStandalone">
+            <summary>
+            Gets a value indicating whether this instance is vvvv gamma standalone.
+            </summary>
+        </member>
+        <member name="P:VL.HDE.API.NewVersionUrl">
+            <summary>
+            Empty if there is no newer version available, otherwise link to release page
+            </summary>
+        </member>
+        <member name="M:VL.HDE.API.ShowTooltip(System.Windows.Forms.Form,Stride.Core.Mathematics.Vector2,System.Object)">
+            <summary>
+            Let's take the standard route via ILiveElementViewer, which takes care of the update rate and exception handling and tooltip scaling
+            </summary>
+            <param name="element">typically of type ILiveElement, ITooltipInfo, TooltipWrapper</param>
+        </member>
+        <member name="M:VL.HDE.API.ShowTooltip(System.Windows.Forms.Form,Stride.Core.Mathematics.Vector2,VL.Skia.ILayer,Stride.Core.Mathematics.Vector2)">
+            <summary>
+            Show the tooltip without ILiveElementViewer indirection. Tooltip scaling is taken care of
+            </summary>
+        </member>
+        <member name="F:VL.HDE.SkiaWindow.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:VL.HDE.SkiaWindow.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:VL.HDE.SkiaWindow.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+    </members>
+</doc>

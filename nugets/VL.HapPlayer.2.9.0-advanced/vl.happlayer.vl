@@ -1,0 +1,1126 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document xmlns:p="property" xmlns:r="reflection" Id="JoCyKoxMbfsODRld0cvKTF" LanguageVersion="2023.5.0" Version="0.128">
+  <NugetDependency Id="QUnqySI0IUvQUzHU44T26d" Location="VL.CoreLib" Version="2023.5.0" />
+  <Patch Id="CnvyzRQBzL5NHAVLPessrP">
+    <Canvas Id="FQutt7SUJiINETq0xjUG8I" DefaultCategory="HapPlayer" CanvasType="FullCategory">
+      <!--
+
+    ************************ HapPlayer ************************
+
+-->
+      <Node Name="HapPlayer" Category="HapPlayer" Bounds="321,159" Id="QcK1ZBOEELoM7DmZcrWLwk">
+        <p:NodeReference>
+          <Choice Kind="ClassDefinition" Name="Class" />
+          <FullNameCategoryReference ID="Primitive" />
+        </p:NodeReference>
+        <Patch Id="Nf6D8pXKxY5PvOki02jwub">
+          <Canvas Id="QUB47doBM73NX0vZHZYyPV" CanvasType="Group">
+            <Node Bounds="281,139,52,26" Id="N3b0DpPpOTqQOJgj6tuXpD">
+              <p:NodeReference LastCategoryFullName="VL.HapPlayer.HapPlayer" LastDependency="VL.HapPlayer.dll">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <CategoryReference Kind="AssemblyCategory" Name="HapPlayer" />
+                <CategoryReference Kind="AssemblyCategory" Name="HapPlayer" />
+                <Choice Kind="OperationCallFlag" Name="Create" />
+                <CategoryReference Kind="AssemblyCategory" Name="HapPlayer" NeedsToBeDirectParent="true">
+                  <p:OuterCategoryReference Kind="AssemblyCategory" Name="HapPlayer" NeedsToBeDirectParent="true" />
+                </CategoryReference>
+              </p:NodeReference>
+              <Pin Id="U3cbV0ax0uBOUN9Glfg3F2" Name="Node Context" Kind="InputPin" />
+              <Pin Id="OXXNovOe51CP9wXtnhOH1h" Name="Output" Kind="StateOutputPin" />
+            </Node>
+            <Pad Id="C9s7cWcn0yUPKWfRPQAs1J" SlotId="NaOQ5jwSNDNQCXNDF3bnl0" Bounds="282,222" />
+            <Node Bounds="961,739,52,26" Id="Njm290aSf96Lyq6FRaCniH">
+              <p:NodeReference LastCategoryFullName="VL.HapPlayer.HapPlayer" LastDependency="VL.HapPlayer.dll">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <CategoryReference Kind="AssemblyCategory" Name="HapPlayer" />
+                <Choice Kind="OperationCallFlag" Name="Opened" />
+              </p:NodeReference>
+              <Pin Id="Ra0eMwfWO5EMsaHd0Pw8lX" Name="Input" Kind="StateInputPin" />
+              <Pin Id="JRobLFUyR4rMyIENcBeXSy" Name="Output" Kind="StateOutputPin" />
+              <Pin Id="Lpj0BdZSUFjQQEuPrOcGWQ" Name="Opened" Kind="OutputPin" />
+            </Node>
+            <ControlPoint Id="T3EYFvcaDk0LE28US95LuE" Bounds="502,125" />
+            <Node Bounds="850,739,52,26" Id="Fki3JtgMGWiMj8Ri3iOYOO">
+              <p:NodeReference LastCategoryFullName="VL.HapPlayer.HapPlayer" LastDependency="VL.HapPlayer.dll">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <CategoryReference Kind="AssemblyCategory" Name="HapPlayer" />
+                <Choice Kind="OperationCallFlag" Name="Path" />
+              </p:NodeReference>
+              <Pin Id="SwmFtqJTnNIMkfCEqXhw8t" Name="Input" Kind="StateInputPin" />
+              <Pin Id="OfRwDlWTVIaLy0XHjsVdjW" Name="Output" Kind="StateOutputPin" />
+              <Pin Id="RvPspCWdMbOLJAP8nFHZmH" Name="Path" Kind="OutputPin" />
+            </Node>
+            <ControlPoint Id="D407koroxSxMEFUPNEdfEs" Bounds="899,794" />
+            <ControlPoint Id="AzWLWVeguFcOU0dhwGtyxM" Bounds="1010,794" />
+            <ControlPoint Id="KYyhYQpGlP1Mrfrwbdab9p" Bounds="283,101" />
+            <Node Bounds="280,1056,54,26" Id="GuaqlpwaOb5N0Otb4YfwdC">
+              <p:NodeReference LastCategoryFullName="VL.HapPlayer.HapPlayer" LastDependency="VL.HapPlayer.dll">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <CategoryReference Kind="AssemblyCategory" Name="HapPlayer" />
+                <Choice Kind="OperationCallFlag" Name="Open" />
+              </p:NodeReference>
+              <Pin Id="SvOZhQV81udLsKYIB32sll" Name="Input" Kind="StateInputPin" />
+              <Pin Id="GTCcarsV6hkMPpqz7SvVly" Name="Output" Kind="StateOutputPin" />
+              <Pin Id="O3PzLRPqMN4MTHTZge9WNw" Name="Open" Kind="OutputPin" />
+            </Node>
+            <Node Bounds="1076,739,56,26" Id="NxMW00KVVzjOouakYErcvw">
+              <p:NodeReference LastCategoryFullName="VL.HapPlayer.HapPlayer" LastDependency="VL.HapPlayer.dll">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="OperationCallFlag" Name="Duration" />
+              </p:NodeReference>
+              <Pin Id="No9cClpXYVTP1jT10ZzP20" Name="Input" Kind="StateInputPin" />
+              <Pin Id="FZestu2kCGFMGcUC7XHZBJ" Name="Output" Kind="StateOutputPin" />
+              <Pin Id="RmBRoVD1MTPP3FXRDpDGNz" Name="Duration" Kind="OutputPin" />
+            </Node>
+            <Node Bounds="279,393,147,26" Id="AXgAo732Uz5PZssiEUaDRi">
+              <p:NodeReference LastCategoryFullName="VL.HapPlayer.HapPlayer" LastDependency="VL.HapPlayer.dll">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="OperationCallFlag" Name="Update" />
+                <CategoryReference Kind="AssemblyCategory" Name="HapPlayer" NeedsToBeDirectParent="true">
+                  <p:OuterCategoryReference Kind="AssemblyCategory" Name="HapPlayer" NeedsToBeDirectParent="true" />
+                </CategoryReference>
+              </p:NodeReference>
+              <Pin Id="VhULQHH85qOL5Wsuu2E89R" Name="Input" Kind="StateInputPin" />
+              <Pin Id="GZa6mzmA9cNPoexsHGKrlt" Name="Output" Kind="StateOutputPin" />
+              <Pin Id="JRBAsmjhemzOmWdH0rAc1t" Name="Result" Kind="OutputPin" />
+            </Node>
+            <ControlPoint Id="RTKcwa6FWf2LIIvqNXvkv8" Bounds="423,452" />
+            <ControlPoint Id="StW9pQnRD8TOWl0Aw96lQB" Bounds="1129,794" />
+            <Node Bounds="1648,739,52,26" Id="DQOf33i5ywmLizzwzWXjg7">
+              <p:NodeReference LastCategoryFullName="VL.HapPlayer.HapPlayer" LastDependency="VL.HapPlayer.dll">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="OperationCallFlag" Name="Playing" />
+              </p:NodeReference>
+              <Pin Id="HCPJYn0kL3CMQCto7rKj3p" Name="Input" Kind="StateInputPin" />
+              <Pin Id="Lgx2IigcMhyLDxabqiasWA" Name="Output" Kind="StateOutputPin" />
+              <Pin Id="BQETQ34luS5LRoQM8uAldG" Name="Playing" Kind="OutputPin" />
+            </Node>
+            <ControlPoint Id="MNpWeA0KlNjMcobmBTq5II" Bounds="1697,794" />
+            <Node Bounds="1401,739,79,26" Id="QWG6u4dJ3SCLJxcNs7aNnM">
+              <p:NodeReference LastCategoryFullName="VL.HapPlayer.HapPlayer" LastDependency="VL.HapPlayer.dll">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="OperationCallFlag" Name="CurrentFrame" />
+              </p:NodeReference>
+              <Pin Id="DOtUNpkLZs6OSgazr4FDLy" Name="Input" Kind="StateInputPin" />
+              <Pin Id="Sx76Aa63Ie2P665PrIEnsa" Name="Output" Kind="StateOutputPin" />
+              <Pin Id="A4SKd35hnPhMIQy6m3g4yT" Name="Current Frame" Kind="OutputPin" />
+            </Node>
+            <ControlPoint Id="KvcYdJ3YZMsO6OnOUxzeI6" Bounds="1477,794" />
+            <Node Bounds="1547,739,52,26" Id="Mssqr948JSBLACCHzwQ2QZ">
+              <p:NodeReference LastCategoryFullName="VL.HapPlayer.HapPlayer" LastDependency="VL.HapPlayer.dll">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <CategoryReference Kind="AssemblyCategory" Name="HapPlayer" />
+                <Choice Kind="OperationCallFlag" Name="Size" />
+              </p:NodeReference>
+              <Pin Id="LuowmVhXtu5PpmtUUQzllj" Name="Input" Kind="StateInputPin" />
+              <Pin Id="QQOuhjBFs00P9TqRqfjaFC" Name="Output" Kind="StateOutputPin" />
+              <Pin Id="H7DOG7OwphePVYVvq67ZPP" Name="Size" Kind="OutputPin" />
+            </Node>
+            <ControlPoint Id="VqNQjSqqoLmNFQZmFfMK30" Bounds="1596,794" />
+            <Node Bounds="1078,220,55,26" Id="Ekr8hy5a5bWMSAMweTbyJE">
+              <p:NodeReference LastCategoryFullName="VL.HapPlayer.HapPlayer" LastDependency="VL.HapPlayer.dll">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="OperationCallFlag" Name="SetClose" />
+              </p:NodeReference>
+              <Pin Id="Bey9XLauofOQKDEwJchD0i" Name="Input" Kind="StateInputPin" />
+              <Pin Id="GZw03lkb1gpPxVRtb9kBOi" Name="Value" Kind="InputPin" />
+              <Pin Id="S6LYoEi1psCL74OUnXifHM" Name="Output" Kind="StateOutputPin" />
+            </Node>
+            <Pad Id="GtF3i4vLXJrNJfF8N4BnUF" Comment="" Bounds="1130,177,35,35" ShowValueBox="true" isIOBox="true" Value="True">
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+                <Choice Kind="TypeFlag" Name="Boolean" />
+              </p:TypeAnnotation>
+              <p:ValueBoxSettings>
+                <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Toggle</p:buttonmode>
+                <p:showvalue p:Type="Boolean">false</p:showvalue>
+              </p:ValueBoxSettings>
+            </Pad>
+            <Node Bounds="280,1099,54,26" Id="CL8yRZQm2WlPTf23z8lY6B">
+              <p:NodeReference LastCategoryFullName="VL.HapPlayer.HapPlayer" LastDependency="VL.HapPlayer.dll">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="OperationCallFlag" Name="SetOpen" />
+              </p:NodeReference>
+              <Pin Id="NRnVuelhrQwPDhycof1iGW" Name="Input" Kind="StateInputPin" />
+              <Pin Id="GrgACb0x7rbLQeBaMuDpRd" Name="Value" Kind="InputPin" />
+              <Pin Id="GAXTAP93YuHOMMeWq11lHA" Name="Output" Kind="StateOutputPin" />
+              <Pin Id="E92wIK6U9KlM5S75mEQHRr" Name="Apply" Kind="InputPin" />
+            </Node>
+            <Node Bounds="280,970,55,26" Id="EBTqV8qp3FZNnprvNg9zsi">
+              <p:NodeReference LastCategoryFullName="VL.HapPlayer.HapPlayer" LastDependency="VL.HapPlayer.dll">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <CategoryReference Kind="AssemblyCategory" Name="HapPlayer" />
+                <Choice Kind="OperationCallFlag" Name="Close" />
+              </p:NodeReference>
+              <Pin Id="CxEU680JdYEMY3FQ1tie8e" Name="Input" Kind="StateInputPin" />
+              <Pin Id="MqydzkqrwrRQFotR7A7FJU" Name="Output" Kind="StateOutputPin" />
+              <Pin Id="GQRsCqIqmJKPTPvL42hpRN" Name="Close" Kind="OutputPin" />
+            </Node>
+            <Node Bounds="280,1012,55,26" Id="LD9s3VUMn4VOhEt8zwFO0k">
+              <p:NodeReference LastCategoryFullName="VL.HapPlayer.HapPlayer" LastDependency="VL.HapPlayer.dll">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="OperationCallFlag" Name="SetClose" />
+              </p:NodeReference>
+              <Pin Id="EimsmzXsAtwN8RdYQ2DVdY" Name="Input" Kind="StateInputPin" />
+              <Pin Id="IdW7KQZ1RVBMhZtwhyJTF4" Name="Value" Kind="InputPin" />
+              <Pin Id="FASaNfAAuE4MxVWDSWDxi5" Name="Output" Kind="StateOutputPin" />
+              <Pin Id="Vamrjb8A6oKOOwxeNGt9Bm" Name="Apply" Kind="InputPin" />
+            </Node>
+            <Node Bounds="441,171,126,114" Id="Cmd1LCdSrFlLt7zylmK5FG">
+              <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
+                <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
+                <Choice Kind="ProcessStatefulRegion" Name="Cache" />
+                <FullNameCategoryReference ID="Primitive" />
+              </p:NodeReference>
+              <Pin Id="CBLwLtKw2yYOGmKyroQNsc" Name="Force" Kind="InputPin" />
+              <Pin Id="NJvbP4Pzx5lN2SIVe5LRt6" Name="Dispose Cached Outputs" Kind="InputPin" />
+              <Pin Id="UbTEIK9HpyrOYeEPmrCsWg" Name="Has Changed" Kind="OutputPin" />
+              <ControlPoint Id="S1Onvo7SGPyO3OaFggBxCM" Bounds="502,177" Alignment="Top" />
+              <Patch Id="I53XzZhEMY9PkUyXSbzDQs" ManuallySortedPins="true">
+                <Node Bounds="453,239,52,26" Id="KywbdrOR7wAMNtao2lqy6f">
+                  <p:NodeReference LastCategoryFullName="VL.HapPlayer.HapPlayer" LastDependency="VL.HapPlayer.dll">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <Choice Kind="OperationCallFlag" Name="SetPath" />
+                    <CategoryReference Kind="AssemblyCategory" Name="HapPlayer" NeedsToBeDirectParent="true">
+                      <p:OuterCategoryReference Kind="AssemblyCategory" Name="HapPlayer" NeedsToBeDirectParent="true" />
+                    </CategoryReference>
+                  </p:NodeReference>
+                  <Pin Id="RKGd8YJA2zHPYqJRETtZeN" Name="Input" Kind="StateInputPin" />
+                  <Pin Id="IAk1k6BqqXTNecuSaAW8nu" Name="Value" Kind="InputPin" />
+                  <Pin Id="LaXnrf1Zy0AMbzrTkloWXq" Name="Output" Kind="StateOutputPin" />
+                </Node>
+                <Patch Id="OQu4whvAAesMVjJpxN6yPN" Name="Create" ManuallySortedPins="true" />
+                <Patch Id="Ffh5zCv2xmMMM1hR0HIcnq" Name="Then" ManuallySortedPins="true" />
+                <Node Bounds="500,202,55,19" Id="A0YK1v4JBTVPh83S8ANiM6">
+                  <p:NodeReference LastCategoryFullName="System.Conversion" LastDependency="VL.CoreLib.vl">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <Choice Kind="OperationCallFlag" Name="ToString" />
+                  </p:NodeReference>
+                  <Pin Id="VUqmuAAPVYjOISBcywNXMp" Name="Input" Kind="InputPin" />
+                  <Pin Id="CLXx5dDV78uNH5fWciARCw" Name="Result" Kind="OutputPin" />
+                </Node>
+              </Patch>
+            </Node>
+            <Pad Id="CHjNQlXZMz5QEdRYB8Hwvt" SlotId="NaOQ5jwSNDNQCXNDF3bnl0" Bounds="456,122" />
+            <Pad Id="LzsWyRDQ3zFLTARhHvVSp7" SlotId="NaOQ5jwSNDNQCXNDF3bnl0" Bounds="1080,152" />
+            <ControlPoint Id="HysDbxqfEKJLPvCsVezyxq" Bounds="1294,121" />
+            <Node Bounds="2132,212,79,26" Id="Tv9WZNhP3AzP1Rv48FXE4I">
+              <p:NodeReference LastCategoryFullName="VL.HapPlayer.HapPlayer" LastDependency="VL.HapPlayer.dll">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <CategoryReference Kind="AssemblyCategory" Name="HapPlayer" />
+                <Choice Kind="OperationCallFlag" Name="SetNextFrame" />
+              </p:NodeReference>
+              <Pin Id="EqEPrZOC8SHLuW4hLN3SmA" Name="Input" Kind="StateInputPin" />
+              <Pin Id="EHy6rkmocWhPT4l17MOnHi" Name="Value" Kind="InputPin" />
+              <Pin Id="HnfeomAtqcFLrqcNmgNJjJ" Name="Output" Kind="StateOutputPin" />
+            </Node>
+            <Node Bounds="2003,212,77,26" Id="UJxyjnnTBS0Nqw0pxsIwTv">
+              <p:NodeReference LastCategoryFullName="VL.HapPlayer.HapPlayer" LastDependency="VL.HapPlayer.dll">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="OperationCallFlag" Name="SetPrevFrame" />
+              </p:NodeReference>
+              <Pin Id="ArnrjzeWhwbMWMowA39YSr" Name="Input" Kind="StateInputPin" />
+              <Pin Id="Bbd1A171mLkLWxEegN4XVe" Name="Value" Kind="InputPin" />
+              <Pin Id="AMjRSP170L7Max7qufeKbk" Name="Output" Kind="StateOutputPin" />
+            </Node>
+            <ControlPoint Id="N8Gd8xrwcmUPm3TrxIMDUS" Bounds="1733,71" />
+            <ControlPoint Id="BvPlZouTRYvNegrj3Eu6Ei" Bounds="1856,115" />
+            <Node Bounds="1731,158,218,278" Id="FM5VqEkeJmYMHDtlN1olu2">
+              <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
+                <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
+                <FullNameCategoryReference ID="Primitive" />
+                <Choice Kind="ProcessStatefulRegion" Name="Cache" />
+                <CategoryReference Kind="Category" Name="Primitive" />
+              </p:NodeReference>
+              <Pin Id="VQx2ga6oibQMyEUw69v42g" Name="Force" Kind="InputPin" />
+              <Pin Id="FUNimBbHlxCMcyYYqArrf1" Name="Dispose Cached Outputs" Kind="InputPin" />
+              <Pin Id="Vx74zjBTZIbL2s7J66QAY3" Name="Has Changed" Kind="OutputPin" />
+              <ControlPoint Id="AQiFFJMgD1HL7NRk6E9SJZ" Bounds="1856,164" Alignment="Top" />
+              <Patch Id="OW0JpnQqdNWL9oNMMw3WFC" ManuallySortedPins="true">
+                <Patch Id="DVgbq3VrLtbM0dx2tv48Ie" Name="Create" ManuallySortedPins="true" />
+                <Patch Id="NsyuA7hzUHqNFoIbKFcnVj" Name="Then" ManuallySortedPins="true" />
+                <Node Bounds="1743,343,64,26" Id="EZb125HqN6COIWHuNvHirT">
+                  <p:NodeReference LastCategoryFullName="VL.HapPlayer.HapPlayer" LastDependency="VL.HapPlayer.dll">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <Choice Kind="OperationCallFlag" Name="SetDoSeek" />
+                  </p:NodeReference>
+                  <Pin Id="Ql6ovXLHSwJPvIdgqZVUZb" Name="Input" Kind="StateInputPin" />
+                  <Pin Id="BX59fYK1T0mPvhcPB0mXlP" Name="Value" Kind="InputPin" DefaultValue="True">
+                    <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+                      <Choice Kind="TypeFlag" Name="Boolean" />
+                    </p:TypeAnnotation>
+                  </Pin>
+                  <Pin Id="LIxpBgf4QdNLBnCruIX7Yg" Name="Apply" Kind="InputPin" DefaultValue="True">
+                    <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+                      <Choice Kind="TypeFlag" Name="Boolean" />
+                    </p:TypeAnnotation>
+                  </Pin>
+                  <Pin Id="SaU6yzp20vcQPLIhif0P2J" Name="Output" Kind="StateOutputPin" />
+                </Node>
+                <Node Bounds="1743,296,116,26" Id="HnAtabbmRowO9l3ORyn1sa">
+                  <p:NodeReference LastCategoryFullName="VL.HapPlayer.HapPlayer" LastDependency="VL.HapPlayer.dll">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <Choice Kind="OperationCallFlag" Name="SetSeekFrame" />
+                  </p:NodeReference>
+                  <Pin Id="ITyxuO3BGvhNxGNusfISI5" Name="Input" Kind="StateInputPin" />
+                  <Pin Id="DERtzQEIKDqPgUswvxz7e1" Name="Value" Kind="InputPin" />
+                  <Pin Id="H8pWnDBNJM6MFPlfiCNRFU" Name="Output" Kind="StateOutputPin" />
+                </Node>
+                <Node Bounds="1743,389,64,26" Id="SI0hJHJsKtwMHFhtMzkh4b">
+                  <p:NodeReference LastCategoryFullName="VL.HapPlayer.HapPlayer" LastDependency="VL.HapPlayer.dll">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <Choice Kind="OperationCallFlag" Name="SetDoSeek" />
+                  </p:NodeReference>
+                  <Pin Id="RR8W0RAD93zM7kd4fQADxa" Name="Input" Kind="StateInputPin" />
+                  <Pin Id="E1bNxBPBFXhM4u9uo2xBaa" Name="Value" Kind="InputPin" DefaultValue="False">
+                    <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+                      <Choice Kind="TypeFlag" Name="Boolean" />
+                    </p:TypeAnnotation>
+                  </Pin>
+                  <Pin Id="ISTvMEfjlonLGiHH5cJfkV" Name="Apply" Kind="InputPin" DefaultValue="True">
+                    <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+                      <Choice Kind="TypeFlag" Name="Boolean" />
+                    </p:TypeAnnotation>
+                  </Pin>
+                  <Pin Id="DBLdwBmgnYhQRHoEji5nXe" Name="Output" Kind="StateOutputPin" />
+                </Node>
+                <Node Bounds="1854,263,44,19" Id="VPLdL45nrY0P1f00HwGjBJ">
+                  <p:NodeReference LastCategoryFullName="Math" LastDependency="VL.CoreLib.vl">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <Choice Kind="OperationCallFlag" Name="ZMOD" />
+                  </p:NodeReference>
+                  <Pin Id="JpvWSmCV66hMqbwTp5KXu3" Name="Input" Kind="InputPin" />
+                  <Pin Id="DXfWrN9RsROOODGwp7UBSV" Name="Input 2" Kind="InputPin" />
+                  <Pin Id="MZVBlRCs0ljP0xGq8l5Vfh" Name="Output" Kind="OutputPin" />
+                </Node>
+                <Node Bounds="1743,228,72,26" Id="MO7rhgPkrlVLXc9xRttTUT">
+                  <p:NodeReference LastCategoryFullName="VL.HapPlayer.HapPlayer" LastDependency="VL.HapPlayer.dll">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <CategoryReference Kind="AssemblyCategory" Name="HapPlayer" />
+                    <Choice Kind="OperationCallFlag" Name="FrameCount" />
+                  </p:NodeReference>
+                  <Pin Id="NgGbBueoBbfPIHvBvXYJWO" Name="Input" Kind="StateInputPin" />
+                  <Pin Id="MAoRaQlcADZMRO4XUQqHlj" Name="Output" Kind="StateOutputPin" />
+                  <Pin Id="T1by17uLTbHOwXKMA2KUz7" Name="Frame Count" Kind="OutputPin" />
+                </Node>
+                <Node Bounds="1878,233,35,19" Id="T7scRlVFf1sOOrXPW9rvbz">
+                  <p:NodeReference LastCategoryFullName="Math" LastDependency="VL.CoreLib.vl">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <Choice Kind="OperationCallFlag" Name="Max" />
+                  </p:NodeReference>
+                  <Pin Id="LI7RF181IMNQGnTr03JWdk" Name="Input" Kind="InputPin" />
+                  <Pin Id="P8rRpV9olpUPZrCR139YM4" Name="Input 2" Kind="InputPin" DefaultValue="1">
+                    <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+                      <Choice Kind="TypeFlag" Name="Integer32" />
+                    </p:TypeAnnotation>
+                  </Pin>
+                  <Pin Id="LOovySq9ouHLiJaQOmzpeg" Name="Output" Kind="OutputPin" />
+                </Node>
+                <Pad Id="NCT2fwzHXJGPIpPCBzaClc" Comment="" Bounds="1883,313,35,15" ShowValueBox="true" isIOBox="true" />
+              </Patch>
+            </Node>
+            <Pad Id="Ji8K6P28svSLLVzsOgrN5q" SlotId="NaOQ5jwSNDNQCXNDF3bnl0" Bounds="1248,119" />
+            <Node Bounds="1233,162,76,86" Id="QI2dJyJWZ3vLLpxhl94iGy">
+              <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
+                <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
+                <Choice Kind="ProcessStatefulRegion" Name="Cache" />
+                <CategoryReference Kind="Category" Name="Primitive" />
+              </p:NodeReference>
+              <Pin Id="APLu2AneCZ4OzIZwKWXWMR" Name="Force" Kind="InputPin" />
+              <Pin Id="QJwxnZhWzYkNnI3ja3SkUX" Name="Dispose Cached Outputs" Kind="InputPin" />
+              <Pin Id="D8SbyT7WUNqLkHKXIA0U07" Name="Has Changed" Kind="OutputPin" />
+              <ControlPoint Id="PDl6GKhTwHhOghCDGTKThP" Bounds="1294,168" Alignment="Top" />
+              <Patch Id="H3CA7C5Ok2FLrT0rjTAhZi" ManuallySortedPins="true">
+                <Patch Id="Ve97hPX0HB8NfkwP0YZ9uN" Name="Create" ManuallySortedPins="true" />
+                <Patch Id="EC9Nz0vqj3NPMg5tabMZH6" Name="Then" ManuallySortedPins="true" />
+                <Node Bounds="1245,197,52,26" Id="OkqrNEP4B1BNCOQwrcfTK0">
+                  <p:NodeReference LastCategoryFullName="VL.HapPlayer.HapPlayer" LastDependency="VL.HapPlayer.dll">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <Choice Kind="OperationCallFlag" Name="SetPlay" />
+                    <CategoryReference Kind="AssemblyCategory" Name="HapPlayer" NeedsToBeDirectParent="true">
+                      <p:OuterCategoryReference Kind="AssemblyCategory" Name="HapPlayer" NeedsToBeDirectParent="true" />
+                    </CategoryReference>
+                  </p:NodeReference>
+                  <Pin Id="PUWjnDKdpdBPg4jRekON0t" Name="Input" Kind="StateInputPin" />
+                  <Pin Id="Hob5EKYebtfLkCPyLTFYYP" Name="Value" Kind="InputPin" />
+                  <Pin Id="PS8dcgSS9RiPwS2K0MIIPz" Name="Output" Kind="StateOutputPin" />
+                </Node>
+              </Patch>
+            </Node>
+            <Pad Id="BXEXHLUPiASOQYNr4GLNY4" SlotId="NaOQ5jwSNDNQCXNDF3bnl0" Bounds="2006,112" />
+            <Node Bounds="280,840,79,26" Id="VNDuscE3eLjOr68a8mq51e">
+              <p:NodeReference LastCategoryFullName="VL.HapPlayer.HapPlayer" LastDependency="VL.HapPlayer.dll">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <CategoryReference Kind="AssemblyCategory" Name="HapPlayer" />
+                <Choice Kind="OperationCallFlag" Name="SetNextFrame" />
+              </p:NodeReference>
+              <Pin Id="SK9uwWSJ2JmQBy6S7nPzbp" Name="Input" Kind="StateInputPin" />
+              <Pin Id="FpCA7LKOxUWNdlpRnSshvl" Name="Value" Kind="InputPin" />
+              <Pin Id="E1WLVbWvH9cNKwzE7pT3B5" Name="Output" Kind="StateOutputPin" />
+              <Pin Id="JNj13UIB4VfLAw9QEliUVa" Name="Apply" Kind="InputPin" />
+            </Node>
+            <Pad Id="Nxo0d2u665BNJ6jJzqtisK" Comment="" Bounds="2209,174,35,35" ShowValueBox="true" isIOBox="true" Value="True">
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+                <Choice Kind="TypeFlag" Name="Boolean" />
+              </p:TypeAnnotation>
+            </Pad>
+            <Node Bounds="280,920,77,26" Id="CAQN4U9vTKxNSOBLSgY7YW">
+              <p:NodeReference LastCategoryFullName="VL.HapPlayer.HapPlayer" LastDependency="VL.HapPlayer.dll">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="OperationCallFlag" Name="SetPrevFrame" />
+              </p:NodeReference>
+              <Pin Id="UhhideJgoGeNIsm8Fyp73q" Name="Input" Kind="StateInputPin" />
+              <Pin Id="KBdnS9iqYC7MTBABfoz6aB" Name="Value" Kind="InputPin" />
+              <Pin Id="VnGxoeqJJxtMUa92i9kutF" Name="Output" Kind="StateOutputPin" />
+              <Pin Id="PsIm9NZ2vlYNn3BcAvEE28" Name="Apply" Kind="InputPin" />
+            </Node>
+            <Pad Id="Pddx8zkIYTsQUAefK895oU" Comment="" Bounds="2077,171,35,35" ShowValueBox="true" isIOBox="true" Value="True">
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+                <Choice Kind="TypeFlag" Name="Boolean" />
+              </p:TypeAnnotation>
+            </Pad>
+            <Node Bounds="280,805,79,26" Id="MATN1gSXweYLYunwev8CSB">
+              <p:NodeReference LastCategoryFullName="VL.HapPlayer.HapPlayer" LastDependency="VL.HapPlayer.dll">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="OperationCallFlag" Name="NextFrame" />
+                <CategoryReference Kind="AssemblyCategory" Name="HapPlayer" NeedsToBeDirectParent="true">
+                  <p:OuterCategoryReference Kind="AssemblyCategory" Name="HapPlayer" NeedsToBeDirectParent="true" />
+                </CategoryReference>
+              </p:NodeReference>
+              <Pin Id="LbWnufBsPZrNwmQj2QShnc" Name="Input" Kind="StateInputPin" />
+              <Pin Id="IQU8r9CpAmgMJBQ5M39nwJ" Name="Output" Kind="StateOutputPin" />
+              <Pin Id="BN8DlWvdTpCNRs64BaXHHT" Name="Next Frame" Kind="OutputPin" />
+            </Node>
+            <Node Bounds="280,881,77,26" Id="EnVzd3S3F1cMFboYN5Ra1a">
+              <p:NodeReference LastCategoryFullName="VL.HapPlayer.HapPlayer" LastDependency="VL.HapPlayer.dll">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="OperationCallFlag" Name="PrevFrame" />
+              </p:NodeReference>
+              <Pin Id="PU4u6kuSaz9NB51WE8mxUc" Name="Input" Kind="StateInputPin" />
+              <Pin Id="LMr96hrG8UmQXtcOd7YBbd" Name="Output" Kind="StateOutputPin" />
+              <Pin Id="UmwNXaZIoRyMmeL8uSItbT" Name="Prev Frame" Kind="OutputPin" />
+            </Node>
+            <Node Bounds="888,173,54,26" Id="QZN3zyayMhIQdJ16tbkYSK">
+              <p:NodeReference LastCategoryFullName="VL.HapPlayer.HapPlayer" LastDependency="VL.HapPlayer.dll">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="OperationCallFlag" Name="SetOpen" />
+              </p:NodeReference>
+              <Pin Id="Tpel8Lcso2VQKvd8qqHDND" Name="Input" Kind="StateInputPin" />
+              <Pin Id="A8eZta9qCVpQMRUw5EsJW5" Name="Value" Kind="InputPin" DefaultValue="True">
+                <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+                  <Choice Kind="TypeFlag" Name="Boolean" />
+                </p:TypeAnnotation>
+              </Pin>
+              <Pin Id="NLSju5WH1F8NOX4Ws6Dmi4" Name="Output" Kind="StateOutputPin" />
+            </Node>
+            <Pad Id="GznViNFPxZ2Oe3xrpgTpoq" SlotId="NaOQ5jwSNDNQCXNDF3bnl0" Bounds="889,117" />
+            <Pad Id="LpNbAMSTk2YN0z8g8QSnzA" Comment="" Bounds="939,132,35,35" ShowValueBox="true" isIOBox="true" Value="True">
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+                <Choice Kind="TypeFlag" Name="Boolean" />
+              </p:TypeAnnotation>
+            </Pad>
+            <Pad Id="F8HqbANOzmrOFN9xP0IWHh" SlotId="NaOQ5jwSNDNQCXNDF3bnl0" Bounds="1813,115" />
+            <Pad Id="UJVepTjthVKQaWt51ybF2Q" SlotId="NaOQ5jwSNDNQCXNDF3bnl0" Bounds="852,712" />
+            <Node Bounds="1266,739,62,26" Id="GGBrem0wA66N7UWcpgXjT7">
+              <p:NodeReference LastCategoryFullName="VL.HapPlayer.HapPlayer" LastDependency="VL.HapPlayer.dll">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <CategoryReference Kind="AssemblyCategory" Name="HapPlayer" />
+                <Choice Kind="OperationCallFlag" Name="Framerate" />
+              </p:NodeReference>
+              <Pin Id="C5v19A7xfs1PNB61MnR15T" Name="Input" Kind="StateInputPin" />
+              <Pin Id="V4kFpr6LzHaQYZpl6Q5a1p" Name="Output" Kind="StateOutputPin" />
+              <Pin Id="U0SOt5uRazILQxs12qJcns" Name="Framerate" Kind="OutputPin" />
+            </Node>
+            <ControlPoint Id="HnkQndBHGBAPUyZHxN4L7o" Bounds="1325,794" />
+            <Node Bounds="1168,739,72,26" Id="HzyegJDAp8HPiHR6sexfaC">
+              <p:NodeReference LastCategoryFullName="VL.HapPlayer.HapPlayer" LastDependency="VL.HapPlayer.dll">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <CategoryReference Kind="AssemblyCategory" Name="HapPlayer" />
+                <Choice Kind="OperationCallFlag" Name="FrameCount" />
+              </p:NodeReference>
+              <Pin Id="PX7hQAXnlpMOKDPQ2j8Aq6" Name="Input" Kind="StateInputPin" />
+              <Pin Id="PXZBePewy5zLgXeJh5r3c5" Name="Output" Kind="StateOutputPin" />
+              <Pin Id="SdvNjMNK1VfL467eA4G6t6" Name="Frame Count" Kind="OutputPin" />
+            </Node>
+            <ControlPoint Id="RqwmzlIIGwpMDhamg2rKRh" Bounds="1237,794" />
+            <Node Bounds="1395,811,25,19" Id="DaYjw2LkY4POhYS7U8UpKF">
+              <p:NodeReference LastCategoryFullName="Primitive.Float32" LastDependency="VL.CoreLib.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="OperationCallFlag" Name="/ (Integer)" />
+              </p:NodeReference>
+              <Pin Id="FIAwDqduXQmOnIj3pMpBIh" Name="Input" Kind="InputPin" />
+              <Pin Id="N0F5t4L4A4COjvzowzHgLy" Name="Input 2" Kind="InputPin" />
+              <Pin Id="EnwiOi4jUNoM2Rlpu4JEeK" Name="Output" Kind="OutputPin" />
+            </Node>
+            <ControlPoint Id="UIN7ZlcuE0vQFkhmHZpORT" Bounds="1397,892" />
+            <Node Bounds="1395,846,61,19" Id="D6PE1AEWn9YPegzqONmqDV">
+              <p:NodeReference LastCategoryFullName="Math" LastDependency="VL.CoreLib.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="OperationCallFlag" Name="AvoidNaN" />
+              </p:NodeReference>
+              <Pin Id="AdhAmOs6b6lLzJPM782XMo" Name="Input" Kind="InputPin" />
+              <Pin Id="T3QIjMdIepSPR3OF8m6IOn" Name="Default" Kind="InputPin" />
+              <Pin Id="MvIbohuk6mOMhzaeaAh5ok" Name="Output" Kind="OutputPin" />
+            </Node>
+            <ControlPoint Id="GvjywugY2xVNR7Ogly7qDO" Bounds="464,789" />
+            <Node Bounds="280,474,231,26" Id="A1ryf3aTQ2IPXDmRdJjnMc">
+              <p:NodeReference LastCategoryFullName="VL.HapPlayer.HapPlayer" LastDependency="VL.HapPlayer.dll">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="OperationCallFlag" Name="GetMedia" />
+              </p:NodeReference>
+              <Pin Id="DsKAvX2qgYFN0ITQ33F99x" Name="Input" Kind="StateInputPin" />
+              <Pin Id="CMWFzyJO3FbLYGSJDVgX0X" Name="Output" Kind="StateOutputPin" />
+              <Pin Id="IaiquNR6pOlO5DivY5DXeX" Name="Result" Kind="OutputPin" />
+            </Node>
+            <Pad Id="Jwxnrs76jhjQN9cgwnBzTA" SlotId="C05bG2PIwjgOjhMNVvSgPz" Bounds="924,392" />
+            <Node Bounds="640,178,87,26" Id="HDOSKUVUqgvLU5BKOO8bbp">
+              <p:NodeReference LastCategoryFullName="VL.HapPlayer.HapPlayer" LastDependency="VL.HapPlayer.dll">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="OperationCallFlag" Name="SetEnableAudio" />
+                <CategoryReference Kind="AssemblyCategory" Name="HapPlayer" NeedsToBeDirectParent="true">
+                  <p:OuterCategoryReference Kind="AssemblyCategory" Name="HapPlayer" NeedsToBeDirectParent="true" />
+                </CategoryReference>
+              </p:NodeReference>
+              <Pin Id="BoRE1r6faWHOZwXLqG17hp" Name="Input" Kind="StateInputPin" />
+              <Pin Id="UKCRo0yczdwL9aWN8n739X" Name="Value" Kind="InputPin" DefaultValue="False">
+                <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+                  <Choice Kind="TypeFlag" Name="Boolean" />
+                </p:TypeAnnotation>
+              </Pin>
+              <Pin Id="HCXuPmv9UxWOLzN44qUoke" Name="Output" Kind="StateOutputPin" />
+            </Node>
+            <Node Bounds="877,283,160,75" Id="Ix4f4sJNN1SL0QEmDrWJtd">
+              <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
+                <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
+                <Choice Kind="ApplicationStatefulRegion" Name="If" />
+                <CategoryReference Kind="Category" Name="Primitive" />
+              </p:NodeReference>
+              <Patch Id="O055hCPRMdjOZD1kx8N2Zy" ManuallySortedPins="true">
+                <Patch Id="ODuXTtfLcbYMnxV3Lx5MRF" Name="Create" ManuallySortedPins="true" />
+                <Patch Id="AQ6sKIF0saeLN3zyX1ldiS" Name="Then" ManuallySortedPins="true" />
+                <Node Bounds="922,308,77,26" Id="Tfglk3YGlshMAMynK6s9Z1">
+                  <p:NodeReference LastCategoryFullName="VL.HapPlayer.HapAudioSignal" LastDependency="VL.HapPlayer.dll">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <Choice Kind="OperationCallFlag" Name="Create" />
+                    <CategoryReference Kind="AssemblyCategory" Name="HapAudioSignal" NeedsToBeDirectParent="true" />
+                  </p:NodeReference>
+                  <Pin Id="Fs76hZgjJElLleNcWklOda" Name="Output" Kind="StateOutputPin" />
+                </Node>
+              </Patch>
+              <ControlPoint Id="QoGn2DGULC8LngTCHQvx30" Bounds="924,352" Alignment="Bottom" />
+              <ControlPoint Id="FLZPvfpxq6nNWtF8JSS7yE" Bounds="1020,289" Alignment="Top" />
+              <ControlPoint Id="POgmbe4BNbLLhFthfnHL7u" Bounds="891,289" Alignment="Top" />
+              <ControlPoint Id="HaKiVZkwbQbMyskP4VzMuy" Bounds="892,352" Alignment="Bottom" />
+              <Pin Id="SYOL1wBi9TBMdETT6zrUWe" Name="Condition" Kind="InputPin" DefaultValue="True">
+                <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+                  <Choice Kind="TypeFlag" Name="Boolean" />
+                </p:TypeAnnotation>
+              </Pin>
+            </Node>
+            <Pad Id="EcyICJ9XRKaOXKGxnYQ7Dg" SlotId="C05bG2PIwjgOjhMNVvSgPz" Bounds="1020,260" />
+            <Node Bounds="268,612,289,143" Id="QKSpYYKKv8zLO8RLPs9Qc8">
+              <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
+                <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
+                <Choice Kind="ApplicationStatefulRegion" Name="If" />
+                <CategoryReference Kind="Category" Name="Primitive" />
+              </p:NodeReference>
+              <Pin Id="Gxgngc4l6QjLqiJT4nuHq7" Name="Condition" Kind="InputPin" />
+              <ControlPoint Id="C25bMpNXbaYMMpEhaP2cdN" Bounds="464,749" Alignment="Bottom" />
+              <ControlPoint Id="CWa0XS8UZNlPvl9DxuqPFx" Bounds="331,618" Alignment="Top" />
+              <ControlPoint Id="PMELpUNh2vJNQ4PSFcV9n9" Bounds="282,618" Alignment="Top" />
+              <ControlPoint Id="Fsw4wN0eOFvOmuxFyfvT3I" Bounds="282,749" Alignment="Bottom" />
+              <Patch Id="BtjC2FEH0rgQdra6f0wWa3" ManuallySortedPins="true">
+                <Patch Id="KM51v64Xig3O2tUFccDCUb" Name="Create" ManuallySortedPins="true" />
+                <Patch Id="D7ypBBhPYboMltYpOrTR1d" Name="Then" ManuallySortedPins="true" />
+                <Node Bounds="382,636,130,26" Id="LHfijBrpdwmO7THV1sTIER">
+                  <p:NodeReference LastCategoryFullName="VL.HapPlayer.HapAudioSignal" LastDependency="VL.HapPlayer.dll">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <Choice Kind="OperationCallFlag" Name="SetMedia" />
+                  </p:NodeReference>
+                  <Pin Id="CkYmhvguaICNsvSiqHDNR6" Name="Input" Kind="StateInputPin" />
+                  <Pin Id="BKBqFsi9Vc5MUZ05v7uqih" Name="Value" Kind="InputPin" />
+                  <Pin Id="D9EtQPA4m48N20hIoCCrUe" Name="Output" Kind="StateOutputPin" />
+                </Node>
+                <Node Bounds="462,715,83,19" Id="Env0iXkp6X7LSuumur1SiH">
+                  <p:NodeReference LastCategoryFullName="Collections.Spread" LastDependency="VL.CoreLib.vl">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <Choice Kind="ProcessAppFlag" Name="FromSequence (Sustain)" />
+                  </p:NodeReference>
+                  <Pin Id="LLxyeUWRSZXLBFLlFfdZ7g" Name="Input" Kind="StateInputPin" />
+                  <Pin Id="I3z4Zi0GSD2Nvc74fxadHD" Name="Result" Kind="OutputPin" />
+                </Node>
+                <Node Bounds="382,678,85,26" Id="DJjP9wSqqEZOtwqcx97txQ">
+                  <p:NodeReference LastCategoryFullName="VL.Audio.MultiChannelSignal" LastDependency="VL.Audio.dll">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <CategoryReference Kind="AssemblyCategory" Name="MultiChannelSignal" />
+                    <Choice Kind="OperationCallFlag" Name="Outputs" />
+                  </p:NodeReference>
+                  <Pin Id="UyE3vmHR153N8Z04Bbw2sN" Name="Input" Kind="StateInputPin" />
+                  <Pin Id="Ayt5GVCd9HGLa9m32ytKWL" Name="Output" Kind="StateOutputPin" />
+                  <Pin Id="DvDTd0bgosUPtYeqc06bYh" Name="Outputs" Kind="OutputPin" />
+                </Node>
+              </Patch>
+            </Node>
+            <Node Bounds="380,543,65,19" Id="BNLq9aUKDyuPcvu82rOIaa">
+              <p:NodeReference LastCategoryFullName="Primitive.Object" LastDependency="VL.CoreLib.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="OperationCallFlag" Name="IsAssigned" />
+              </p:NodeReference>
+              <Pin Id="Ar6qs7XwbulQKhaY3GGV8e" Name="X" Kind="InputPin" />
+              <Pin Id="JngXIYlj9v0Pti9X2ZFddu" Name="Result" Kind="OutputPin" />
+              <Pin Id="VV0RGkWML0HQNYQZbPsuCS" Name="Not Assigned" Kind="OutputPin" />
+            </Node>
+            <Node Bounds="280,543,73,26" Id="Td2fZULtSeuNAjrtjrhW3C">
+              <p:NodeReference LastCategoryFullName="VL.HapPlayer.HapPlayer" LastDependency="VL.HapPlayer.dll">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <CategoryReference Kind="AssemblyCategory" Name="HapPlayer" />
+                <Choice Kind="OperationCallFlag" Name="EnableAudio" />
+              </p:NodeReference>
+              <Pin Id="CtWLhUhv8vkQXHPYZcIdsi" Name="Input" Kind="StateInputPin" />
+              <Pin Id="AQ37qetUMr7PJM3f60QUJM" Name="Output" Kind="StateOutputPin" />
+              <Pin Id="CEUEOCEe6ocNDiIPAqPCSv" Name="Enable Audio" Kind="OutputPin" />
+            </Node>
+            <Node Bounds="889,245,73,26" Id="Qg5o3YRHduWL2IkuiDfucF">
+              <p:NodeReference LastCategoryFullName="VL.HapPlayer.HapPlayer" LastDependency="VL.HapPlayer.dll">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <CategoryReference Kind="AssemblyCategory" Name="HapPlayer" />
+                <Choice Kind="OperationCallFlag" Name="EnableAudio" />
+              </p:NodeReference>
+              <Pin Id="U8HeyliYC91LaQK9tFQDYD" Name="Input" Kind="StateInputPin" />
+              <Pin Id="OlN70iplkAMLo0t1LhzX3o" Name="Output" Kind="StateOutputPin" />
+              <Pin Id="LbFC9RoajchN5JpVxPCB8D" Name="Enable Audio" Kind="OutputPin" />
+            </Node>
+            <Node Bounds="348,577,37,19" Id="PfFNVn0JOFEOKB4xbL7sfX">
+              <p:NodeReference LastCategoryFullName="Primitive.Boolean" LastDependency="VL.CoreLib.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="OperationCallFlag" Name="AND" />
+              </p:NodeReference>
+              <Pin Id="HxRWrHdWW1WM9egKcTeiD7" Name="Input" Kind="StateInputPin" />
+              <Pin Id="KqeFsBSYbM2L8YT9LUK9DC" Name="Input 2" Kind="InputPin" />
+              <Pin Id="APab6gWZBK5MolTxl0fV7L" Name="Output" Kind="StateOutputPin" />
+            </Node>
+            <Pad Id="RvN5HJqYd1FMuosIg6s8oO" SlotId="NaOQ5jwSNDNQCXNDF3bnl0" Bounds="642,125" />
+            <ControlPoint Id="NBvjmpYMoCnPPYpk00umkU" Bounds="723,121" />
+            <Node Bounds="1204,485,109,26" Id="TaHu5BRybNUPc3vdoWXdCZ">
+              <p:NodeReference LastCategoryFullName="VL.HapPlayer.HapPlayer" LastDependency="VL.HapPlayer.dll">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <CategoryReference Kind="AssemblyCategory" Name="HapPlayer" />
+                <Choice Kind="OperationCallFlag" Name="SetEnableFramedrop" />
+              </p:NodeReference>
+              <Pin Id="FzrOzMc60ucPR7ZtsllMbT" Name="Input" Kind="StateInputPin" />
+              <Pin Id="Jr5Xjftj9d3MwshaBdfzRF" Name="Value" Kind="InputPin" />
+              <Pin Id="RbiC9ms8lyzMdkKxEg5dIq" Name="Output" Kind="StateOutputPin" />
+            </Node>
+            <ControlPoint Id="JPcBFzXqQ8CNhxpxHfpxRI" Bounds="1310,445" />
+            <Pad Id="TrljvhrEA4FLUpzTbI41D2" SlotId="NaOQ5jwSNDNQCXNDF3bnl0" Bounds="1206,453" />
+            <Node Bounds="1207,600,57,26" Id="H1xozLavEj0MIAe7LcupWR">
+              <p:NodeReference LastCategoryFullName="VL.HapPlayer.HapPlayer" LastDependency="VL.HapPlayer.dll">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <CategoryReference Kind="AssemblyCategory" Name="HapPlayer" />
+                <Choice Kind="OperationCallFlag" Name="SetSpeed" />
+              </p:NodeReference>
+              <Pin Id="SaWkrbSc2ofPjEO6uU6pIg" Name="Input" Kind="StateInputPin" />
+              <Pin Id="EJdtBrY0MovNMCMKAlVQue" Name="Value" Kind="InputPin" />
+              <Pin Id="GlsfZGW4rQWNrXJb3mdt0i" Name="Output" Kind="StateOutputPin" />
+            </Node>
+            <Pad Id="DpECHSnP7o2Ma5721M2gsU" SlotId="NaOQ5jwSNDNQCXNDF3bnl0" Bounds="1209,569" />
+            <ControlPoint Id="Crx2D4bpUPvOWZlkdbitfD" Bounds="1261,568" />
+            <Node Bounds="1417,235,187,192" Id="CefkmFq2q48NVJjx394vXv">
+              <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
+                <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
+                <Choice Kind="ProcessStatefulRegion" Name="Cache" />
+                <FullNameCategoryReference ID="Primitive" />
+              </p:NodeReference>
+              <Pin Id="RvNbveoLjEaOWCwPqmFTut" Name="Force" Kind="InputPin" />
+              <Pin Id="Gq3jS2t3J88OcTE25ALjXz" Name="Dispose Cached Outputs" Kind="InputPin" />
+              <Pin Id="PaUG5PVZhovMIOfhKudwB5" Name="Has Changed" Kind="OutputPin" />
+              <Patch Id="Mp5HrxPYjizNWZ85K2sJcM" ManuallySortedPins="true">
+                <Patch Id="Qs5n6Bjvh6iM2TvBEFEzOv" Name="Create" ManuallySortedPins="true" />
+                <Patch Id="VZF1GsTCEjjMY8jjjjy1Af" Name="Then" ManuallySortedPins="true" />
+                <Node Bounds="1429,282,53,26" Id="ED1Y0RuCZZkLBQDfvhxs5j">
+                  <p:NodeReference LastCategoryFullName="VL.HapPlayer.HapPlayer" LastDependency="VL.HapPlayer.dll">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <CategoryReference Kind="AssemblyCategory" Name="HapPlayer" />
+                    <Choice Kind="OperationCallFlag" Name="SetLoop" />
+                  </p:NodeReference>
+                  <Pin Id="I8lX1D4jTuKP2I6KDR0Cyl" Name="Input" Kind="StateInputPin" />
+                  <Pin Id="EP2fxTu5jucNmyaBjcGopI" Name="Value" Kind="InputPin" />
+                  <Pin Id="CXyCLXMiTF4OuqjXRALXnv" Name="Output" Kind="StateOutputPin" />
+                </Node>
+                <Node Bounds="1429,330,100,26" Id="NCQkqHd6TeeO2EIvLov6mm">
+                  <p:NodeReference LastCategoryFullName="VL.HapPlayer.HapPlayer" LastDependency="VL.HapPlayer.dll">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <CategoryReference Kind="AssemblyCategory" Name="HapPlayer" />
+                    <Choice Kind="OperationCallFlag" Name="SetStartFrame" />
+                  </p:NodeReference>
+                  <Pin Id="VqnxTVx2qTNPovLoHZcPRu" Name="Input" Kind="StateInputPin" />
+                  <Pin Id="O7C2R7TohpDQZPZkVzaZdT" Name="Value" Kind="InputPin" />
+                  <Pin Id="MlF1yVnyZXZLWdaSlgUElX" Name="Output" Kind="StateOutputPin" />
+                </Node>
+                <Node Bounds="1429,381,162,26" Id="SdnjfuedPbFPowQfC0uIii">
+                  <p:NodeReference LastCategoryFullName="VL.HapPlayer.HapPlayer" LastDependency="VL.HapPlayer.dll">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <CategoryReference Kind="AssemblyCategory" Name="HapPlayer" />
+                    <Choice Kind="OperationCallFlag" Name="SetEndFrame" />
+                  </p:NodeReference>
+                  <Pin Id="H0gKasfUkN8NKEn29Pp5Bw" Name="Input" Kind="StateInputPin" />
+                  <Pin Id="DF7SdFDIiE2PJraJidbAqS" Name="Value" Kind="InputPin" />
+                  <Pin Id="TJLkZyjdeviQIbyXvD9ysE" Name="Output" Kind="StateOutputPin" />
+                </Node>
+              </Patch>
+              <ControlPoint Id="VbYZ0zyebnaNXGwPH0UOzu" Bounds="1479,241" Alignment="Top" />
+              <ControlPoint Id="QG9ShODKLkLNaTC4fXkylb" Bounds="1527,241" Alignment="Top" />
+              <ControlPoint Id="ScLdRKbxHviO0OBZsNbmEA" Bounds="1589,241" Alignment="Top" />
+            </Node>
+            <Pad Id="FNUEL7Hl6XhPH7WY3I1I7a" SlotId="NaOQ5jwSNDNQCXNDF3bnl0" Bounds="1432,159" />
+            <ControlPoint Id="JzAruEoncY9OigJa4l74NY" Bounds="1480,92" />
+            <ControlPoint Id="MQ1p9iWL9X1NfDx1ftxIPO" Bounds="1528,129" />
+            <ControlPoint Id="DMKcXLPweUoNYwe8itlO4a" Bounds="1589,174" />
+            <Pad Id="P2cGg0hDYOMO6kizEjfaru" SlotId="HT1w6CzWmciPrxWkoa1hl7" Bounds="1480,146" />
+            <Pad Id="LDQXCBdp7IFNGk5i7AauNI" SlotId="HUDmmmJFmjGNUMpVJEywvc" Bounds="1527,188" />
+            <Pad Id="D74aPssuViqLXW0iqZsZt6" SlotId="QXDNiGzWoxDM03LreRz5KN" Bounds="1590,220" />
+            <Pad Id="J7MGxWmln9sPZWmq6hK7h1" Comment="Loop" Bounds="1490,110,35,15" ShowValueBox="true" isIOBox="true" Value="True">
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+                <Choice Kind="TypeFlag" Name="Boolean" />
+              </p:TypeAnnotation>
+              <p:ValueBoxSettings>
+                <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Toggle</p:buttonmode>
+              </p:ValueBoxSettings>
+            </Pad>
+            <Pad Id="RGtpsmjmh1zOXqYEqXQt3e" Comment="StartFrame" Bounds="1547,150,35,15" ShowValueBox="true" isIOBox="true" Value="-1">
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+                <Choice Kind="TypeFlag" Name="Integer32" />
+              </p:TypeAnnotation>
+            </Pad>
+            <Pad Id="Rl0KfcGyXgaNRBB8SXdq8i" Comment="EndFrame" Bounds="1609,192,35,15" ShowValueBox="true" isIOBox="true" Value="-1">
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+                <Choice Kind="TypeFlag" Name="Integer32" />
+              </p:TypeAnnotation>
+            </Pad>
+            <Node Bounds="280,346,151,26" Id="DwbsuqKpwUQNme7VnM5SmV">
+              <p:NodeReference LastCategoryFullName="VL.HapPlayer.HapPlayer" LastDependency="VL.HapPlayer.dll">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="OperationCallFlag" Name="SetConvertToDynamicTexture" />
+              </p:NodeReference>
+              <Pin Id="C71uhViuiKHP2oXxz3HOGC" Name="Input" Kind="StateInputPin" />
+              <Pin Id="B2IpxXmZ2g5PbsLdyNGUK7" Name="Value" Kind="InputPin" />
+              <Pin Id="LPp9Qgl9ZtOO09sk7YmxvS" Name="Output" Kind="StateOutputPin" />
+            </Node>
+            <ControlPoint Id="GNKfAyCV5TRP7skImToVRO" Bounds="428,321" />
+            <Node Bounds="270,1218,78,81" Id="OrE6EK7NyzcN3bylH8uxOJ">
+              <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
+                <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
+                <Choice Kind="ApplicationStatefulRegion" Name="If" />
+                <CategoryReference Kind="Category" Name="Primitive" />
+              </p:NodeReference>
+              <Pin Id="GdUhBg8a5bqL5pOMzH8mPF" Name="Condition" Kind="InputPin" />
+              <Patch Id="JhVGpnoaG6WPvSQPx90ZYA" ManuallySortedPins="true">
+                <Patch Id="CWiJEDTsiTyLT7N0LqPcBc" Name="Create" ManuallySortedPins="true" />
+                <Patch Id="NOphrCUNdxgO0WKP4RCn1H" Name="Then" ManuallySortedPins="true" />
+                <Node Bounds="283,1247,53,26" Id="Cw0SJkcNvexPVneZKBrYKp">
+                  <p:NodeReference LastCategoryFullName="VL.HapPlayer.HapPlayer" LastDependency="VL.HapPlayer.dll">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <Choice Kind="OperationCallFlag" Name="SetLoop" />
+                    <CategoryReference Kind="AssemblyCategory" Name="HapPlayer" NeedsToBeDirectParent="true">
+                      <p:OuterCategoryReference Kind="AssemblyCategory" Name="HapPlayer" NeedsToBeDirectParent="true" />
+                    </CategoryReference>
+                  </p:NodeReference>
+                  <Pin Id="LfsNZseCU9oPsd7HC2KQEw" Name="Input" Kind="StateInputPin" />
+                  <Pin Id="HCxR4kEpcgYLeq9Fwk1o48" Name="Value" Kind="InputPin" />
+                  <Pin Id="PZb3kPWzXznMWlQkjFOXUo" Name="Output" Kind="StateOutputPin" />
+                </Node>
+              </Patch>
+              <ControlPoint Id="RiZQGZaa3d5MT5Ah6QShF1" Bounds="284,1224" Alignment="Top" />
+              <ControlPoint Id="K9jBWa9FEsrMAD8No0EZvA" Bounds="284,1293" Alignment="Bottom" />
+            </Node>
+            <Node Bounds="281,1145,52,26" Id="RZONztxIxdJPMTLgx26Ajp">
+              <p:NodeReference LastCategoryFullName="VL.HapPlayer.HapPlayer" LastDependency="VL.HapPlayer.dll">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <CategoryReference Kind="AssemblyCategory" Name="VL" />
+                <CategoryReference Kind="AssemblyCategory" Name="HapPlayer" />
+                <Choice Kind="OperationCallFlag" Name="Loop" />
+              </p:NodeReference>
+              <Pin Id="UKTFVA7xASEOcDPaFRgl9o" Name="Input" Kind="StateInputPin" />
+              <Pin Id="JIhCFTG8KsWQVurzHpVFMk" Name="Output" Kind="StateOutputPin" />
+              <Pin Id="JxSQy0JIefBODXuVkYzbGO" Name="Loop" Kind="OutputPin" />
+            </Node>
+            <Node Bounds="327,1189,27,19" Id="AsUbehaKTPvK9mW4DkisP6">
+              <p:NodeReference LastCategoryFullName="Math" LastDependency="VL.CoreLib.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="OperationCallFlag" Name="!=" />
+              </p:NodeReference>
+              <Pin Id="MRN9JsCVEjMLzJ3wrD8bYr" Name="Input" Kind="InputPin" />
+              <Pin Id="Qh4QAVHlM7gMbYGH5qLfO7" Name="Input 2" Kind="InputPin" />
+              <Pin Id="N45hXf4RE1EMhaSUjqqetf" Name="Result" Kind="OutputPin" />
+            </Node>
+            <Pad Id="O3XOCHOW9axNBLMC1LVLy2" SlotId="HT1w6CzWmciPrxWkoa1hl7" Bounds="414,1155" />
+            <Node Bounds="148,288,53,26" Id="EBJiSfxuXr9OBLHC4WI8zT">
+              <p:NodeReference LastCategoryFullName="VL.HapPlayer.HapPlayer" LastDependency="VL.HapPlayer.dll">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="OperationCallFlag" Name="Dispose" />
+                <CategoryReference Kind="AssemblyCategory" Name="HapPlayer" NeedsToBeDirectParent="true">
+                  <p:OuterCategoryReference Kind="AssemblyCategory" Name="HapPlayer" NeedsToBeDirectParent="true" />
+                </CategoryReference>
+              </p:NodeReference>
+              <Pin Id="VfjqYDUrLGfNzOZMBMnVIe" Name="Input" Kind="StateInputPin" />
+              <Pin Id="OVKtCF436mCPLv2bSodlfK" Name="Output" Kind="StateOutputPin" />
+            </Node>
+            <Pad Id="FOCdGZmJlXoObF2CHCoi6A" Bounds="1954,15,35,19" ShowValueBox="true" isIOBox="true" Value="">
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+                <Choice Kind="TypeFlag" Name="String" />
+              </p:TypeAnnotation>
+              <p:ValueBoxSettings>
+                <p:fontsize p:Type="Int32">9</p:fontsize>
+                <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+              </p:ValueBoxSettings>
+            </Pad>
+            <Pad Id="QQXdlaPHQwsOe9tP7Ow6oE" SlotId="NaOQ5jwSNDNQCXNDF3bnl0" Bounds="2325,89" />
+            <Pad Id="Oq5topdnXxOQYQ6ZE2O7AT" SlotId="NaOQ5jwSNDNQCXNDF3bnl0" Bounds="2714,89" />
+            <ControlPoint Id="LIpmN5Cs431LWiJ0bmgtHW" Bounds="2875,89" />
+            <ControlPoint Id="LcBrA06qriKPZ48cF1Gr0l" Bounds="2506,89" />
+            <Node Bounds="2311,104,210,86" Id="QMrRh5FuSvkPOL3frezzsY">
+              <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
+                <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
+                <CategoryReference Kind="Category" Name="Primitive" />
+                <Choice Kind="ProcessStatefulRegion" Name="Cache" />
+              </p:NodeReference>
+              <Pin Id="ITLxVxoTB0gLiu3RS9p0qm" Name="Force" Kind="InputPin" />
+              <Pin Id="R6CKryTHwhQMIU0dJY3w04" Name="Dispose Cached Outputs" Kind="InputPin" />
+              <Pin Id="Ey2BPQFYugDPF5HNMGc9IR" Name="Has Changed" Kind="OutputPin" />
+              <Patch Id="RbTGSGhHUu2Ottb242oQXD" ManuallySortedPins="true">
+                <Patch Id="LgEuXmGTVJAOAQs1Wnj7Eb" Name="Create" ManuallySortedPins="true" />
+                <Patch Id="AAxELGwmwTePpZW6rtXLsH" Name="Then" ManuallySortedPins="true" />
+                <Node Bounds="2323,133,186,26" Id="J0OfTT2a0MfMUavtlh5p9p">
+                  <p:NodeReference LastCategoryFullName="VL.HapPlayer.HapPlayer" LastDependency="VL.HapPlayer.dll">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <CategoryReference Kind="AssemblyCategory" Name="HapPlayer" NeedsToBeDirectParent="true">
+                      <p:OuterCategoryReference Kind="AssemblyCategory" Name="HapPlayer" NeedsToBeDirectParent="true" />
+                    </CategoryReference>
+                    <Choice Kind="OperationCallFlag" Name="SetVideoFrameQueueMemoryLimitMb" />
+                  </p:NodeReference>
+                  <Pin Id="Jj5k0K8JJYfMDFTfnHM2Xo" Name="Input" Kind="StateInputPin" />
+                  <Pin Id="H1ZcYSCraR1OVEK10KYoQh" Name="Value" Kind="InputPin" />
+                  <Pin Id="A3BQ6jbrGC2N03I10F08hW" Name="Output" Kind="StateOutputPin" />
+                </Node>
+              </Patch>
+              <ControlPoint Id="POUtmpJr0JyP28ms8Gis4E" Bounds="2506,110" Alignment="Top" />
+            </Node>
+            <Node Bounds="2700,104,190,86" Id="NKTTk7XtuvGQEDc6G5piea">
+              <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
+                <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
+                <CategoryReference Kind="Category" Name="Primitive" />
+                <Choice Kind="ProcessStatefulRegion" Name="Cache" />
+              </p:NodeReference>
+              <Pin Id="K4046P9bQrKQAhyfWPavfp" Name="Force" Kind="InputPin" />
+              <Pin Id="D1QD2bFg6FzLgVlq27IBDk" Name="Dispose Cached Outputs" Kind="InputPin" />
+              <Pin Id="Er0sG3w8TNSPf3wkBKPPrM" Name="Has Changed" Kind="OutputPin" />
+              <Patch Id="H4APawPs7PnM44JLB6sysO" ManuallySortedPins="true">
+                <Patch Id="GpWSkYwAsW9M2KCsrci0uF" Name="Create" ManuallySortedPins="true" />
+                <Patch Id="RIzJ83BV7WGPOQ5CFHE5fs" Name="Then" ManuallySortedPins="true" />
+                <Node Bounds="2712,133,166,26" Id="EpicTqHeCFHQFKTGR29xTH">
+                  <p:NodeReference LastCategoryFullName="VL.HapPlayer.HapPlayer" LastDependency="VL.HapPlayer.dll">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <Choice Kind="OperationCallFlag" Name="SetPacketQueuesMemoryLimitMb" />
+                  </p:NodeReference>
+                  <Pin Id="USHce7lrOxdM4WqiYfDsQe" Name="Input" Kind="StateInputPin" />
+                  <Pin Id="IuEk1NzHVJnPrevVqTL1T8" Name="Value" Kind="InputPin" />
+                  <Pin Id="Kkc3WHuXNHXMdXdFO9a1Vh" Name="Output" Kind="StateOutputPin" />
+                </Node>
+              </Patch>
+              <ControlPoint Id="GaKMcsiB3PzOfpvwpY170k" Bounds="2875,110" Alignment="Top" />
+            </Node>
+            <Node Bounds="1765,737,66,26" Id="M35krbDAhqAMA5QPrC2is2">
+              <p:NodeReference LastCategoryFullName="VL.HapPlayer.HapPlayer" LastDependency="VL.HapPlayer.dll">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="OperationCallFlag" Name="StateString" />
+              </p:NodeReference>
+              <Pin Id="H3DEM84Q21YNDyLk2RVg2V" Name="Input" Kind="StateInputPin" />
+              <Pin Id="Lp8Fmy10h3FOKx0a2FRZrE" Name="Output" Kind="StateOutputPin" />
+              <Pin Id="Bdy2CfjQYr1NSR094seF7p" Name="State String" Kind="OutputPin" />
+            </Node>
+            <ControlPoint Id="LwQuTiJOXBHOQoWsPBGgse" Bounds="1828,793" />
+          </Canvas>
+          <Link Id="HspVc4o8EAbOXNnnbfGNO8" Ids="SXSFLWkyRwwMN92grjNXH9,T3EYFvcaDk0LE28US95LuE" IsHidden="true" />
+          <Link Id="ReZGYnM2AhZLgJUPetJmUO" Ids="RvPspCWdMbOLJAP8nFHZmH,D407koroxSxMEFUPNEdfEs" />
+          <Link Id="Ji4CVTWCTcAQLZWrK88FhH" Ids="D407koroxSxMEFUPNEdfEs,A44l6zac4Y5LvfmIPHiJpZ" IsHidden="true" />
+          <Link Id="AS9y4EnOGj9NqXvtBdYKkN" Ids="Lpj0BdZSUFjQQEuPrOcGWQ,AzWLWVeguFcOU0dhwGtyxM" />
+          <Link Id="T6nycfn3oT9NWT8bdvWH0B" Ids="AzWLWVeguFcOU0dhwGtyxM,Rz6y3eAl7vmO0BaZauWd8d" IsHidden="true" />
+          <Link Id="BerUiFo53PtO0Wo0qNcWhl" Ids="KYyhYQpGlP1Mrfrwbdab9p,U3cbV0ax0uBOUN9Glfg3F2" />
+          <Link Id="EtOriPZGwAGO14YWQ0y4xI" Ids="OpQO1h6wMUDMX7eYRDLaqz,KYyhYQpGlP1Mrfrwbdab9p" IsHidden="true" />
+          <Link Id="Ccnxu5OygvyO4UG7Vf96hh" Ids="RTKcwa6FWf2LIIvqNXvkv8,QXL659CqKTdOStV9fUAZXK" IsHidden="true" />
+          <Link Id="SfqicEmQOC7LxYBbUuKpxH" Ids="RmBRoVD1MTPP3FXRDpDGNz,StW9pQnRD8TOWl0Aw96lQB" />
+          <Link Id="BnSJOpEXqZsMda05tcw3MB" Ids="StW9pQnRD8TOWl0Aw96lQB,Kh8zQD6Ue0ZNqbLTxiXQ86" IsHidden="true" />
+          <Link Id="MCsS4kO0hhHP9jP9ldDxtr" Ids="BQETQ34luS5LRoQM8uAldG,MNpWeA0KlNjMcobmBTq5II" />
+          <Link Id="IV1XzrBLAPSOCIbWruwFk1" Ids="MNpWeA0KlNjMcobmBTq5II,HDyVxN8eH6qM4BKkL5IUbM" IsHidden="true" />
+          <Link Id="UNZ1Q9z9qBzPZu0YdXrOnZ" Ids="A4SKd35hnPhMIQy6m3g4yT,KvcYdJ3YZMsO6OnOUxzeI6" />
+          <Link Id="TS4HNkkw3m3NMqxcGPeFjq" Ids="KvcYdJ3YZMsO6OnOUxzeI6,DZDqfciRuLPNrVRAQbQXOj" IsHidden="true" />
+          <Link Id="BhtZyPDErzOLXNb2eaX5kf" Ids="H7DOG7OwphePVYVvq67ZPP,VqNQjSqqoLmNFQZmFfMK30" />
+          <Link Id="D7qD7s4VeAxPamSBPKvHM8" Ids="VqNQjSqqoLmNFQZmFfMK30,REPa3DCXNiXPmY2bliNGnE" IsHidden="true" />
+          <Link Id="CLy8rW8Zgw0LlxMZ42Mm0O" Ids="GtF3i4vLXJrNJfF8N4BnUF,GZw03lkb1gpPxVRtb9kBOi" />
+          <Link Id="OjN26hbawNoOEY29liEsUh" Ids="GTCcarsV6hkMPpqz7SvVly,NRnVuelhrQwPDhycof1iGW" />
+          <Link Id="Rgxen3fUawWOVq9yC6HO8r" Ids="O3PzLRPqMN4MTHTZge9WNw,E92wIK6U9KlM5S75mEQHRr" />
+          <Link Id="AngueKzOmj2NmJxvXWdjjM" Ids="MqydzkqrwrRQFotR7A7FJU,EimsmzXsAtwN8RdYQ2DVdY" />
+          <Link Id="KTNZ6BNkHKxLGrUvkDuv6n" Ids="GQRsCqIqmJKPTPvL42hpRN,Vamrjb8A6oKOOwxeNGt9Bm" />
+          <Link Id="HixWxvo5UosMIyR07DUNxM" Ids="CLXx5dDV78uNH5fWciARCw,IAk1k6BqqXTNecuSaAW8nu" />
+          <Link Id="QtX1JIeKOwaNNhqGVExQiQ" Ids="S1Onvo7SGPyO3OaFggBxCM,VUqmuAAPVYjOISBcywNXMp" />
+          <Link Id="O8JJChZyLVnPjtFNc5R17m" Ids="T3EYFvcaDk0LE28US95LuE,S1Onvo7SGPyO3OaFggBxCM" />
+          <Slot Id="NaOQ5jwSNDNQCXNDF3bnl0" Name="HapPlayer" />
+          <Link Id="PvXbEDQLchKMRBxLZLRYs4" Ids="CHjNQlXZMz5QEdRYB8Hwvt,RKGd8YJA2zHPYqJRETtZeN" />
+          <Link Id="PwfMr46NHyQMTO7YITEKW5" Ids="LzsWyRDQ3zFLTARhHvVSp7,Bey9XLauofOQKDEwJchD0i" />
+          <Link Id="UmU0Bzf9noULoqmYLMrjQv" Ids="CWFKBCykkbxNoYlEwyFnwM,HysDbxqfEKJLPvCsVezyxq" IsHidden="true" />
+          <Link Id="KtwZQs3vCRkMMx5OBN6KpS" Ids="PEsF9xKNfxOPOJjyupjMNQ,N8Gd8xrwcmUPm3TrxIMDUS" IsHidden="true" />
+          <Link Id="BmdwzH0oPhuMecRegrwj6x" Ids="DAJzehgiGN9MkkdGymaLzo,BvPlZouTRYvNegrj3Eu6Ei" IsHidden="true" />
+          <Link Id="IIp2ITOYP21MJZ2eoQAL4d" Ids="Ji8K6P28svSLLVzsOgrN5q,PUWjnDKdpdBPg4jRekON0t" />
+          <Link Id="FdMfrL2OEepNPzczoPDIss" Ids="PDl6GKhTwHhOghCDGTKThP,Hob5EKYebtfLkCPyLTFYYP" />
+          <Link Id="A2GNMUApgpdN7K77E1Gbmd" Ids="HysDbxqfEKJLPvCsVezyxq,PDl6GKhTwHhOghCDGTKThP" />
+          <Link Id="AKKDnCs2EAvNMyllVF0ioe" Ids="BXEXHLUPiASOQYNr4GLNY4,EqEPrZOC8SHLuW4hLN3SmA" />
+          <Link Id="Jyh1r9ernGRLHzF6sXzxg3" Ids="Nxo0d2u665BNJ6jJzqtisK,EHy6rkmocWhPT4l17MOnHi" />
+          <Link Id="UGQWrqrMORkPRnZ4ws5y0G" Ids="BXEXHLUPiASOQYNr4GLNY4,ArnrjzeWhwbMWMowA39YSr" />
+          <Link Id="NhgNeaZzUycNfC2x5u3ZnT" Ids="Pddx8zkIYTsQUAefK895oU,Bbd1A171mLkLWxEegN4XVe" />
+          <Link Id="E6QQJLWrb5jNqu5lOZRVpK" Ids="IQU8r9CpAmgMJBQ5M39nwJ,SK9uwWSJ2JmQBy6S7nPzbp" />
+          <Link Id="LMt2BGH74eRL0zPrnheCrG" Ids="BN8DlWvdTpCNRs64BaXHHT,JNj13UIB4VfLAw9QEliUVa" />
+          <Link Id="N1DE3qIGRmGLjn6wCX8Qsx" Ids="E1WLVbWvH9cNKwzE7pT3B5,PU4u6kuSaz9NB51WE8mxUc" />
+          <Link Id="LKJOxWjUBZkQDcjB0YwOqr" Ids="LMr96hrG8UmQXtcOd7YBbd,UhhideJgoGeNIsm8Fyp73q" />
+          <Link Id="Hx3CCSDkAYnP3eMaxM59HY" Ids="UmwNXaZIoRyMmeL8uSItbT,PsIm9NZ2vlYNn3BcAvEE28" />
+          <Link Id="BVrGjIIWz9lLguV007YhYk" Ids="VnGxoeqJJxtMUa92i9kutF,CxEU680JdYEMY3FQ1tie8e" />
+          <Link Id="FaKXK2D1fxhNVNUpG3ecL2" Ids="FASaNfAAuE4MxVWDSWDxi5,SvOZhQV81udLsKYIB32sll" />
+          <Link Id="Drclba1v8vhNjJsp9cAOww" Ids="GznViNFPxZ2Oe3xrpgTpoq,Tpel8Lcso2VQKvd8qqHDND" />
+          <Link Id="LvUCFizQTaGMYaYrO7N73Z" Ids="LpNbAMSTk2YN0z8g8QSnzA,A8eZta9qCVpQMRUw5EsJW5" />
+          <Link Id="AcgsbUKd6aiQLJep6qOFi7" Ids="N8Gd8xrwcmUPm3TrxIMDUS,VQx2ga6oibQMyEUw69v42g" />
+          <Link Id="PDyk9rUGJdpPSPfcAfchKp" Ids="UJVepTjthVKQaWt51ybF2Q,SwmFtqJTnNIMkfCEqXhw8t" />
+          <Link Id="BkLgmobzaiHOEilwPfeDb0" Ids="OfRwDlWTVIaLy0XHjsVdjW,Ra0eMwfWO5EMsaHd0Pw8lX" />
+          <Link Id="EieW81pzLscLdsVf3iOLZe" Ids="JRobLFUyR4rMyIENcBeXSy,No9cClpXYVTP1jT10ZzP20" />
+          <Link Id="FPofJr7g2ejLMmSuFjqeMt" Ids="FZestu2kCGFMGcUC7XHZBJ,PX7hQAXnlpMOKDPQ2j8Aq6" />
+          <Link Id="HH2e8GnObz6NQlnTV7e3Lc" Ids="U0SOt5uRazILQxs12qJcns,HnkQndBHGBAPUyZHxN4L7o" />
+          <Link Id="NibwShInXiGPYlQSYXpV6N" Ids="HnkQndBHGBAPUyZHxN4L7o,M4fVuMcc95oPma9jFfxojR" IsHidden="true" />
+          <Link Id="UpwApnENwuyNz5Hn0TH1Iu" Ids="PXZBePewy5zLgXeJh5r3c5,C5v19A7xfs1PNB61MnR15T" />
+          <Link Id="Po9g0bXmynyN2axDac3qrZ" Ids="SdvNjMNK1VfL467eA4G6t6,RqwmzlIIGwpMDhamg2rKRh" />
+          <Link Id="AEDELvClPyUN28n7ni2vb2" Ids="RqwmzlIIGwpMDhamg2rKRh,RjwmdcHJQhpM6WSKp8rbF4" IsHidden="true" />
+          <Link Id="EJBKlk6wrwULuGqjOZQo4S" Ids="MAoRaQlcADZMRO4XUQqHlj,ITyxuO3BGvhNxGNusfISI5" />
+          <Link Id="JQBiLXmpn0eOjMAxJCR13w" Ids="MZVBlRCs0ljP0xGq8l5Vfh,DERtzQEIKDqPgUswvxz7e1" />
+          <Link Id="LW05unqD1cALORqVEtudXS" Ids="T1by17uLTbHOwXKMA2KUz7,LI7RF181IMNQGnTr03JWdk" />
+          <Link Id="Sis3VLpkCF4MBP2I4NEVdp" Ids="LOovySq9ouHLiJaQOmzpeg,DXfWrN9RsROOODGwp7UBSV" />
+          <Link Id="JfiNkABErVdMZjblXOGjiI" Ids="JRBAsmjhemzOmWdH0rAc1t,RTKcwa6FWf2LIIvqNXvkv8" />
+          <Link Id="CUvzunsnS7SNhrDjjHfDqZ" Ids="BvPlZouTRYvNegrj3Eu6Ei,AQiFFJMgD1HL7NRk6E9SJZ" />
+          <Link Id="J0MFhXgpGjdO0WEnJkZQuD" Ids="AQiFFJMgD1HL7NRk6E9SJZ,JpvWSmCV66hMqbwTp5KXu3" />
+          <Link Id="OBUZqBhBuK2NVgkP15bgnM" Ids="MZVBlRCs0ljP0xGq8l5Vfh,NCT2fwzHXJGPIpPCBzaClc" />
+          <Link Id="FOYxhtzbid9OuXTz2YrnKH" Ids="F8HqbANOzmrOFN9xP0IWHh,NgGbBueoBbfPIHvBvXYJWO" />
+          <Link Id="FsTLfYxL2rNNr5Vs3uWPAB" Ids="H8pWnDBNJM6MFPlfiCNRFU,Ql6ovXLHSwJPvIdgqZVUZb" />
+          <Link Id="LE3KSsDMepMLqJJJsFoqVs" Ids="SaU6yzp20vcQPLIhif0P2J,RR8W0RAD93zM7kd4fQADxa" />
+          <Link Id="TMV8ZwYFDCiPxBoGMUTENn" Ids="V4kFpr6LzHaQYZpl6Q5a1p,DOtUNpkLZs6OSgazr4FDLy" />
+          <Link Id="OmNUW4HHvcFPjNZgONN47g" Ids="Sx76Aa63Ie2P665PrIEnsa,LuowmVhXtu5PpmtUUQzllj" />
+          <Link Id="NZ0GP3BXcXHO3eLPUXP1Gy" Ids="QQOuhjBFs00P9TqRqfjaFC,HCPJYn0kL3CMQCto7rKj3p" />
+          <Link Id="Oah6OFe4ERUOLsXWh8FcSH" Ids="A4SKd35hnPhMIQy6m3g4yT,FIAwDqduXQmOnIj3pMpBIh" />
+          <Link Id="Aclg1ZBthIHNliztvgKeEn" Ids="U0SOt5uRazILQxs12qJcns,N0F5t4L4A4COjvzowzHgLy" />
+          <Link Id="R6noeXZjo35OOP3FiDTe93" Ids="EnwiOi4jUNoM2Rlpu4JEeK,AdhAmOs6b6lLzJPM782XMo" />
+          <Link Id="ReHof2bsIopO3p0HlhRdSJ" Ids="UIN7ZlcuE0vQFkhmHZpORT,Ec4Dcch0nRjNuZ6gwEkuI2" IsHidden="true" />
+          <Link Id="PHAcrbaiVtZO6sUV3OmS0k" Ids="MvIbohuk6mOMhzaeaAh5ok,UIN7ZlcuE0vQFkhmHZpORT" />
+          <Link Id="JeluU479G3YLu1gYReWiCC" Ids="GvjywugY2xVNR7Ogly7qDO,NdNoy3SdcxdN2LD1OuMQJf" IsHidden="true" />
+          <Slot Id="C05bG2PIwjgOjhMNVvSgPz" Name="signal" />
+          <Link Id="JOce86UbUHlLlxZJ41Xf0O" Ids="FLZPvfpxq6nNWtF8JSS7yE,QoGn2DGULC8LngTCHQvx30" IsFeedback="true" />
+          <Link Id="QejSL9jz4PUMLMczX1YSU4" Ids="QoGn2DGULC8LngTCHQvx30,Jwxnrs76jhjQN9cgwnBzTA" />
+          <Link Id="FlsbA9GMQZfOvcBjjMxSIS" Ids="EcyICJ9XRKaOXKGxnYQ7Dg,FLZPvfpxq6nNWtF8JSS7yE" />
+          <Link Id="AaXFsRyhuIvNoSqvTfUpf7" Ids="POgmbe4BNbLLhFthfnHL7u,HaKiVZkwbQbMyskP4VzMuy" IsFeedback="true" />
+          <Link Id="MmdRnw7ofyBQJ6SQ6QBBbX" Ids="POgmbe4BNbLLhFthfnHL7u,HaKiVZkwbQbMyskP4VzMuy" />
+          <Link Id="FKyHhXb8rtNLrNvP2xnsAa" Ids="Jwxnrs76jhjQN9cgwnBzTA,Ar6qs7XwbulQKhaY3GGV8e" />
+          <Link Id="MqtWTAwicNAMPI9mAIwapN" Ids="CWa0XS8UZNlPvl9DxuqPFx,C25bMpNXbaYMMpEhaP2cdN" IsFeedback="true" />
+          <Link Id="LrY8Y4QejCuOJpeivpOL5e" Ids="Jwxnrs76jhjQN9cgwnBzTA,CkYmhvguaICNsvSiqHDNR6" />
+          <Link Id="NAv2IsV54mxNKxSVFeyRHy" Ids="IaiquNR6pOlO5DivY5DXeX,BKBqFsi9Vc5MUZ05v7uqih" />
+          <Link Id="QdanTv6mjpFNyvFKXePNv3" Ids="PMELpUNh2vJNQ4PSFcV9n9,Fsw4wN0eOFvOmuxFyfvT3I" IsFeedback="true" />
+          <Link Id="AY5YWORbW5sOoSskk04PcF" Ids="PMELpUNh2vJNQ4PSFcV9n9,Fsw4wN0eOFvOmuxFyfvT3I" />
+          <Link Id="SLHDJSyyENINxqKYSjwuLX" Ids="Fs76hZgjJElLleNcWklOda,QoGn2DGULC8LngTCHQvx30" />
+          <Link Id="DyFM5k2BwzbPCuOCEj84LI" Ids="OlN70iplkAMLo0t1LhzX3o,POgmbe4BNbLLhFthfnHL7u" />
+          <Link Id="HxkShKBxSCAQBgziWxiWTp" Ids="LbFC9RoajchN5JpVxPCB8D,SYOL1wBi9TBMdETT6zrUWe" />
+          <Link Id="La0qQ7w4fMAQPqPk0JvX5Z" Ids="CEUEOCEe6ocNDiIPAqPCSv,HxRWrHdWW1WM9egKcTeiD7" />
+          <Link Id="DRVqiZOzyPzNcZ7yR8HrgX" Ids="JngXIYlj9v0Pti9X2ZFddu,KqeFsBSYbM2L8YT9LUK9DC" />
+          <Link Id="RBmiV25LWh3M53SRI2I2oS" Ids="APab6gWZBK5MolTxl0fV7L,Gxgngc4l6QjLqiJT4nuHq7" />
+          <Link Id="QQDoemyrqU4Mf87oGfBv9U" Ids="GZa6mzmA9cNPoexsHGKrlt,DsKAvX2qgYFN0ITQ33F99x" />
+          <Link Id="CUm32ho5hluQGId05i7jsB" Ids="CMWFzyJO3FbLYGSJDVgX0X,CtWLhUhv8vkQXHPYZcIdsi" />
+          <Link Id="BItTPm0OgB9PT10O4IDNAc" Ids="AQ37qetUMr7PJM3f60QUJM,PMELpUNh2vJNQ4PSFcV9n9" />
+          <Link Id="QWAOdyyQh6cQF4FAIKsyO5" Ids="Fsw4wN0eOFvOmuxFyfvT3I,LbWnufBsPZrNwmQj2QShnc" />
+          <Link Id="KnkCGr5C4gKPzolb2xPiE9" Ids="I3z4Zi0GSD2Nvc74fxadHD,C25bMpNXbaYMMpEhaP2cdN" />
+          <Link Id="TNR5MfrJikGMQpGiBXqZ6j" Ids="C25bMpNXbaYMMpEhaP2cdN,GvjywugY2xVNR7Ogly7qDO" />
+          <Link Id="IAaAQ6SDUdqMB42xDHVdk8" Ids="RvN5HJqYd1FMuosIg6s8oO,BoRE1r6faWHOZwXLqG17hp" />
+          <Link Id="TOfAIg0JZgpO3S0v2jqY3z" Ids="NBvjmpYMoCnPPYpk00umkU,UKCRo0yczdwL9aWN8n739X" />
+          <Link Id="FaGuCY4i3rNQYjaildClPh" Ids="SylQ9NK3IO3NXY56JSf6l6,NBvjmpYMoCnPPYpk00umkU" IsHidden="true" />
+          <Link Id="QPmBq295QbzPm7oLD9ZKaL" Ids="JPcBFzXqQ8CNhxpxHfpxRI,Jr5Xjftj9d3MwshaBdfzRF" />
+          <Link Id="K6ai35y7GZ2MmPR9PSkbHh" Ids="RFPZH8ZXEn1MstDFZKuXKu,JPcBFzXqQ8CNhxpxHfpxRI" IsHidden="true" />
+          <Link Id="BmokNQ8q2kMNogQrvxeDkT" Ids="TrljvhrEA4FLUpzTbI41D2,FzrOzMc60ucPR7ZtsllMbT" />
+          <Link Id="UH0mGVu0GtxOmSdDadIaEt" Ids="DpECHSnP7o2Ma5721M2gsU,SaWkrbSc2ofPjEO6uU6pIg" />
+          <Link Id="FFEqTcKdzCLNi9G58CdKnh" Ids="Crx2D4bpUPvOWZlkdbitfD,EJdtBrY0MovNMCMKAlVQue" />
+          <Link Id="NMkhuTDvfi5PgSpCqTXuQM" Ids="ARmolwUiFsdNbLtxRKs39X,Crx2D4bpUPvOWZlkdbitfD" IsHidden="true" />
+          <Slot Id="HT1w6CzWmciPrxWkoa1hl7" Name="Loop" />
+          <Slot Id="HUDmmmJFmjGNUMpVJEywvc" Name="StartFrame" />
+          <Slot Id="QXDNiGzWoxDM03LreRz5KN" Name="EndFrame" />
+          <Link Id="NwbRUzo1PMxLRBavmkeZVt" Ids="CXyCLXMiTF4OuqjXRALXnv,VqnxTVx2qTNPovLoHZcPRu" />
+          <Link Id="QGB39gIjs3XMN3qfrljQh4" Ids="MlF1yVnyZXZLWdaSlgUElX,H0gKasfUkN8NKEn29Pp5Bw" />
+          <Link Id="S1fRg91foaiLhqUPoGrSn0" Ids="FNUEL7Hl6XhPH7WY3I1I7a,I8lX1D4jTuKP2I6KDR0Cyl" />
+          <Link Id="QurzCAYVZhHM4P9YAyUJa7" Ids="VbYZ0zyebnaNXGwPH0UOzu,EP2fxTu5jucNmyaBjcGopI" />
+          <Link Id="R8MIMUnds4GLIMybT6Kj18" Ids="JzAruEoncY9OigJa4l74NY,P2cGg0hDYOMO6kizEjfaru" />
+          <Link Id="FSvvpNTFoB6OPYzgb4khtZ" Ids="K89936Peb9RPRo4I0OWmYH,JzAruEoncY9OigJa4l74NY" IsHidden="true" />
+          <Link Id="HaglE1KrkrpObOPSeFShUB" Ids="A7aRFANNgO6OGGzCCHheYi,MQ1p9iWL9X1NfDx1ftxIPO" IsHidden="true" />
+          <Link Id="JfrhYuBNtuKLWqXoY0tyDi" Ids="B1D8psHZrFFL6XO9EtOHOz,DMKcXLPweUoNYwe8itlO4a" IsHidden="true" />
+          <Link Id="Fdp3TtlWY8hNT4lx6lVc2q" Ids="MQ1p9iWL9X1NfDx1ftxIPO,LDQXCBdp7IFNGk5i7AauNI" />
+          <Link Id="LWngPg1r5n9PDU4KZ02KYN" Ids="QG9ShODKLkLNaTC4fXkylb,O7C2R7TohpDQZPZkVzaZdT" />
+          <Link Id="V16CuEn3sovQIQ72Khd3Eq" Ids="DMKcXLPweUoNYwe8itlO4a,D74aPssuViqLXW0iqZsZt6" />
+          <Link Id="T0ml3uSf2DGOVdEIhP3YJI" Ids="ScLdRKbxHviO0OBZsNbmEA,DF7SdFDIiE2PJraJidbAqS" />
+          <Link Id="L1pl7u2NpRTMDbzGHIgKmy" Ids="P2cGg0hDYOMO6kizEjfaru,VbYZ0zyebnaNXGwPH0UOzu" />
+          <Link Id="LjKCsryyDQtLDeUcpC9bYj" Ids="LDQXCBdp7IFNGk5i7AauNI,QG9ShODKLkLNaTC4fXkylb" />
+          <Link Id="A0gycsp1EoeOYmpEDY3Fty" Ids="D74aPssuViqLXW0iqZsZt6,ScLdRKbxHviO0OBZsNbmEA" />
+          <Link Id="S3NNSKnFFVRLka1Q2BVvu0" Ids="J7MGxWmln9sPZWmq6hK7h1,P2cGg0hDYOMO6kizEjfaru" />
+          <Link Id="VhCO1I3TBl1OckZIJCAaNA" Ids="RGtpsmjmh1zOXqYEqXQt3e,LDQXCBdp7IFNGk5i7AauNI" />
+          <Link Id="CH8uJWmEFzeLOrSkEiNivv" Ids="Rl0KfcGyXgaNRBB8SXdq8i,D74aPssuViqLXW0iqZsZt6" />
+          <Link Id="D4KhYc8V6d6PxOLsXx0Paw" Ids="OXXNovOe51CP9wXtnhOH1h,C9s7cWcn0yUPKWfRPQAs1J" />
+          <Link Id="MWWaZA1FkaLMRsvtHHhlBs" Ids="C9s7cWcn0yUPKWfRPQAs1J,C71uhViuiKHP2oXxz3HOGC" />
+          <Link Id="K1mBPY1V4jNLUk8OIAMjI9" Ids="LPp9Qgl9ZtOO09sk7YmxvS,VhULQHH85qOL5Wsuu2E89R" />
+          <Link Id="RLJVBTOLZlFLPbtDEQ2LTY" Ids="GNKfAyCV5TRP7skImToVRO,B2IpxXmZ2g5PbsLdyNGUK7" />
+          <Link Id="CRUOTo42jJBPEPrRVOHK49" Ids="DZuH8wbfMQANg6ffKFLleU,GNKfAyCV5TRP7skImToVRO" IsHidden="true" />
+          <Link Id="TiBssgUwsYANTjzGqQgF72" Ids="NLSju5WH1F8NOX4Ws6Dmi4,U8HeyliYC91LaQK9tFQDYD" />
+          <Link Id="E0YjczfoepNPp4p2CCVBaP" Ids="JxSQy0JIefBODXuVkYzbGO,MRN9JsCVEjMLzJ3wrD8bYr" />
+          <Link Id="BmG3pXdYMI6Nibw4D5Lttj" Ids="O3XOCHOW9axNBLMC1LVLy2,Qh4QAVHlM7gMbYGH5qLfO7" />
+          <Link Id="OyhWuvdvtKoPr4kwck3AW1" Ids="N45hXf4RE1EMhaSUjqqetf,GdUhBg8a5bqL5pOMzH8mPF" />
+          <Link Id="KHhnJ2RcoGFNYqTnyBYexO" Ids="O3XOCHOW9axNBLMC1LVLy2,HCxR4kEpcgYLeq9Fwk1o48" />
+          <Link Id="HVfzFnTKCzeOULzEMwWmHI" Ids="GAXTAP93YuHOMMeWq11lHA,UKTFVA7xASEOcDPaFRgl9o" />
+          <Link Id="K6b7K0U0ZsaMqSYWvXpDDu" Ids="RiZQGZaa3d5MT5Ah6QShF1,K9jBWa9FEsrMAD8No0EZvA" IsFeedback="true" />
+          <Link Id="LNp22O0LvH2OgGsrPoS1qB" Ids="JIhCFTG8KsWQVurzHpVFMk,RiZQGZaa3d5MT5Ah6QShF1" />
+          <Link Id="M41ZHugazHUOpU4GOU9VDs" Ids="RiZQGZaa3d5MT5Ah6QShF1,LfsNZseCU9oPsd7HC2KQEw" />
+          <Link Id="GLOFSUHR1lXMns9nWekPYc" Ids="PZb3kPWzXznMWlQkjFOXUo,K9jBWa9FEsrMAD8No0EZvA" />
+          <Link Id="Ar4Zh7hjyp0NQ6LfowFbMr" Ids="D9EtQPA4m48N20hIoCCrUe,UyE3vmHR153N8Z04Bbw2sN" />
+          <Link Id="H2Si02UmMwmLddGFbf0bFU" Ids="DvDTd0bgosUPtYeqc06bYh,LLxyeUWRSZXLBFLlFfdZ7g" />
+          <Link Id="EW7nKmu9rN8LuuZBiTyb4Y" Ids="C9s7cWcn0yUPKWfRPQAs1J,VfjqYDUrLGfNzOZMBMnVIe" />
+          <Patch Id="FRHBSfDXM3nMDEVP9SjPRR" Name="Create" ParticipatingElements="S3NNSKnFFVRLka1Q2BVvu0,VhCO1I3TBl1OckZIJCAaNA,CH8uJWmEFzeLOrSkEiNivv">
+            <Pin Id="OpQO1h6wMUDMX7eYRDLaqz" Name="Node Context" Kind="InputPin" Bounds="303,5" Visibility="Hidden" />
+          </Patch>
+          <Patch Id="T7Nk1J2QKM7Ob8eyyrICOt" Name="Update" ParticipatingElements="CL8yRZQm2WlPTf23z8lY6B,VNDuscE3eLjOr68a8mq51e,CAQN4U9vTKxNSOBLSgY7YW" ManuallySortedPins="true">
+            <Pin Id="DZuH8wbfMQANg6ffKFLleU" Name="Dynamic Texture" Kind="InputPin" Bounds="375,262" DefaultValue="True" Visibility="Optional">
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+                <Choice Kind="TypeFlag" Name="Boolean" />
+              </p:TypeAnnotation>
+            </Pin>
+            <Pin Id="QXL659CqKTdOStV9fUAZXK" Name="VideoFrame" Kind="OutputPin" Bounds="512,253" />
+            <Pin Id="NdNoy3SdcxdN2LD1OuMQJf" Name="Audio Signal" Kind="OutputPin" />
+          </Patch>
+          <Patch Id="TC0vIYtlnnNQYCu3xhFynE" Name="SetPath">
+            <Pin Id="SXSFLWkyRwwMN92grjNXH9" Name="Path" Kind="InputPin" DefaultValue="">
+              <p:TypeAnnotation LastCategoryFullName="IO" LastDependency="VL.CoreLib.vl">
+                <Choice Kind="TypeFlag" Name="Path" />
+              </p:TypeAnnotation>
+            </Pin>
+          </Patch>
+          <Patch Id="N2r98vZdK1HPvvWEByRc65" Name="Close" ParticipatingElements="Ekr8hy5a5bWMSAMweTbyJE" />
+          <Patch Id="N1rePOq9mQVLf4xyQABpcE" Name="SetPlay">
+            <Pin Id="CWFKBCykkbxNoYlEwyFnwM" Name="Play" Kind="InputPin" />
+          </Patch>
+          <Patch Id="JrgOrVwDPxfMB71OpMD60v" Name="NextFrame" ParticipatingElements="Tv9WZNhP3AzP1Rv48FXE4I" />
+          <Patch Id="IFhUfO5cO3GPDD3CYw1OSO" Name="PreviousFrame" ParticipatingElements="UJxyjnnTBS0Nqw0pxsIwTv" />
+          <Patch Id="K8pzuLUSfvUM0UAG1tSXiV" Name="Open" ParticipatingElements="QZN3zyayMhIQdJ16tbkYSK" />
+          <Patch Id="PzpXeXqLU4HPjpfm3QA0fM" Name="DoSeek">
+            <Pin Id="PEsF9xKNfxOPOJjyupjMNQ" Name="DoSeek" Kind="InputPin" />
+            <Pin Id="DAJzehgiGN9MkkdGymaLzo" Name="SeekfFrame" Kind="InputPin" />
+          </Patch>
+          <Patch Id="IkTKGAPCFLlQS7QrVbdbS9" Name="GetState" ParticipatingElements="Njm290aSf96Lyq6FRaCniH,Fki3JtgMGWiMj8Ri3iOYOO,NxMW00KVVzjOouakYErcvw,DQOf33i5ywmLizzwzWXjg7,QWG6u4dJ3SCLJxcNs7aNnM,Mssqr948JSBLACCHzwQ2QZ">
+            <Pin Id="A44l6zac4Y5LvfmIPHiJpZ" Name="Path" Kind="OutputPin" />
+            <Pin Id="Rz6y3eAl7vmO0BaZauWd8d" Name="Opened" Kind="OutputPin" />
+            <Pin Id="Kh8zQD6Ue0ZNqbLTxiXQ86" Name="Duration" Kind="OutputPin" />
+            <Pin Id="RjwmdcHJQhpM6WSKp8rbF4" Name="Frame Count" Kind="OutputPin" Bounds="1094,508" />
+            <Pin Id="M4fVuMcc95oPma9jFfxojR" Name="Framerate" Kind="OutputPin" Bounds="1183,507" />
+            <Pin Id="Ec4Dcch0nRjNuZ6gwEkuI2" Name="Current Position" Kind="OutputPin" Bounds="1237,583" />
+            <Pin Id="DZDqfciRuLPNrVRAQbQXOj" Name="Current Frame" Kind="OutputPin" />
+            <Pin Id="REPa3DCXNiXPmY2bliNGnE" Name="Size" Kind="OutputPin" />
+            <Pin Id="HDyVxN8eH6qM4BKkL5IUbM" Name="Playing" Kind="OutputPin" />
+            <Pin Id="DCUWMlQC6xrLky5viJYSOb" Name="State String" Kind="OutputPin" />
+          </Patch>
+          <Patch Id="C6LNaMdJBFJQT0isiJEiei" Name="SetLoop" ParticipatingElements="A0gycsp1EoeOYmpEDY3Fty">
+            <Pin Id="K89936Peb9RPRo4I0OWmYH" Name="Loop" Kind="InputPin" DefaultValue="True" Visibility="Optional">
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+                <Choice Kind="TypeFlag" Name="Boolean" />
+              </p:TypeAnnotation>
+            </Pin>
+            <Pin Id="A7aRFANNgO6OGGzCCHheYi" Name="LoopStart" Kind="InputPin" DefaultValue="-1" Visibility="Optional">
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+                <Choice Kind="TypeFlag" Name="Integer32" />
+              </p:TypeAnnotation>
+            </Pin>
+            <Pin Id="B1D8psHZrFFL6XO9EtOHOz" Name="LoopEnd" Kind="InputPin" DefaultValue="-1" Visibility="Optional">
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+                <Choice Kind="TypeFlag" Name="Integer32" />
+              </p:TypeAnnotation>
+            </Pin>
+          </Patch>
+          <Patch Id="A2MRLxM24RdPn9LUa2vcmk" Name="SetEnableAudio">
+            <Pin Id="SylQ9NK3IO3NXY56JSf6l6" Name="Enable Audio" Kind="InputPin" Visibility="Optional" />
+          </Patch>
+          <Patch Id="Es5ZvKfWHgrNUus8TnZU8V" Name="SetEnableFramedrop">
+            <Pin Id="RFPZH8ZXEn1MstDFZKuXKu" Name="Enable Framedrop" Kind="InputPin" Visibility="Optional" />
+          </Patch>
+          <Patch Id="DeWlrXNxtMINY0mttPmLsH" Name="SetSpeed">
+            <Pin Id="ARmolwUiFsdNbLtxRKs39X" Name="Speed" Kind="InputPin" DefaultValue="1" Visibility="Optional">
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+                <Choice Kind="TypeFlag" Name="Float32" />
+              </p:TypeAnnotation>
+            </Pin>
+          </Patch>
+          <Patch Id="HSv07lvtopLLXpiUfzFx34" Name="Dispose" ParticipatingElements="EBJiSfxuXr9OBLHC4WI8zT" />
+          <Link Id="PCPMFkUuHCaPoGCUAKs2qy" Ids="Oq5topdnXxOQYQ6ZE2O7AT,USHce7lrOxdM4WqiYfDsQe" />
+          <Link Id="MNZDtqWzG5WMi1SfUSmrpJ" Ids="O3A4YN1sLPkLcKKujXJbuY,LIpmN5Cs431LWiJ0bmgtHW" IsHidden="true" />
+          <Link Id="JUKL5wTYiKdMxnqPXTNcxV" Ids="QQXdlaPHQwsOe9tP7Ow6oE,Jj5k0K8JJYfMDFTfnHM2Xo" />
+          <Link Id="HigOgHH9zLmPOUrmd5DK5a" Ids="Jyt5Zwuzp8WNTR3lO3bhDt,LcBrA06qriKPZ48cF1Gr0l" IsHidden="true" />
+          <Link Id="NymFP0SstU6Oq75R4JPXAS" Ids="LcBrA06qriKPZ48cF1Gr0l,POUtmpJr0JyP28ms8Gis4E" />
+          <Link Id="Pq2azmb8MRlOUirfxzowFy" Ids="POUtmpJr0JyP28ms8Gis4E,H1ZcYSCraR1OVEK10KYoQh" />
+          <Link Id="Gl06SUNOE9PLvQYLWFuLgH" Ids="LIpmN5Cs431LWiJ0bmgtHW,GaKMcsiB3PzOfpvwpY170k" />
+          <Link Id="N5KA2xskIyKLolioVSOXGe" Ids="GaKMcsiB3PzOfpvwpY170k,IuEk1NzHVJnPrevVqTL1T8" />
+          <Patch Id="FVk2c2MQYWNPriTt5ZSHnA" Name="SetGPUMemoryLimit">
+            <Pin Id="Jyt5Zwuzp8WNTR3lO3bhDt" Name="GPU Memory Limit MB" Kind="InputPin" DefaultValue="100" Visibility="Optional" />
+          </Patch>
+          <Patch Id="EBNDAuDu2gyOBXiGNbMvWs" Name="SetCPUMemoryLimit">
+            <Pin Id="O3A4YN1sLPkLcKKujXJbuY" Name="CPU Memory Limit MB" Kind="InputPin" DefaultValue="100" Visibility="Optional" />
+          </Patch>
+          <ProcessDefinition Id="Mwz1wQiDlp8N9TKGwfD6iH" HasStateOut="true">
+            <Fragment Id="U8zE9TyU5xpNnKbbU4OrMU" Patch="FRHBSfDXM3nMDEVP9SjPRR" Enabled="true" />
+            <Fragment Id="Ilpha5mss8yMv23afJdYP3" Patch="TC0vIYtlnnNQYCu3xhFynE" Enabled="true" />
+            <Fragment Id="GAtdb741HvQPT2nEMDsuQC" Patch="A2MRLxM24RdPn9LUa2vcmk" Enabled="true" />
+            <Fragment Id="VQgoJONfn3FOzng48p4CMN" Patch="FVk2c2MQYWNPriTt5ZSHnA" Enabled="true" />
+            <Fragment Id="JfIDXQMpZh1QJ2Kq49UYhU" Patch="EBNDAuDu2gyOBXiGNbMvWs" Enabled="true" />
+            <Fragment Id="MlbQxgREummPAxsGxXrdTd" Patch="K8pzuLUSfvUM0UAG1tSXiV" Enabled="true" />
+            <Fragment Id="My3jdanqE4FPTTUxaJbPGT" Patch="N1rePOq9mQVLf4xyQABpcE" Enabled="true" />
+            <Fragment Id="RpV0QkeEOT0MTC8Ll3oP2s" Patch="C6LNaMdJBFJQT0isiJEiei" Enabled="true" />
+            <Fragment Id="GxvLirkH7oANno44u2oyLN" Patch="PzpXeXqLU4HPjpfm3QA0fM" Enabled="true" />
+            <Fragment Id="NZz9oCn9oHvNnLryB0TQkX" Patch="IFhUfO5cO3GPDD3CYw1OSO" Enabled="true" />
+            <Fragment Id="T2fojo1PLnZOrpVJUIFobP" Patch="JrgOrVwDPxfMB71OpMD60v" Enabled="true" />
+            <Fragment Id="Gku8mbNyod8Lsen7QXt8xW" Patch="N2r98vZdK1HPvvWEByRc65" Enabled="true" />
+            <Fragment Id="USOSPN2TREfOX8H5Jc69KC" Patch="DeWlrXNxtMINY0mttPmLsH" Enabled="true" />
+            <Fragment Id="LmZU6joLTLLPsaRsafFqBe" Patch="Es5ZvKfWHgrNUus8TnZU8V" Enabled="true" />
+            <Fragment Id="OqIKkROQNokLcBvQuSiRkM" Patch="T7Nk1J2QKM7Ob8eyyrICOt" Enabled="true" />
+            <Fragment Id="ARqFi2UjlJXLYvetvZZxvI" Patch="IkTKGAPCFLlQS7QrVbdbS9" Enabled="true" />
+          </ProcessDefinition>
+          <Link Id="E9x1CXVA8ULLzFwTn8el1a" Ids="Lgx2IigcMhyLDxabqiasWA,H3DEM84Q21YNDyLk2RVg2V" />
+          <Link Id="UN8knAHDcTpOB8YTYkgfN6" Ids="LwQuTiJOXBHOQoWsPBGgse,DCUWMlQC6xrLky5viJYSOb" IsHidden="true" />
+          <Link Id="IDTa0y3oGujNTVrcj9QoGR" Ids="Bdy2CfjQYr1NSR094seF7p,LwQuTiJOXBHOQoWsPBGgse" />
+        </Patch>
+      </Node>
+    </Canvas>
+    <!--
+
+    ************************ Application ************************
+
+-->
+    <Node Name="Application" Bounds="100,100" Id="Os5bF79Cx3UPSoIX03vE0s">
+      <p:NodeReference>
+        <Choice Kind="ContainerDefinition" Name="Process" />
+        <FullNameCategoryReference ID="Primitive" />
+      </p:NodeReference>
+      <Patch Id="D7nSxdNzQZcO83SaEfDPhK">
+        <Canvas Id="JBcqVJjEItROWUZY3Z3HtW" CanvasType="Group" />
+        <Patch Id="EzxLo8aTEZiNWXn3I9giUR" Name="Create" />
+        <Patch Id="FSHOD7UDOGRNmSm3uaR7HH" Name="Update" />
+        <ProcessDefinition Id="HyH2huSZNFHPcpphDM2hDe">
+          <Fragment Id="L6Bnm9G7d5dNaKoMj8CVo6" Patch="EzxLo8aTEZiNWXn3I9giUR" Enabled="true" />
+          <Fragment Id="Bf1tsoDpimqLfOIYSPgMc7" Patch="FSHOD7UDOGRNmSm3uaR7HH" Enabled="true" />
+        </ProcessDefinition>
+      </Patch>
+    </Node>
+  </Patch>
+  <NugetDependency Id="ISs5MzkYBr7Nvfntcrg4gG" Location="VL.Stride" Version="2023.5.0" />
+  <NugetDependency Id="JtPjtBSlKGVORr9BRuw3r0" Location="VL.Audio" Version="1.2.0" />
+  <PlatformDependency Id="HXAli8fWgMmMW8xZ2rsnH4" Location="./lib/net6.0-windows7.0/VL.HapPlayer.dll" />
+  <PlatformDependency Id="Dp1RWoOAogPL68EKuQJf8U" Location="C:/Program Files/vvvv/vvvv_gamma_2021.4.8-0906-gf8740f07b4/lib/packs/VL.Audio.1.0.2/lib/net472/VL.Audio.dll" />
+</Document>

@@ -1,0 +1,303 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document xmlns:p="property" xmlns:r="reflection" Id="GWbOztvy1lDM2Z2is2QvFv" LanguageVersion="2024.6.1-0015-ge741679a5e" Version="0.128">
+  <NugetDependency Id="NO1ZfxBWILENuLfHuvMsEK" Location="VL.CoreLib" Version="2024.6.1-0015-ge741679a5e" />
+  <Patch Id="QNYLzhmmnFkNU2wDllEzNB">
+    <Canvas Id="NZIqEgYZ7fmLWWQfzUaC3G" DefaultCategory="ImaginaryToolkit.Proxies" CanvasType="FullCategory">
+      <Canvas Id="QZ2za8MiwmoLT8X19xWTD7" Name="System" Position="290,253">
+        <Canvas Id="UuE0nsoCqpGLGsNxMcPzY3" Name="Drawing" Position="222,219">
+          <Canvas Id="T2ZEvQaASbZOncUIYvlkV5" Name="Rectangle" Position="347,224">
+            <!--
+
+    ************************ TopLeft ************************
+
+-->
+            <Node Name="TopLeft" Bounds="419,246,142,151" Id="Op4tsTCUfVULSudmGnbGw9">
+              <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
+                <Choice Kind="OperationDefinition" Name="Operation" />
+              </p:NodeReference>
+              <Patch Id="Lj3xP0HrvkDOKBcpbTd9zp">
+                <Pin Id="BRb0u2JbY7gMSAsH2x2gpS" Name="Input" Kind="InputPin">
+                  <p:TypeAnnotation LastCategoryFullName="System.Drawing" LastDependency="System.Drawing.dll">
+                    <Choice Kind="TypeFlag" Name="Rectangle" />
+                  </p:TypeAnnotation>
+                </Pin>
+                <ControlPoint Id="FsvXMSmlBgMPx90c4HMrp1" Bounds="433,264" />
+                <Link Id="TUER8rqz1BOO2Jkvtxb1TM" Ids="BRb0u2JbY7gMSAsH2x2gpS,FsvXMSmlBgMPx90c4HMrp1" IsHidden="true" />
+                <Node Bounds="431,290,51,26" Id="KZT69QdjvnmLMOjM4ULtef">
+                  <p:NodeReference LastCategoryFullName="System.Drawing.Rectangle" LastDependency="System.Drawing.dll">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <CategoryReference Kind="AssemblyCategory" Name="Rectangle" />
+                    <Choice Kind="OperationCallFlag" Name="X" />
+                  </p:NodeReference>
+                  <Pin Id="JXTtAKOv3PePmFYxuHRWDJ" Name="Input" Kind="StateInputPin" />
+                  <Pin Id="TxkddxyCxT5L0N3Hdsp8Mr" Name="Output" Kind="StateOutputPin" />
+                  <Pin Id="Oz0OGBWY2i6Lm7gYX9TQCN" Name="X" Kind="OutputPin" />
+                </Node>
+                <Link Id="B0tGnIRt0ImLaXGrFOghyr" Ids="FsvXMSmlBgMPx90c4HMrp1,JXTtAKOv3PePmFYxuHRWDJ" />
+                <Node Bounds="477,341,72,19" Id="Bi0rQ8oDzx9MJlgxfPEiZK">
+                  <p:NodeReference LastCategoryFullName="2D.Vector2" LastDependency="VL.CoreLib.vl">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <CategoryReference Kind="4043309057" Name="Vector2" NeedsToBeDirectParent="true" />
+                    <Choice Kind="OperationCallFlag" Name="Vector (Join)" />
+                  </p:NodeReference>
+                  <Pin Id="ObudJxBRzy0LZe5TZJuPSe" Name="X" Kind="InputPin" />
+                  <Pin Id="UJhBTvNn5agOYbJPacemCV" Name="Y" Kind="InputPin" />
+                  <Pin Id="HhiaGPcMERcQEB7X2YwjLQ" Name="Output" Kind="StateOutputPin" />
+                </Node>
+                <Link Id="Q7hKDXdZdYcOS4G6fdycq0" Ids="Oz0OGBWY2i6Lm7gYX9TQCN,ObudJxBRzy0LZe5TZJuPSe" />
+                <Node Bounds="498,290,51,26" Id="SNH0PzSvva2LTGrChQswZt">
+                  <p:NodeReference LastCategoryFullName="System.Drawing.Rectangle" LastDependency="System.Drawing.dll">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <CategoryReference Kind="AssemblyCategory" Name="Rectangle" />
+                    <Choice Kind="OperationCallFlag" Name="Y" />
+                  </p:NodeReference>
+                  <Pin Id="RUtNFVAJu8uPsG6czaSRL0" Name="Input" Kind="StateInputPin" />
+                  <Pin Id="P9hat8crwejLV6GTL6uGHW" Name="Output" Kind="StateOutputPin" />
+                  <Pin Id="MzBi0NzvgXcN17XCVXrb8c" Name="Y" Kind="OutputPin" />
+                </Node>
+                <Link Id="RZR1IGPkBwOPKjVkL3met2" Ids="FsvXMSmlBgMPx90c4HMrp1,RUtNFVAJu8uPsG6czaSRL0" />
+                <Link Id="Ufh62NfbwKmPwzvpxDOzoj" Ids="MzBi0NzvgXcN17XCVXrb8c,UJhBTvNn5agOYbJPacemCV" />
+                <ControlPoint Id="DG2CUe9tYFFPvm2hz27Lgr" Bounds="479,380" />
+                <Link Id="D9jAWZcrT6lLL7b3cdHCMC" Ids="HhiaGPcMERcQEB7X2YwjLQ,DG2CUe9tYFFPvm2hz27Lgr" />
+                <Pin Id="QuLCcSeLdnSMHvOVAyUUrP" Name="Output" Kind="OutputPin" Bounds="479,380">
+                  <p:TypeAnnotation LastCategoryFullName="2D" LastDependency="VL.CoreLib.vl">
+                    <Choice Kind="TypeFlag" Name="Vector2" />
+                  </p:TypeAnnotation>
+                </Pin>
+                <Link Id="LYuPncB7z3uLuYlrcAcDFf" Ids="DG2CUe9tYFFPvm2hz27Lgr,QuLCcSeLdnSMHvOVAyUUrP" IsHidden="true" />
+              </Patch>
+            </Node>
+            <!--
+
+    ************************ Size ************************
+
+-->
+            <Node Name="Size" Bounds="638,247,142,151" Id="I3btAq3ze8pP5JkHa0oVqy">
+              <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
+                <Choice Kind="OperationDefinition" Name="Operation" />
+              </p:NodeReference>
+              <Patch Id="HaaNI74qEH7OYqKhroH1wE">
+                <ControlPoint Id="VEbIY8XZ5qIO5uOTKACXBP" Bounds="652,265" />
+                <Node Bounds="650,291,51,26" Id="BDyNxAXZbOLLwypgdpTDR8">
+                  <p:NodeReference LastCategoryFullName="System.Drawing.Rectangle" LastDependency="System.Drawing.dll">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <CategoryReference Kind="AssemblyCategory" Name="Rectangle" />
+                    <Choice Kind="OperationCallFlag" Name="Width" />
+                  </p:NodeReference>
+                  <Pin Id="OLr0nK77HgOLemSuln05F6" Name="Input" Kind="StateInputPin" />
+                  <Pin Id="VHIIqibOIbbLTzcr6pV7PB" Name="Output" Kind="StateOutputPin" />
+                  <Pin Id="KguDWU4OjuIQX29IsQbucU" Name="Width" Kind="OutputPin" />
+                </Node>
+                <Node Bounds="717,291,51,26" Id="VHfn4wFAmLyOmvSQuWpMPw">
+                  <p:NodeReference LastCategoryFullName="System.Drawing.Rectangle" LastDependency="System.Drawing.dll">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <CategoryReference Kind="AssemblyCategory" Name="Rectangle" />
+                    <Choice Kind="OperationCallFlag" Name="Height" />
+                  </p:NodeReference>
+                  <Pin Id="BlPPty61hypNL1NP8GUBcS" Name="Input" Kind="StateInputPin" />
+                  <Pin Id="UCb28IaMzynPGX1TbxbbIi" Name="Output" Kind="StateOutputPin" />
+                  <Pin Id="A2SwVTuUaLbN23kVu6wZG4" Name="Height" Kind="OutputPin" />
+                </Node>
+                <ControlPoint Id="Ec1CGeCn489NA2uZF86rmp" Bounds="698,381" />
+                <Link Id="QTBNpmfNpInL4MCyB7KK4A" Ids="C2cJVRPgIfcNaQoGo2RVId,VEbIY8XZ5qIO5uOTKACXBP" IsHidden="true" />
+                <Link Id="JEioAGNBWUUNUowTQLE0MP" Ids="VEbIY8XZ5qIO5uOTKACXBP,OLr0nK77HgOLemSuln05F6" />
+                <Link Id="CaZwrmrmS3oMkxhu6IIfqf" Ids="VEbIY8XZ5qIO5uOTKACXBP,BlPPty61hypNL1NP8GUBcS" />
+                <Link Id="UWsNpHlKQVQOVsuUx999Se" Ids="Ec1CGeCn489NA2uZF86rmp,SYQW0UVB6GoNxfy9dMrsMT" IsHidden="true" />
+                <Node Bounds="696,336,34,19" Id="LFdgTzGDh6IOyyHDg2bsDM">
+                  <p:NodeReference LastCategoryFullName="Primitive.Int2" LastDependency="VL.CoreLib.vl">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <Choice Kind="OperationCallFlag" Name="Int2 (Create)" />
+                  </p:NodeReference>
+                  <Pin Id="JzPCTYTD4bLMKd9GIgsfTY" Name="X" Kind="InputPin" />
+                  <Pin Id="QJOF9qw5YdlPAk8rv7SHtl" Name="Y" Kind="InputPin" />
+                  <Pin Id="ADsjTaGCydvOoJthMvOtTW" Name="Output" Kind="StateOutputPin" />
+                </Node>
+                <Link Id="KvW2KtnR9rkLFoYlX20fGr" Ids="KguDWU4OjuIQX29IsQbucU,JzPCTYTD4bLMKd9GIgsfTY" />
+                <Link Id="UGFxKMzJnqXOO7V0H9tmzT" Ids="A2SwVTuUaLbN23kVu6wZG4,QJOF9qw5YdlPAk8rv7SHtl" />
+                <Link Id="Ahn9ZJ209H6QFPMtvDcAmA" Ids="ADsjTaGCydvOoJthMvOtTW,Ec1CGeCn489NA2uZF86rmp" />
+                <Pin Id="C2cJVRPgIfcNaQoGo2RVId" Name="Input" Kind="InputPin">
+                  <p:TypeAnnotation LastCategoryFullName="System.Drawing" LastDependency="System.Drawing.dll">
+                    <Choice Kind="TypeFlag" Name="Rectangle" />
+                  </p:TypeAnnotation>
+                </Pin>
+                <Pin Id="SYQW0UVB6GoNxfy9dMrsMT" Name="Output" Kind="OutputPin" Bounds="479,380">
+                  <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+                    <Choice Kind="TypeFlag" Name="Int2" />
+                  </p:TypeAnnotation>
+                </Pin>
+              </Patch>
+            </Node>
+            <!--
+
+    ************************ Location ************************
+
+-->
+            <Node Name="Location" Bounds="427,462,174,186" Id="EkVo2AvaBbaLBiuvK0KDFo">
+              <p:NodeReference>
+                <Choice Kind="OperationDefinition" />
+              </p:NodeReference>
+              <Patch Id="VgpHAQSUCqUQRF4RFbgY4z">
+                <Node Bounds="439,498,65,26" Id="RfjJ0Ha0fZdNkwRKzKShf5">
+                  <p:NodeReference LastCategoryFullName="System.Drawing.Rectangle" LastDependency="System.Drawing.dll">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <CategoryReference Kind="AssemblyCategory" Name="Rectangle" />
+                    <Choice Kind="OperationCallFlag" Name="Location" />
+                  </p:NodeReference>
+                  <Pin Id="FwCDvrFaHkbMSqIBG8NMvF" Name="Input" Kind="StateInputPin" />
+                  <Pin Id="TxaWv8BIDlwMUiXd2baeBC" Name="Output" Kind="StateOutputPin" />
+                  <Pin Id="TeWuRIoDBGqOQQx1GfmjfK" Name="Location" Kind="OutputPin" />
+                </Node>
+                <ControlPoint Id="Sl7Tyap03kAOqVTmXis0aG" Bounds="441,480" />
+                <Link Id="GEHtLJtUozBLKqDgWglYVJ" Ids="Sl7Tyap03kAOqVTmXis0aG,FwCDvrFaHkbMSqIBG8NMvF" />
+                <Pin Id="Jw7rjnPmhTPMZGQwrf9V8g" Name="Input" Kind="InputPin" />
+                <Link Id="ErxEqRAvR6QOESEVaXdqYg" Ids="Jw7rjnPmhTPMZGQwrf9V8g,Sl7Tyap03kAOqVTmXis0aG" IsHidden="true" />
+                <Node Bounds="499,550,34,26" Id="MhOttJSZLdbN4A2O2rcWI3">
+                  <p:NodeReference LastCategoryFullName="System.Drawing.Point" LastDependency="System.Drawing.dll">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <CategoryReference Kind="AssemblyCategory" Name="Point" />
+                    <Choice Kind="OperationCallFlag" Name="X" />
+                  </p:NodeReference>
+                  <Pin Id="JUXCuWOkhJaMFXiz5PY6PK" Name="Input" Kind="StateInputPin" />
+                  <Pin Id="Hnqv5H9sw2fMO7hiP6oxHQ" Name="Output" Kind="StateOutputPin" />
+                  <Pin Id="UoNtsEnxsLGQQEAapKxaky" Name="X" Kind="OutputPin" />
+                </Node>
+                <Link Id="QYflKUZeFdNL6dJ2NVHpUg" Ids="TeWuRIoDBGqOQQx1GfmjfK,JUXCuWOkhJaMFXiz5PY6PK" />
+                <Node Bounds="555,550,34,26" Id="JqNwUdLT69nN8H4ORFYN8T">
+                  <p:NodeReference LastCategoryFullName="System.Drawing.Point" LastDependency="System.Drawing.dll">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <CategoryReference Kind="AssemblyCategory" Name="Point" />
+                    <Choice Kind="OperationCallFlag" Name="Y" />
+                  </p:NodeReference>
+                  <Pin Id="GZXIJmEZvGlOv9vEImxZ7i" Name="Input" Kind="StateInputPin" />
+                  <Pin Id="Kiy2StfBNV9LhbsWpgVZeS" Name="Output" Kind="StateOutputPin" />
+                  <Pin Id="GFGByk88kR8L1M4XOWBdOU" Name="Y" Kind="OutputPin" />
+                </Node>
+                <Link Id="JQVcapJq5sWM1oUxgKnybU" Ids="TeWuRIoDBGqOQQx1GfmjfK,GZXIJmEZvGlOv9vEImxZ7i" />
+                <Node Bounds="528,597,34,19" Id="I6zZ3oKmZh5Obi4hjEK0Oa">
+                  <p:NodeReference LastCategoryFullName="Primitive.Int2" LastDependency="VL.CoreLib.vl">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <Choice Kind="OperationCallFlag" Name="Int2 (Create)" />
+                  </p:NodeReference>
+                  <Pin Id="RKlWFbGCJQQNe8GcSFoLha" Name="X" Kind="InputPin" />
+                  <Pin Id="JtplUHf5OmULAmGtR7ZPZI" Name="Y" Kind="InputPin" />
+                  <Pin Id="D1gO2oliuDTNikAWxs1bOJ" Name="Output" Kind="StateOutputPin" />
+                </Node>
+                <Link Id="RfVAEisyqj8NvoHjD8o1l6" Ids="UoNtsEnxsLGQQEAapKxaky,RKlWFbGCJQQNe8GcSFoLha" />
+                <Link Id="TuTahzQJfqLMbMDGbxuFLs" Ids="GFGByk88kR8L1M4XOWBdOU,JtplUHf5OmULAmGtR7ZPZI" />
+                <ControlPoint Id="QantuslrmybMAJAyxBGYXl" Bounds="530,631" />
+                <Link Id="Hp3RKzxsq69LLyxLOjYFkU" Ids="D1gO2oliuDTNikAWxs1bOJ,QantuslrmybMAJAyxBGYXl" />
+                <Pin Id="TpcHVR9869IPBjsOwQci3x" Name="Output" Kind="OutputPin" />
+                <Link Id="ExtD8OggaIzLe3IjI3AyX3" Ids="QantuslrmybMAJAyxBGYXl,TpcHVR9869IPBjsOwQci3x" IsHidden="true" />
+              </Patch>
+            </Node>
+          </Canvas>
+        </Canvas>
+        <Canvas Id="T3thaCn0MvfNkE1EpNzHBM" Name="Windows" Position="222,272">
+          <Canvas Id="TnZVwuojBx7Nyo1uDKeeS2" Name="Forms" Position="216,225">
+            <Canvas Id="ApXqbQKW9fjO5SXKxkVLbA" Name="Screen" Position="393,280">
+              <!--
+
+    ************************ AllScreens ************************
+
+-->
+              <Node Name="AllScreens" Bounds="449,399,87,75" Id="NloYsca8UwQMZoAqABDcfO">
+                <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
+                  <Choice Kind="OperationDefinition" Name="Operation" />
+                </p:NodeReference>
+                <Patch Id="RNPpiWx0ugmMVh54YhFNQJ">
+                  <Node Bounds="461,422,63,19" Id="Lh3mKPaqpXiNiWUq8mkK7k">
+                    <p:NodeReference LastCategoryFullName="System.Windows.Forms.Screen" LastDependency="System.Windows.Forms.dll">
+                      <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                      <CategoryReference Kind="AssemblyCategory" Name="Screen" NeedsToBeDirectParent="true" />
+                      <Choice Kind="OperationCallFlag" Name="AllScreens" />
+                    </p:NodeReference>
+                    <Pin Id="F3ApWp7ubsaLxvOVzbzRMd" Name="All Screens" Kind="OutputPin" />
+                  </Node>
+                  <ControlPoint Id="RZeGdmPjC1TNmOjJtHZ9xT" Bounds="463,457" />
+                  <Link Id="GD2p9prDgXALeniq0hvHgK" Ids="F3ApWp7ubsaLxvOVzbzRMd,RZeGdmPjC1TNmOjJtHZ9xT" />
+                  <Pin Id="IKLPm8KZ6lMP2JjQD6WphV" Name="All Screens" Kind="OutputPin" Bounds="519,366" />
+                  <Link Id="PAEeyzgZK43LA5Bm99S5wN" Ids="RZeGdmPjC1TNmOjJtHZ9xT,IKLPm8KZ6lMP2JjQD6WphV" IsHidden="true" />
+                </Patch>
+              </Node>
+              <!--
+
+    ************************ PrimaryScreen ************************
+
+-->
+              <Node Name="PrimaryScreen" Bounds="589,395,119,92" Id="LpdnRQAgM7HL27mDpD1994">
+                <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
+                  <Choice Kind="OperationDefinition" Name="Operation" />
+                </p:NodeReference>
+                <Patch Id="S22Xa79iK0tLrf5FGCaLQI">
+                  <Node Bounds="615,431,81,19" Id="JPazW1OuoDfOogq6FgZv9S">
+                    <p:NodeReference LastCategoryFullName="System.Windows.Forms.Screen" LastDependency="System.Windows.Forms.dll">
+                      <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                      <Choice Kind="OperationCallFlag" Name="PrimaryScreen" />
+                    </p:NodeReference>
+                    <Pin Id="VbLJOHLdtTYL8RM2Hop90I" Name="Primary Screen" Kind="OutputPin" />
+                  </Node>
+                  <ControlPoint Id="BWarIQ2lPWDPIGIqAC0bsf" Bounds="617,470" />
+                  <Link Id="K7mVOMNcxpnM6PU7b5uG4l" Ids="VbLJOHLdtTYL8RM2Hop90I,BWarIQ2lPWDPIGIqAC0bsf" />
+                  <Pin Id="PX1nDgHBo93MX3uYqyUlNO" Name="Primary Screen" Kind="OutputPin" Bounds="683,379" />
+                  <Link Id="G8WS49uI2nFNAjwaouAyGX" Ids="BWarIQ2lPWDPIGIqAC0bsf,PX1nDgHBo93MX3uYqyUlNO" IsHidden="true" />
+                </Patch>
+              </Node>
+              <!--
+
+    ************************ Bounds ************************
+
+-->
+              <Node Name="Bounds" Bounds="773,397,116,93" Id="UiQlvdWiSpdOwunIboKBjj">
+                <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
+                  <Choice Kind="OperationDefinition" Name="Operation" />
+                </p:NodeReference>
+                <Patch Id="RyX0syjTtVhMGLfONUwtYe">
+                  <Node Bounds="785,430,50,26" Id="PNAGyy5TEdAP0257pw1EL7">
+                    <p:NodeReference LastCategoryFullName="System.Windows.Forms.Screen" LastDependency="System.Windows.Forms.dll">
+                      <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                      <CategoryReference Kind="AssemblyCategory" Name="Screen" />
+                      <Choice Kind="OperationCallFlag" Name="Bounds" />
+                    </p:NodeReference>
+                    <Pin Id="TbXXFachZfqLsbX1NNR9ZB" Name="Input" Kind="StateInputPin" />
+                    <Pin Id="V2V94piUkcLPDGnmUGtcFw" Name="Output" Kind="StateOutputPin" />
+                    <Pin Id="NsYrrI8A1SVPQ8KPin3uGS" Name="Bounds" Kind="OutputPin" />
+                  </Node>
+                  <ControlPoint Id="AkwJoloOggROy1HdUv0ism" Bounds="832,473" />
+                  <Link Id="L1xZwCBvFWEP93vjAuoyi3" Ids="NsYrrI8A1SVPQ8KPin3uGS,AkwJoloOggROy1HdUv0ism" />
+                  <Pin Id="HanJpZGpu06OupqKCLPUuw" Name="Bounds" Kind="OutputPin" Bounds="832,473" />
+                  <Link Id="OPwaVXDvDpvMUdcyVZIqEq" Ids="AkwJoloOggROy1HdUv0ism,HanJpZGpu06OupqKCLPUuw" IsHidden="true" />
+                  <ControlPoint Id="L1t7wxnBfEIMx2sDsocCTu" Bounds="787,415" />
+                  <Link Id="J1d4qCOSwMVNvVRMkisjoN" Ids="L1t7wxnBfEIMx2sDsocCTu,TbXXFachZfqLsbX1NNR9ZB" />
+                  <Pin Id="KKY8v4pKj4pMrohgwtJpyD" Name="Input" Kind="InputPin" Bounds="824,406" />
+                  <Link Id="JKTF848Lm41MmNXpiRjfrH" Ids="KKY8v4pKj4pMrohgwtJpyD,L1t7wxnBfEIMx2sDsocCTu" IsHidden="true" />
+                </Patch>
+              </Node>
+            </Canvas>
+          </Canvas>
+        </Canvas>
+      </Canvas>
+    </Canvas>
+    <!--
+
+    ************************ Application ************************
+
+-->
+    <Node Name="Application" Bounds="100,100" Id="RxtFlolKt04QRe5FNa5xyW">
+      <p:NodeReference>
+        <Choice Kind="ContainerDefinition" Name="Process" />
+        <CategoryReference Kind="Category" Name="Primitive" />
+      </p:NodeReference>
+      <Patch Id="OAGtPFufUB2LXeX4WwPwEZ">
+        <Canvas Id="R2mnvzMwSLuQKy5EprgFuc" CanvasType="Group" />
+        <Patch Id="JIiGbejVthSNXdIfAHybqe" Name="Create" />
+        <Patch Id="C626fuqhROCLwYI1DdpEeb" Name="Update" />
+        <ProcessDefinition Id="FonxmzyNnFfQI62SMeqe8c">
+          <Fragment Id="KwdA3d8LMneMfz7wXC6WUq" Patch="JIiGbejVthSNXdIfAHybqe" Enabled="true" />
+          <Fragment Id="VTE4bHUVDLbLsnOxy775zQ" Patch="C626fuqhROCLwYI1DdpEeb" Enabled="true" />
+        </ProcessDefinition>
+      </Patch>
+    </Node>
+  </Patch>
+  <PlatformDependency Id="DfPWowprcbaNH4FCrAkE2E" Location="System.Drawing" />
+  <PlatformDependency Id="DYipEL4XiYFLL4VYCtJAvj" Location="System.Windows.Forms" />
+</Document>

@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+  <metadata>
+    <id>VL.HapPlayer</id>
+    <version>2.9.0-advanced</version>
+    <title>VL.HapPlayer</title>
+    <authors>Demolition Studios | For active patreon users only</authors>
+    <owners>Lev Panov, Alexander Shaliapin</owners>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <license type="file">LICENSE_PATREON.txt</license>
+    <licenseUrl>https://aka.ms/deprecateLicenseUrl</licenseUrl>
+    <projectUrl>https://www.patreon.com/hap_player</projectUrl>
+    <description>Hap GPU video playback implementation for VL/Stride</description>
+    <summary>Hap Player for VL/Stride</summary>
+    <copyright>For active patreon users only</copyright>
+    <tags>VL, Stride3d, Stride, video, playback, hap</tags>
+    <dependencies>
+      <group targetFramework="net6.0-windows7.0">
+        <dependency id="VL.Audio" version="1.2.2" />
+      </group>
+    </dependencies>
+  </metadata>
+</package>

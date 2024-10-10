@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document xmlns:p="property" xmlns:r="reflection" Id="TRSQqiX8IifNt3AKKsULGv" LanguageVersion="2024.6.0-0305-g43e4570135" Version="0.128">
+  <Patch Id="SHdLF6Pzc5qM24jZt1wrG4">
+    <Canvas Id="R44lQiGNl7qPS5RjgXH6Pu" DefaultCategory="System.Threading.Advanced" CanvasType="FullCategory">
+      <!--
+
+    ************************ SynchronizationContext ************************
+
+-->
+      <Node Name="SynchronizationContext" Bounds="231,271" Id="AvWSHqEHIO5Mq5eO2nvv5v">
+        <p:NodeReference>
+          <Choice Kind="ForwardDefinition" Name="Forward" />
+          <CategoryReference Kind="Category" Name="Primitive" />
+        </p:NodeReference>
+        <p:TypeAnnotation LastCategoryFullName="System.Threading" LastDependency="System.Threading.dll">
+          <Choice Kind="TypeFlag" Name="SynchronizationContext" />
+        </p:TypeAnnotation>
+        <Patch Id="TtHlPBW4kUeOQVmNgcU17q">
+          <Canvas Id="GUqA4LxJE9NPZDEyQPuZh2" BordersChecked="false" CanvasType="Group" />
+          <ProcessDefinition Id="AStoDdSqPhhPOFCQmx7BlW" IsHidden="true" />
+        </Patch>
+      </Node>
+    </Canvas>
+    <!--
+
+    ************************ Application ************************
+
+-->
+    <Node Name="Application" Bounds="100,100" Id="OCB5WhWtDvJM8pGrD6L6oS">
+      <p:NodeReference>
+        <Choice Kind="ContainerDefinition" Name="Process" />
+        <FullNameCategoryReference ID="Primitive" />
+      </p:NodeReference>
+      <Patch Id="ONAFVYgpeaPLA1F6yDBv2F">
+        <Canvas Id="MFl9ylWIbJ1LzBRuEgnTVF" CanvasType="Group" />
+        <Patch Id="UjCFRmiYIkRPTWEFaPACc7" Name="Create" />
+        <Patch Id="Q63d8U4Wk9jOUXYoJcxNxK" Name="Update" />
+        <ProcessDefinition Id="LiLXMb9jjYUQSVMEwsoqeO">
+          <Fragment Id="MYJeuFK9aZ0PKJv33sB69S" Patch="UjCFRmiYIkRPTWEFaPACc7" Enabled="true" />
+          <Fragment Id="QX1jpYVMw1BL3zC5Lbe4oQ" Patch="Q63d8U4Wk9jOUXYoJcxNxK" Enabled="true" />
+        </ProcessDefinition>
+      </Patch>
+    </Node>
+  </Patch>
+  <PlatformDependency Id="F0f3zha7AFxOrGnJe66BHY" Location="System.Threading" />
+  <PlatformDependency Id="U8eE3PAwNTcQDVheQIDAK4" Location="mscorlib" />
+  <PlatformDependency Id="NCrkiwKIGePL0BJ7fgLS4t" Location="./src/bin/Debug/net472/VL.CoreLib.dll" />
+  <DocumentDependency Id="Jiwdb8kR3coObEaVIedBKG" Location="./CoreLibBasics.vl" />
+</Document>
