@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="Jicf6db60A5O3MMVvAiDfa" LanguageVersion="2022.5.0-0778-g41d7625912" Version="0.128">
+<Document xmlns:p="property" xmlns:r="reflection" Id="Jicf6db60A5O3MMVvAiDfa" LanguageVersion="2024.6.7-0185-g7d063e105d" Version="0.128">
   <Patch Id="K6jOtX5z4AOM2g6L5teo07">
     <Canvas Id="HuM0Neyl9P0P3djIwL4nYf" DefaultCategory="Main" CanvasType="FullCategory">
       <!--
@@ -21,6 +21,7 @@
                 <Choice Kind="OperationCallFlag" Name="Create" />
                 <CategoryReference Kind="RecordType" Name="Leaf" NeedsToBeDirectParent="true" />
               </p:NodeReference>
+              <Pin Id="PjVrouLISwzLspOGDKB1IZ" Name="Node Context" Kind="InputPin" IsHidden="true" />
               <Pin Id="QtVr9VcrNGfOCoqSqeyfyx" Name="Attack" Kind="InputPin" DefaultValue="1" />
               <Pin Id="OIvTufq19mHPCALZBs6W94" Name="Decay" Kind="InputPin" DefaultValue="0.5" />
               <Pin Id="F3SPji9g6vqLibiXUcfgwv" Name="Output" Kind="StateOutputPin" />
@@ -41,6 +42,7 @@
                 <Choice Kind="OperationCallFlag" Name="Create" />
                 <CategoryReference Kind="RecordType" Name="Leaf" NeedsToBeDirectParent="true" />
               </p:NodeReference>
+              <Pin Id="Q9Le7nhdk0aMxwns4FeWpA" Name="Node Context" Kind="InputPin" IsHidden="true" />
               <Pin Id="A4A05jiZjnPNy6SaYI3CIw" Name="Attack" Kind="InputPin" DefaultValue="2" />
               <Pin Id="Appv8VnnawlLBFCxhgyVYt" Name="Decay" Kind="InputPin" DefaultValue="3" />
               <Pin Id="MH5AONV65QjODOQriqfe24" Name="Output" Kind="StateOutputPin" />
@@ -131,11 +133,13 @@
       </p:NodeReference>
       <Patch Id="RxrvDdUu4cvOBXbi4KngKc">
         <Canvas Id="PuJjSWeZNf5OSPyulV1tEs" CanvasType="Group">
-          <Node Bounds="448,287,53,19" Id="AR5c0Q6rt68PckQ1AuTiGr">
+          <Node Bounds="468,284,53,19" Id="AR5c0Q6rt68PckQ1AuTiGr">
             <p:NodeReference LastCategoryFullName="Reactive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="Channel" />
             </p:NodeReference>
+            <Pin Id="Kc1JGtLueEyMClNqSACfpZ" Name="Node Context" Kind="InputPin" IsHidden="true" />
+            <Pin Id="L1GYV8p7sliOT3jWy8gbYQ" Name="Initial Value" Kind="InputPin" IsHidden="true" />
             <Pin Id="K1kLv5ECH1KLSENKjsFjj2" Name="Value" Kind="InputPin" />
             <Pin Id="LdZ3p1Uqym7PSncTZwQBzB" Name="Output" Kind="StateOutputPin" />
             <Pin Id="RssTx93rhCIMOXk6RZU5qa" Name="Value" Kind="OutputPin" />
@@ -157,6 +161,7 @@
               <Choice Kind="ProcessAppFlag" Name="Select (ByPath)" />
             </p:NodeReference>
             <p:HelpFocus p:Assembly="VL.Lang" p:Type="VL.Model.HelpPriority">High</p:HelpFocus>
+            <Pin Id="UrjCvCKDPdCNgnAOrg1HIp" Name="Node Context" Kind="InputPin" IsHidden="true" />
             <Pin Id="K74brfBqxaaPMpNACobutz" Name="Input" Kind="InputPin" />
             <Pin Id="RB48a7kIyJ0QSXIwYgNMCY" Name="Path" Kind="InputPin" DefaultValue="Items[0].AttackTime" />
             <Pin Id="Mcn7vBTIy7fP8juYQUtqMp" Name="Output" Kind="OutputPin" />
@@ -166,6 +171,7 @@
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="Select (ByPath)" />
             </p:NodeReference>
+            <Pin Id="VWmnZ2PqHSsQVldPIbKVsm" Name="Node Context" Kind="InputPin" IsHidden="true" />
             <Pin Id="RgCcY2Z5KEmQEJvkSMtFbO" Name="Input" Kind="InputPin" />
             <Pin Id="S47ewXjrFZvOuiKHBmTu0I" Name="Path" Kind="InputPin" DefaultValue="Items[1].DecayTime" />
             <Pin Id="JJafhJZH9eQPC7Npgo15b4" Name="Output" Kind="OutputPin" />
@@ -177,6 +183,7 @@
               <Choice Kind="OperationCallFlag" Name="Split" />
             </p:NodeReference>
             <Pin Id="GdxQHo88A0PLO1uJHN0crv" Name="Input" Kind="StateInputPin" />
+            <Pin Id="RgnLPevXyPtMNHVIyKHChi" Name="Output" Kind="OutputPin" IsHidden="true" />
             <Pin Id="HGNQD8yOXMSO6EeOXTtUfg" Name="Items" Kind="OutputPin" />
           </Node>
           <Node Bounds="694,440,112,19" Id="RzI4fAj04VJP9uDnfCePNH">
@@ -228,9 +235,12 @@
             </p:NodeReference>
             <Pin Id="Ja0UmTfUVWyMD0TeNizLWQ" Name="Input" Kind="InputPin" />
             <Pin Id="TT20ZXc6WnmOA9PBXVfA52" Name="Value" Kind="InputPin" />
+            <Pin Id="JUMOG7Ob5A8MYwIhfYWErM" Name="Author" Kind="InputPin" IsHidden="true" />
             <Pin Id="TazUOckZKsAM1DxBFPsw5z" Name="Force" Kind="InputPin" />
+            <Pin Id="FuCclWKvHfELoNnlLgNhRP" Name="Apply" Kind="InputPin" />
+            <Pin Id="NCTYji30JHgMra9i2LSh3E" Name="Output" Kind="OutputPin" />
           </Node>
-          <Pad Id="UIRX9Y0xlyaMOUEfceZcqC" Comment="Attack" Bounds="291,552,52,26" ShowValueBox="true" isIOBox="true" Value="1.54">
+          <Pad Id="UIRX9Y0xlyaMOUEfceZcqC" Comment="Attack" Bounds="291,527,52,26" ShowValueBox="true" isIOBox="true" Value="1.47">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="Float32" />
             </p:TypeAnnotation>
@@ -246,9 +256,12 @@
             </p:NodeReference>
             <Pin Id="EyaEyCrG84DMcP6St27Zcw" Name="Input" Kind="InputPin" />
             <Pin Id="PQBsf62MbedMkRzbf4h6cm" Name="Value" Kind="InputPin" />
+            <Pin Id="KtkaHcHeIivOtohxT9ANqS" Name="Author" Kind="InputPin" IsHidden="true" />
             <Pin Id="GIP9QPbxTZrOsLIFe1EKHt" Name="Force" Kind="InputPin" />
+            <Pin Id="MErPw40XrTBMd6NbTm2P5s" Name="Apply" Kind="InputPin" />
+            <Pin Id="Gu7BzyLf1PfOM1xkg0ILZa" Name="Output" Kind="OutputPin" />
           </Node>
-          <Pad Id="IXCcUwXSJiPOBBgQlXDs32" Comment="Decay" Bounds="472,552,52,26" ShowValueBox="true" isIOBox="true" Value="0.48999998">
+          <Pad Id="IXCcUwXSJiPOBBgQlXDs32" Comment="Decay" Bounds="472,552,52,26" ShowValueBox="true" isIOBox="true" Value="0.46">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="ImmutableTypeFlag" Name="Float32" />
               <FullNameCategoryReference ID="Primitive" />
@@ -264,6 +277,7 @@
               <CategoryReference Kind="RecordType" Name="SomeModel" NeedsToBeDirectParent="true" />
             </p:NodeReference>
             <Pin Id="A35yiZdpy8LOAJ1MFE4idD" Name="Output" Kind="StateOutputPin" />
+            <Pin Id="I95bKknffkbL4unuuD6uO7" Name="Node Context" Kind="InputPin" IsHidden="true" />
           </Node>
           <Pad Id="DnVSEP9ZJpMNt07ypF4oXk" Bounds="257,638,158,19" ShowValueBox="true" isIOBox="true" Value="Pushing values upstream">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
@@ -319,6 +333,7 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
+          <ControlPoint Id="ClQEQYARYKCN8FLzg1srTx" Bounds="495,294" />
         </Canvas>
         <Patch Id="DOR8YfYVKNAOTpcsIcbHHK" Name="Create" ParticipatingElements="TtcqNitbY1fOOPh9ovVdbf" />
         <Patch Id="RYcSdMgjOSHMTo1e9h0RjC" Name="Update" />
@@ -328,7 +343,7 @@
         </ProcessDefinition>
         <Link Id="Q2Nv00hI9OnL6FX1aYSAUO" Ids="LdZ3p1Uqym7PSncTZwQBzB,K74brfBqxaaPMpNACobutz" />
         <Link Id="LpJTdrP4lyMLU1dVnuCklU" Ids="LdZ3p1Uqym7PSncTZwQBzB,RgCcY2Z5KEmQEJvkSMtFbO" />
-        <Link Id="Ia4HbVeyhHiP4Nnw8ga9Kd" Ids="RssTx93rhCIMOXk6RZU5qa,GdxQHo88A0PLO1uJHN0crv" />
+        <Link Id="Ia4HbVeyhHiP4Nnw8ga9Kd" Ids="RssTx93rhCIMOXk6RZU5qa,ClQEQYARYKCN8FLzg1srTx,GdxQHo88A0PLO1uJHN0crv" />
         <Link Id="AvCJxfZiWSsLKUNAf1KLpo" Ids="HGNQD8yOXMSO6EeOXTtUfg,SGeChvEMIkoLpJuU1g46bp" />
         <Link Id="CjHTuhXKuCSNToufuUYcRi" Ids="MZyGM32aFjPMTSJn5qlefR,Swd2fZIQGvxPuOT07MLmaj" />
         <Link Id="L0uirV0pxrBN2WY7rAj5nd" Ids="VoEUza8dTTCK9VxtMOlbv6,VVYGIDwcxTvPyIx5pE9i1B" />
@@ -344,6 +359,6 @@
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="VCZm9gqYh4TNWNPU7BmXgd" Location="VL.CoreLib" Version="2021.4.11-1228-gf15d2066ce" />
-  <NugetDependency Id="G5uNvJj7sZOOCtalt7jSx4" Location="VL.Skia" Version="2021.4.11-1228-gf15d2066ce" />
+  <NugetDependency Id="VCZm9gqYh4TNWNPU7BmXgd" Location="VL.CoreLib" Version="2024.6.7-0185-g7d063e105d" />
+  <NugetDependency Id="G5uNvJj7sZOOCtalt7jSx4" Location="VL.Skia" Version="2024.6.7-0185-g7d063e105d" />
 </Document>

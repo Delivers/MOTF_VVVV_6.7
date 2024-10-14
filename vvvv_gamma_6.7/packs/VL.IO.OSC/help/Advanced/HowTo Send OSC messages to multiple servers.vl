@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="S9EuadUceOoMWBK1eZXzUK" LanguageVersion="2023.5.3-0157-gcbac65ecd1" Version="0.128">
-  <NugetDependency Id="P0R369bokpAPMN6cZoWzt3" Location="VL.CoreLib" Version="2023.5.3-0157-gcbac65ecd1" />
+<Document xmlns:p="property" xmlns:r="reflection" Id="S9EuadUceOoMWBK1eZXzUK" LanguageVersion="2024.6.7-0185-g7d063e105d" Version="0.128">
+  <NugetDependency Id="P0R369bokpAPMN6cZoWzt3" Location="VL.CoreLib" Version="2024.6.7-0185-g7d063e105d" />
   <Patch Id="RNg6extPzPdMdaB97BQ37w">
     <Canvas Id="R5d8ZEkbFhON8aOGcSTrTu" DefaultCategory="Main" CanvasType="FullCategory">
       <!--
@@ -223,7 +223,7 @@
               </p:TypeArguments>
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="LXpjEfw6Rd1QKZcSqeuHxq" Bounds="284,233,222,175" ShowValueBox="true" isIOBox="true" Value="&lt; Enable these optional inputs by rightclicking on the OSCClient and pressing &quot;Configure&quot;.&#xD;&#xA;&#xD;&#xA;Here you can now specify a range of Servers and/or Ports to target with all messages sent via that client.">
+          <Pad Id="LXpjEfw6Rd1QKZcSqeuHxq" Bounds="294,221,222,175" ShowValueBox="true" isIOBox="true" Value="&lt; Enable these optional inputs by rightclicking on the OSCClient and pressing &quot;Configure&quot;.&#xD;&#xA;&#xD;&#xA;Here you can now specify a range of Servers and/or Ports to target with all messages sent via that client.">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -250,6 +250,6 @@
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="RXlDIKwF9NONL4X6Sk8Q0q" Location="VL.Skia" Version="2023.5.3-0157-gcbac65ecd1" />
-  <NugetDependency Id="DcbnPRoJhzUO3yAg6Xi2U5" Location="VL.IO.OSC" Version="0.0.0.0" />
+  <NugetDependency Id="RXlDIKwF9NONL4X6Sk8Q0q" Location="VL.Skia" Version="2024.6.7-0185-g7d063e105d" />
+  <NugetDependency Id="DcbnPRoJhzUO3yAg6Xi2U5" Location="VL.IO.OSC" Version="1.1.4" />
 </Document>
